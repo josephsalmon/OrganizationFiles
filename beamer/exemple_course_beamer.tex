@@ -1,0 +1,137 @@
+%\documentclass[11pt]{beamer}
+%\documentclass[11pt,handout]{beamer}
+% \documentclass[hyperref={pdfpagelabels=false}]{beamer}
+
+\documentclass{beamer}
+\usepackage[francais]{babel}
+% \usepackage[francais,american]{babel}
+\usepackage{/home/jo/Documents/organization_files/sty/beamer_js}    %/home/jo/Documents/organization_files/sty
+\usepackage{/home/jo/Documents/organization_files/sty/shortcuts_js} %/home/jo/Documents/organization_files/sty
+
+
+
+\begin{document}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%          Headers	   %%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+\bigskip
+\bigskip 
+\begin{center}{
+\LARGE\color{marron}
+\textbf{CES DATA scientist}\\
+\vspace{1cm}
+Apprentissage supervisé: (théorie) et algorithmes}
+\end{center}
+\bigskip
+\begin{center}
+\textbf{ Joseph Salmon} \\ 
+\url{http://josephsalmon.eu} \\
+T\'el\'ecom Paristech, Institut Mines-T\'el\'ecom \\
+\end{center}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%   co-authors    pictures   %%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%       PLAN     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{frame}
+  \frametitle{Motivation -- enjeux}
+  \begin{itemize}
+  \item Point de départ : diverses m\'ethodes usuelles et retour sur quelques
+\'el\'ements de statistiques
+\vspace{1cm}
+  \item Compr\'ehension des m\'ethodes  
+\vspace{1cm} 
+  \item Implémenter celles-ci en Python
+\vspace{1cm} 
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Plan}
+\tableofcontents[section]
+% You might wish to add the option [pausesections]
+\end{frame}
+
+
+% \AtBeginSection[] % Do nothing for \subsection*
+% {
+%   \begin{frame}%<beamer>
+%     \frametitle{Plan}
+% %      \tableofcontents[currentsubsection,hideothersubsections]
+%      \tableofcontents[currentsection,currentsubsection,hideothersubsections,hideothersubsubsections]
+% %     \tableofcontents[ 
+% % currentsubsection, 
+% % hideothersubsections, 
+% % subsectionstyle=show/shaded, 
+%   \end{frame}
+% }
+% 
+\AtBeginSubsection[]
+{
+  \begin{frame}
+    \frametitle{Sommaire}
+%     \tableofcontents[ currentsubsection, hideothersubsections, sectionstyle=show/hide, subsectionstyle=show/shaded, ]
+ \tableofcontents[currentsection,hideothersubsections,hideothersubsubsections,subsectionstyle=show/shaded]
+  \end{frame}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%       Movie Example     %%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \begin{frame}{Real data}
+% \begin{figure}
+% \animategraphics[width=6cm,autoplay,every=2]{10}
+% \caption{Youngest supernova explosion in the Milky Way, supernova remnant G1.9+0.3  (\symbol{64} NASA/CXC/SAO)
+% Thanks: Steven Reynolds, NC State}
+% \end{figure}
+% \end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Pr\'erequis}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Optimisation / statistiques / Alg\`ebre}
+\begin{frame}{Optimisation / statistiques} 
+\begin{exampleblock}{Optimisation/Analyse}
+\begin{itemize}
+ \item Projection sur un sous-espace
+ \item R\'egression lin\'eaire, moindre carr\'es:\\
+$Y=X\theta+\varepsilon$,\quad $\hat{\theta}=(X^\top X)^{-1}X^\top Y $
+ \item M\'ethode de Newton
+\end{itemize}
+\end{exampleblock}
+
+\begin{exampleblock}{Alg\`ebre}
+\begin{itemize}
+ \item D\'ecomposition spectrale des matrices symétriques (carr\'ees): 
+\begin{equation*}
+\Sigma=UDU^{\top} \in \bbR^{p \times p}
+\end{equation*}
+pour une matrice orthonormale  $U$ (\ie $U^\top U =\Id_p$) et une matrice diagonale $D=\diag(d_1,\dots,d_p)$
+\end{itemize}
+\end{exampleblock}
+\end{frame}
+
+\begin{frame}[allowframebreaks]
+%[allowframebreaks]
+\frametitle{R\'ef\'erences}
+\bibliographystyle{alpha}
+% \bibliography{/data/salmon/organization_files/biblio/references_all}%TSI. if needed:IEEEabrv
+% \bibliography{/home/jo/Documents/organization_files/biblio/references_all}%laptop
+\bibliography{/home/jo/Documents/organization_files/biblio/references_all}% /home/jo/Documents/organization_files/biblio
+\end{frame}
+
+
+
+\end{document}
