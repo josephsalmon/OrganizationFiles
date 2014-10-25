@@ -40,9 +40,16 @@
 @STRING{PTRF = {Probab. Theory Related Fields}}
 
 
-@preamble{ {\providecommand{\CH}{C-H} } }
-@preamble{ {\providecommand{\JM}{J-M} } }
-@preamble{ {\providecommand{\JC}{J-C} } }
+@preamble{ {\providecommand{\CH}{C.-H} } }
+@preamble{ {\providecommand{\JM}{J.-M} } }
+@preamble{ {\providecommand{\JC}{J.-C} } }
+@preamble{ {\providecommand{\RE}{R.-E} } }
+@preamble{ {\providecommand{\KW}{K.-W} } }
+@preamble{ {\providecommand{\CJ}{C.-J} } }
+@preamble{ {\providecommand{\XR}{X.-R} } }
+
+
+
 
 @INPROCEEDINGS{Abernethy_Bartlett_Rakhlin07,
   author = {J. Abernethy and P. Bartlett and A. Rakhlin},
@@ -330,6 +337,16 @@
   year = {2009},
   pages = {46--54}
 }
+
+@article{Arlot_Celisse10,
+  title={A survey of cross-validation procedures for model selection},
+  author={S. Arlot  and A. Celisse},
+  journal={Statistics surveys},
+  volume={4},
+  pages={40--79},
+  year={2010},
+}
+
 
 @ARTICLE{Audibert08,
   author = {J-Y. Audibert},
@@ -1742,6 +1759,17 @@ Pierre et Marie Curie},
        DOI = {10.3150/13-BEJ533},
        URL = {http://dx.doi.org/10.3150/13-BEJ533},
 
+@article{Chichignoud_Lederer_Wainwright14,
+   author = {M. Chichignoud and J. Lederer and M. Wainwright},
+    title = "Tuning Lasso for sup-norm optimality",
+  journal = {ArXiv e-prints},
+archivePrefix = "arXiv",
+   eprint = {1410.0247},
+ primaryClass = "stat.ME",
+ keywords = {Statistics - Methodology, Mathematics - Statistics Theory},
+     year = 2014,
+}
+
 
 @Book{Ciarlet06,
   author = {P. G. Ciarlet},
@@ -1814,7 +1842,7 @@ Pierre et Marie Curie},
 }
 
 @incollection {Combettes_Pesquet11,
-    AUTHOR = {P. L. Combettes and \JC Pesquet},
+    AUTHOR = {P. L. Combettes and {\JC}. Pesquet},
      TITLE = {Proximal splitting methods in signal processing},
  BOOKTITLE = {Fixed-point algorithms for inverse problems in science and
               engineering},
@@ -2674,6 +2702,18 @@ booktitle = {SPARS},
   booktitle = {SampTA},	
 }
 
+
+@article{Fan_Chang_Hsieh_Wang_Lin08,
+  title={LIBLINEAR: A library for large linear classification},
+  author={ {\RE}. Fan and {\KW}. Chang and {\CJ}. Hsieh and {\XR}. Wang and {\CJ}. Lin},
+  journal=JMLR,
+  volume={9},
+  pages={1871--1874},
+  year={2008},
+  publisher={JMLR. org}
+}
+
+
 @BOOK{Fan_Gijbels96,
   title = {Local polynomial modelling and its applications},
   publisher = {Chapman \& Hall},
@@ -2685,12 +2725,6 @@ booktitle = {SPARS},
   address = {London}
 }
 
-@PHDTHESIS{Fazel02,
-  title={Matrix rank minimization with applications},
-  author={M. Fazel},
-  year={2002},
-  school = {Stanford University}
-}
 
 
 @ARTICLE{Fan_Li01,
@@ -2705,6 +2739,12 @@ booktitle = {SPARS},
   fjournal = {Journal of the American Statistical Association}
 }
 
+@PHDTHESIS{Fazel02,
+  title={Matrix rank minimization with applications},
+  author={M. Fazel},
+  year={2002},
+  school = {Stanford University}
+}
 
 
 @article{Fevotte_Bertin_Durrieu_09, 
@@ -3241,6 +3281,16 @@ year={2008},
   publisher={IEEE}
 }
 
+@BOOK{Grunbaum03,
+  title = {Convex Polytopes},
+  publisher = {Springer-Verlag},
+  year = {2003},
+  author = {B. Gr\"unbaum},
+  pages = {471},
+  address = {New York},
+  edition = {Second}
+}
+
 
 @ARTICLE{Guedj_Alquier13,
   author = {B. Guedj and P. Alquier},
@@ -3381,6 +3431,20 @@ year={2008},
   booktitle = {NIPS workshop},
   year      ={2012}
 }
+
+@ARTICLE{Harchaoui_Juditsky_Nemirovski14,
+year={2014},
+issn={0025-5610},
+journal={Mathematical Programming},
+title={Conditional gradient algorithms for norm-regularized smooth convex optimization},
+url={http://dx.doi.org/10.1007/s10107-014-0778-9},
+publisher={Springer Berlin Heidelberg},
+author={Z. Harchaoui and A. Juditsky and  A. Nemirovski},
+pages={1-38},
+language={English}
+}
+doi={10.1007/s10107-014-0778-9},
+
 
 
 @BOOK{Hardle90,
@@ -4379,6 +4443,21 @@ doi = {10.1109/MC.2009.263},
 }
 
 
+@inproceedings{Mairal_Yu12,
+  author    = {J. Mairal and B. Yu},
+  title     = {Complexity Analysis of the Lasso Regularization Path},
+  booktitle = ICML, 
+  year      = {2012},
+}
+
+@article{Lederer14,
+  title={Don't fall for tuning parameters: tuning-free variable selection in high dimensions with the TREX},
+  author={M\"uller, Ch. and Lederer, J.},
+  journal={preprint arXiv:1404.0541},
+  year={2014}
+}
+
+
 @book{Ledoux_Talagrand91,
    AUTHOR  = {M. Ledoux and M. Talagrand},
     TITLE  = {Probability in {B}anach spaces},
@@ -4504,6 +4583,18 @@ MRREVIEWER = {Evarist Gin{\'e}},
   address = {Cambridge}
 }
 
+@ARTICLE{Lepski90,
+  author = {O. V. Lepski},
+  title = {On a Problem of Adaptive Estimation in Gaussian White Noise},
+  journal = {Theory of Probability and its Applications},
+  year = {1990},
+  volume = {35},
+  pages = {454--466},
+  number = {3},
+  publisher = {SIAM}
+}
+
+
 @INCOLLECTION{Lepski92,
   author = {O. V. Lepski},
   title = {On problems of adaptive estimation in white {G}aussian noise},
@@ -4516,16 +4607,6 @@ MRREVIEWER = {Evarist Gin{\'e}},
   address = {Providence, RI}
 }
 
-@ARTICLE{Lepski90,
-  author = {O. V. Lepski},
-  title = {On a Problem of Adaptive Estimation in Gaussian White Noise},
-  journal = {Theory of Probability and its Applications},
-  year = {1990},
-  volume = {35},
-  pages = {454--466},
-  number = {3},
-  publisher = {SIAM}
-}
 
 @ARTICLE{Lepski_Mammen_Spokoiny97,
   author = {O. V. Lepski and E. Mammen and V. G. Spokoiny},
@@ -4786,9 +4867,9 @@ page= {119--133},
   title = {Online Learning for Matrix Factorization and Sparse Coding},
   journal = JMLR,
   year = {2010},
-  pages = {19-60},
-note = {\url{http://jmlr.org/papers/volume11/mairal10a/mairal10a.pdf}},
+  pages = {19-60}
 }
+note = {\url{http://jmlr.org/papers/volume11/mairal10a/mairal10a.pdf}},
 
 @article{Mairal_Bach_Ponce12,
    title={Task-driven dictionary learning},
@@ -5738,6 +5819,13 @@ MRREVIEWER = {Sylvain Sardy},
   publisher={Springer}
 }
 
+@article{Reid_Tibshirani_Friedman13,
+  title={A study of error variance estimation in lasso regression},
+  author={S. Reid and R. Tibshirani and J. Friedman},
+  journal={arXiv preprint arXiv:1311.5274},
+  year={2013}
+}
+
 
 @ARTICLE{Rigollet12,
   author = {P. Rigollet},
@@ -5964,6 +6052,14 @@ MRREVIEWER = {Sylvain Sardy},
   year = {2010}
 }
 
+@MASTERSTHESIS{Salmon07,
+  author = {J. Salmon and {E. Le Pennec}},
+  title = {Wavelet and Bayesian Models},
+  school = {ENSAE {ParisTech} et Universit\'e Paris 7-Diderot},
+  year = {2007},
+  keywords = {Image Processing}
+}
+
 @ARTICLE{Salmon10,
   author = {J. Salmon},
   title = {On two parameters for denoising with {Non-Local Means}},
@@ -5988,13 +6084,6 @@ MRREVIEWER = {Sylvain Sardy},
   year = {2012}
 }
 
-@MASTERSTHESIS{Salmon07,
-  author = {J. Salmon and {E. Le Pennec}},
-  title = {Wavelet and Bayesian Models},
-  school = {ENSAE {ParisTech} et Universit\'e Paris 7-Diderot},
-  year = {2007},
-  keywords = {Image Processing}
-}
 
 @ARTICLE{Salmon_Harmany_Deledalle_Willett14,
   author = {J. Salmon and Z. Harmany and {\relax C-A}. Deledalle and R. Willett },
@@ -6092,6 +6181,18 @@ MRREVIEWER = {Sylvain Sardy},
   number = {1},
   publisher = {IEEE}
 }
+
+@BOOK{Schneider13,
+  author={R. Schneider},
+  title={Convex bodies: the Brunn--Minkowski theory},
+  edition = {Second},
+  series={Encyclopedia of Mathematics and its Applications},
+  volume={151},
+  year={2013},
+  pages={760},
+  publisher={Cambridge University Press}
+}
+
 
 @BOOK{Schott05,
   title = {Matrix analysis for statistics},
@@ -6518,15 +6619,7 @@ year="2012",
   fjournal = {TEST}
 }
 
-@ARTICLE{Sun_Zhang12,
-  author = {T. Sun and C.-H. Zhang},
-  title = {Scaled Sparse Linear Regression},
-  journal = {Biometrika},
-  year = {2012},
-  volume = {99},
-  pages = {879-898},
-  number = {4}
-}
+
 
 @ARTICLE{Sun_Zhang10,
   author = {T. Sun and C-H. Zhang},
@@ -6538,6 +6631,28 @@ year="2012",
   number = {2},
   fjournal = {TEST}
 }
+
+@ARTICLE{Sun_Zhang12,
+  author = {T. Sun and C.-H. Zhang},
+  title = {Scaled Sparse Linear Regression},
+  journal = {Biometrika},
+  year = {2012},
+  volume = {99},
+  pages = {879-898},
+  number = {4}
+}
+
+
+@ARTICLE{Sun_Zhang13,
+  author = {T. Sun and C.-H. Zhang},
+  title   = {Sparse Matrix Inversion with Scaled Lasso},
+  journal = {Journal of Machine Learning Research},
+  year    = {2013},
+  volume  = {14},
+  pages   = {3385-3418},
+  url     = {http://jmlr.org/papers/v14/sun13a.html}
+}
+
 
 @ARTICLE{Szlam_Maggioni_Coifman08,
   author = {A. D. Szlam and M. Maggioni and R. R. Coifman},
@@ -7418,6 +7533,17 @@ pages={16–26}
   organization={IEEE}
 }
 
+
+@article{Zou_Hastie05,
+  title={Regularization and variable selection via the elastic net},
+  author={H. Zou and T. Hastie},
+  journal=JRSSB,
+  volume={67},
+  number={2},
+  pages={301--320},
+  year={2005},
+  publisher={Wiley Online Library}
+}
 
 
 @ARTICLE{Zou_Hastie_Tibshirani06,
