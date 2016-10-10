@@ -27,10 +27,12 @@
 
 @STRING{IEEE_J_IT = {{IEEE} Trans. Inf. Theory}}
 
+@STRING{IEEE_J_TSP = {{IEEE} Trans. Sig. Process.}}
+
 @STRING{EJS = {Electron. J. Stat.}}
 
 @STRING{IJCV = {Int. J. Comput. Vision}}
-
+A
 @STRING{JASA = { J. Am. Statist. Assoc.}}
 
 @STRING{JMLR = { J. Mach. Learn. Res.}}
@@ -42,6 +44,12 @@
 @STRING{NIPS = {NIPS}}
 
 @STRING{PTRF = {Probab. Theory Related Fields}}
+
+@STRING{JSS = {J. Stat. Softw.}}
+
+@STRING{ACHA = {Appl. Comput. Harmon. Anal.}}
+
+
 
 
 @preamble{ {\providecommand{\AC}{A.-C}} }
@@ -61,8 +69,7 @@
 @preamble{ {\providecommand{\XR}{X.-R}} }
 @preamble{ {\providecommand{\WX}{W.-X}} }
 @preamble{ {\providecommand{\PL}{P.-L}} }
-
-
+@preamble{ {\providecommand{\YX}{Y.-X}} }
 
 @INPROCEEDINGS{Abernethy_Bartlett_Rakhlin07,
   author = {J. Abernethy and P. Bartlett and A. Rakhlin},
@@ -147,7 +154,7 @@ eprint = { http://dx.doi.org/10.1137/040605266}
 @ARTICLE{Aharon_Elad08,
   author = {M. Aharon and M. Elad},
   title = {Sparse and redundant modeling of image content using an
-image-signature-dictionary},
+  image-signature-dictionary},
   journal = {SIAM J. Imaging Sci.},
   year = {2008},
   volume = {1},
@@ -161,7 +168,7 @@ image-signature-dictionary},
   author = {M. Aharon and M. Elad and A. Bruckstein},
   title = {{K-SVD}: An Algorithm for Designing Overcomplete Dictionaries for
   Sparse Representation},
-  journal = IEEE_J_SP,
+  journal = IEEE_J_TSP,
   year = {2006},
   volume = {54},
   pages = {4311--4322},
@@ -476,7 +483,7 @@ Statistiques}
 
 @article{Azais_DeCastro_Gamboa_15,
   Author = {{\JM}. Aza{\"\i}s and Y. {De Castro} and F. Gamboa},
-  Journal = {Applied and Computational Harmonic Analysis},
+  Journal = \ACHA,
   Number = {2},
   Pages = {177--195},
   Publisher = {Elsevier},
@@ -693,6 +700,20 @@ bilateral
   publisher = {Elsevier}
 }
 
+
+@article{Beck_Eldar13,
+  title={Sparsity constrained nonlinear optimization: Optimality conditions and algorithms},
+  author={A. Beck and Y. C. Eldar},
+  journal={SIAM Journal on Optimization},
+  volume={23},
+  number={3},
+  pages={1480--1509},
+  year={2013},
+  publisher={SIAM}
+}
+
+
+
 @ARTICLE{Becker_Candes_Grant11,
   author = {S. R. Becker and E. J. Cand{\`e}s and M. C. Grant},
   title = {Templates for convex cone problems with applications to sparse signal
@@ -748,6 +769,23 @@ Belloni_Chernozhukov_Wang11.pdf:Articles/Belloni/Belloni_Chernozhukov_Wang11.pdf
   MRNUMBER = {3037163},
        DOI = {10.3150/11-BEJ410},
        URL = {http://dx.doi.org/10.3150/11-BEJ410},
+
+@article{Belloni_Rosenbaum_Tsybakov14,
+  title={Linear and Conic Programming Estimators in High-Dimensional Errors-in-variables Models},
+  author={A. Belloni  and M. Rosenbaum and A. B. Tsybakov},
+  journal={arXiv preprint arXiv:1408.0241},
+  year={2014}
+}
+
+
+@article{Belloni_Rosenbaum_Tsybakov14b,
+  title={An $\{ l_1, l_2, l_{\infty}\}$-Regularization Approach to High-Dimensional Errors-in-variables Models},
+  author={A. Belloni  and M. Rosenbaum and A. B. Tsybakov},
+  journal={arXiv preprint arXiv:1412.7216},
+  year={2014}
+}
+
+
 
 
 @INPROCEEDINGS{Ben-David_Pal_Shalev-Shwartz09,
@@ -1111,12 +1149,13 @@ booktitle={EUSIPCO}
    author = {A. Bonnefoy and V. Emiya and L. Ralaivola and R. Gribonval},
     title = "{Dynamic Screening: Accelerating First-Order Algorithms for the
 Lasso and Group-Lasso}",
-  journal = {ArXiv e-prints},
-archivePrefix = "arXiv",
-   eprint = {1412.4080},
- primaryClass = "stat.ML",
-     year = {2014},
+  journal = IEEE_J_TSP,
+  VOLUME = {63},
+  NUMBER = {19},
+  PAGES = {20},
+   year = {2015},
 }
+
    adsurl = {http://adsabs.harvard.edu/abs/2014arXiv1412.4080B},
   adsnote = {Provided by the SAO/NASA Astrophysics Data System}
 
@@ -1243,7 +1282,19 @@ microscopy
   number = {3}
 }
 
-@book {Breiman_Friedman_Oshen_Stone84,
+@article{Breheny_Huang11,
+  title={Coordinate descent algorithms for nonconvex penalized regression, with applications to biological feature selection},
+  author={P. Breheny and J. Huang},
+  journal=AAS,
+  volume={5},
+  number={1},
+  pages={232},
+  year={2011},
+  publisher={NIH Public Access}
+}
+
+
+@book {Breiman_Friedman_Olshen_Stone84,
     AUTHOR = {L. Breiman and J. H. Friedman and R. A. Olshen and C. J. Stone},
      TITLE = {Classification and regression trees},
     SERIES = {Wadsworth Statistics/Probability Series},
@@ -1465,6 +1516,17 @@ algorithm},
   series = {Springer Series in Statistics},
   address = {Heidelberg},
   note = {Methods, theory and applications}
+}
+
+@article{Buhlmann_Yu03,
+  title={Boosting with the {L2} loss: regression and classification},
+  author={P. B{\"u}hlmann and B. Yu},
+  journal=JASA,
+  volume={98},
+  number={462},
+  pages={324--339},
+  year={2003},
+  publisher={Taylor \& Francis}
 }
 
 
@@ -1914,6 +1976,15 @@ applications to imaging},
   year={2012}
 }
 
+@article{Chatterjee_Jafarov15,
+  title={Prediction error of cross-validated Lasso},
+  author={S. Chatterjee and J. Jafarov},
+  journal={arXiv preprint arXiv:1502.06291},
+  year={2015}
+}
+
+
+
 @INPROCEEDINGS{Chatterjee_Milanfar11,
   author = {P. Chatterjee and P. Milanfar},
   title = {Patch-based Near-Optimal Image Denoising },
@@ -1973,8 +2044,6 @@ recovery},
   year={2013}
 }
 
-
-
 @ARTICLE{Cheng95,
   author = {Y. Cheng},
   title = {Mean Shift, Mode Seeking, and Clustering},
@@ -1985,6 +2054,18 @@ recovery},
   number = {8},
   address = {Los Alamitos, CA, USA},
   publisher = {IEEE Computer Society}
+}
+
+@TechReport{Chetelat_Lederer_Salmon14,
+  Title         = {Optimal two-step prediction in regression},
+  Author        = {D. {Ch\'etelat} and J. Lederer and J. Salmon},
+  Year          = {2014},
+  Archiveprefix = {arXiv},
+  Comment       = {<a href="https://github.com/josephsalmon/AVp">
+                    [Python Code]},
+  Eprint        = {1410.5014},
+  Primaryclass  = {math-ST},
+  Url           = {http://arxiv.org/pdf/1410.5014v1.pdf}
 }
 
 @PHDTHESIS{Chichignoud,
@@ -2057,7 +2138,7 @@ l'optimisation.
   author = {A. Cohen and R. A. DeVore and G. Kerkyacharian and D. Picard},
   title = {Maximal spaces with given rate of convergence for thresholding
 algorithms},
-  journal = {Appl. Comput. Harmon. Anal.},
+  journal = \ACHA,
   year = {2001},
   volume = {11},
   pages = {167--191},
@@ -2604,10 +2685,11 @@ df:PDF}
   Author        = {C-A. Deledalle and N. Papadakis and J. Salmon},
   Booktitle     = {SSVM},
   Year          = {2015},
+  pages         = {129--141},
   Keywords      = {restoration; bias; debiasing; l1 regularization;
                    model subspace; refitting},
-  Url  = {https://hal.archives-ouvertes.fr/hal-01123542/document}
   }
+  Url  = {https://hal.archives-ouvertes.fr/hal-01123542/document}
 
 
 @TECHREPORT{Delon_Desolneux12,
@@ -2680,7 +2762,7 @@ presence
 @ARTICLE{Donoho_Johnstone95,
   author = {D. L. Donoho and I. M. Johnstone},
   title = {Adapting to unknown smoothness via wavelet shrinkage},
-  journal = {J. Amer. Statist. Assoc.},
+  journal = JASA,
   year = {1995},
   volume = {90},
   pages = {1200--1224},
@@ -2704,7 +2786,7 @@ presence
               and A. S. Stern},
      TITLE = {Maximum entropy and the nearly black object},
       NOTE = {With discussion and a reply by the authors},
-   JOURNAL = {J. Roy. Statist. Soc. Ser. B},
+   JOURNAL = JRSSB,
   FJOURNAL = {Journal of the Royal Statistical Society. Series B.
               Methodological},
     VOLUME = {54},
@@ -2771,7 +2853,7 @@ Methodological}
   author = {V. Dor{\'e} and M. Cheriet},
   title = {{Robust NL-Means Filter With Optimal Pixel-Wise Smoothing Parameter
   for Statistical Image Denoising}},
-  journal = IEEE_J_SP,
+  journal = IEEE_J_TSP,
   year = {2009},
   volume = {57},
   pages = {1703--1716}
@@ -2798,8 +2880,6 @@ Methodological}
   year={2005},
   publisher={JMLR. org}
 }
-
-
 
 @book{Dubhashi_Alessandro09,
   title={Concentration of measure for the analysis of randomized algorithms},
@@ -2872,6 +2952,16 @@ Applications]},
   address = {Berlin},
   isbn = {3-540-60699-8}
 }
+
+
+@INPROCEEDINGS{Dunner_Forte_Takac_Jaggi16,
+  author = {C. D{\"{u}}nner and S.Forte and M. Tak{\'{a}\v{c}} and M. Jaggi},
+  title = {Primal-Dual Rates and Certificates},
+  booktitle = ICML,
+  year = {2016},
+  pages = {783--792},
+}
+
 
 @ARTICLE{Duval_Aujol_Gousseau11,
   author = {V. Duval and {\JF}. Aujol and Y. Gousseau},
@@ -3014,6 +3104,17 @@ selection},
   location = {Barcelona, Spain}
 }
 
+@article{Elad_Milanfar_Rubinstein07,
+  title={Analysis versus synthesis in signal priors},
+  author={M. Elad and P. Milanfar and R. Rubinstein},
+  journal={Inverse problems},
+  volume={23},
+  number={3},
+  pages={947--968},
+  year={2007},
+  publisher={IOP Publishing}
+}
+
 @BOOK{Elad10,
   title = {Sparse and redundant representations},
   publisher = {Springer},
@@ -3111,7 +3212,7 @@ J. Salmon},
   author = {J. Fan and R. Li},
   title = {Variable selection via nonconcave penalized likelihood and its oracle
   properties},
-  journal = {J. Amer. Statist. Assoc.},
+  journal = JASA,
   year = {2001},
   volume = {96},
   pages = {1348--1360},
@@ -3179,7 +3280,7 @@ month={Mar}
   author = { M. A. T. Figueiredo and J. M. {Bioucas-Dias}},
   title = {Restoration of Poissonian images using alternating direction
 optimization},
-  journal = IEEE_J_SP,
+  journal = IEEE_J_TSP,
   year = {2010},
   volume = {19},
   pages = {3133--3145},
@@ -3288,7 +3389,7 @@ application to boosting},
 @ARTICLE{Friedman_Hastie_Hofling_Tibshirani07,
   author = {J. Friedman and T. Hastie and H. H{\"o}fling and R. Tibshirani},
   title = {Pathwise coordinate optimization},
-  journal = {Ann. Appl. Stat.},
+  journal = AAS,
   year = {2007},
   volume = {1},
   pages = {302--332},
@@ -3296,10 +3397,22 @@ application to boosting},
   fjournal = {The Annals of Applied Statistics}
 }
 
+@article{Friedman_Hastie_Tibshirani08,
+  title={Sparse inverse covariance estimation with the graphical lasso},
+  author={J. Friedman and T. Hastie and R. Tibshirani},
+  journal={Biostatistics},
+  volume={9},
+  number={3},
+  pages={432--441},
+  year={2008},
+  publisher={Biometrika Trust}
+}
+
+
 @article{Friedman_Hastie_Tibshirani10,
   title={Regularization paths for generalized linear models via coordinate descent},
   author={J. Friedman and T. Hastie and R. Tibshirani},
-  journal={Journal of statistical software},
+  journal=JSS,
   volume={33},
   number={1},
   pages={1},
@@ -3326,6 +3439,18 @@ transformation},
 Kingdom},
   year = {2001}
 }
+
+@article{Fu98,
+  title={Penalized regressions: the bridge versus the lasso},
+  author={W. J. Fu},
+  journal={J. Comput. Graph. Statist.},
+  volume={7},
+  number={3},
+  pages={397--416},
+  year={1998},
+  publisher={Taylor \& Francis}
+}
+
 
 
 @ARTICLE{Fuchs04,
@@ -3444,7 +3569,7 @@ exponential
 @ARTICLE{George86b,
   author = {E. I. George},
   title = {Combining minimax shrinkage estimators},
-  journal = {J. Amer. Statist. Assoc.},
+  journal = JASA,
   year = {1986},
   volume = {81},
   pages = {437--445},
@@ -3760,6 +3885,14 @@ York-London-Sydney},
   edition = {Second}
 }
 
+@inproceedings{Gu_Ling15,
+  title={A New Generalized Error Path Algorithm for Model Selection},
+  author={B. Gu and C. X. Ling},
+  booktitle=ICML,
+  pages={2549--2558},
+  year={2015}
+}
+
 
 @ARTICLE{Guedj_Alquier13,
   author = {B. Guedj and P. Alquier},
@@ -3770,8 +3903,6 @@ York-London-Sydney},
   pages = {264-291},
   file = {Guedj_Alquier13.pdf:Articles/Guedj/Guedj_Alquier13.pdf:PDF}
 }
-
-
 
 @INPROCEEDINGS{Guillaumin_Verbeek_Schmid09,
   title={Is that you? Metric learning approaches for face identification},
@@ -3862,7 +3993,7 @@ York-London-Sydney},
   author = {M. Haltmeier},
   title = {Stable Signal Reconstruction via $\ell_1$ Minimization in Redundant,
   Non-Tight Frames},
-  journal = IEEE_J_SP,
+  journal = IEEE_J_TSP,
   year = {2013},
   volume = {61},
   pages = {420 -426},
@@ -3953,7 +4084,7 @@ ALgorithms
 }
 
 @BOOK{Hastie_Tibshirani_Friedman09,
-  title = {The elements of statistical learning},
+  title = {The {Elements} of {Statistical} {Learning}},
   publisher = {Springer},
   year = {2009},
   author = {T. Hastie and R. Tibshirani and J. Friedman},
@@ -3966,8 +4097,8 @@ ALgorithms
 Hastie_Tibshirani_Friedman09.pdf:Livres/Statistiques/Hastie_Tibshirani_Friedman0
 9.pdf:PDF},
   isbn = {978-0-387-84857-0},
-  note = {\url{http://www-stat.stanford.edu/~tibs/ElemStatLearn/}},
 }
+  note = {\url{http://www-stat.stanford.edu/~tibs/ElemStatLearn/}},
   url = {http://www-stat.stanford.edu/~tibs/ElemStatLearn/}
 
 
@@ -4263,11 +4394,10 @@ optimization},
 @INCOLLECTION{James_Stein61,
   author = {W. James and C. M. Stein},
   title = {Estimation with quadratic loss},
-  booktitle = {Proc. 4th {B}erkeley {S}ympos. {M}ath. {S}tatist. and {P}rob.,
-{V}ol.
-  {I}},
+  booktitle = {Proc. 4th {B}erkeley {S}ympos. {M}ath. {S}tatist. and {P}rob.,},
   publisher = {Univ. California Press},
   year = {1961},
+  Volume ={1},
   pages = {361--379},
   address = {Berkeley, Calif.}
 }
@@ -4284,8 +4414,6 @@ Irrepresentability Condition},
  institution={Stanford},
 }
 
-
-
 @INPROCEEDINGS{Jenatton_Gramfort_Michel_Thirion11,
   author = {R. Jenatton and A. Gramfort and V. Michel and G. Obozinski and F.
   Bach and B. Thirion},
@@ -4297,6 +4425,20 @@ Workshop on},
   pages = {69--72},
   organization = {IEEE}
 }
+
+@article{Jenatton_Mairal_Obozinski_Bach11,
+ author = {R. Jenatton and J. Mairal and G. Obozinski and F. Bach},
+ title = {Proximal Methods for Hierarchical Sparse Coding},
+ journal = JMRL,
+ volume = {12},
+ month = {jul},
+ year = {2011},
+ issn = {1532-4435},
+ pages = {2297--2334},
+ numpages = {38},
+ publisher = {JMLR.org},
+}
+
 
 @ARTICLE{Ji_Chen_Sun_Xia09,
   author = {Z. Ji and Q. Chen and Q-S. Sun and D-S. Xia},
@@ -4369,7 +4511,7 @@ on Knowledge discovery and data mining},
   title = {Blitz: A Principled Meta-Algorithm for Scaling Sparse Optimization},
   booktitle = ICML,
   year = {2015},
-} 
+}
 
 
 @article{Johnson_Lindenstrauss84,
@@ -4428,7 +4570,7 @@ adaptivity
 @ARTICLE{Judge_Takayama66,
   author = {G. G. Judge and T. Takayama},
   title = {Inequality restrictions in regression analysis},
-  journal = {J. Amer. Statist. Assoc.},
+  journal = JASA,
   year = {1966},
   volume = {61},
   pages = {166--181},
@@ -4463,7 +4605,7 @@ adaptivity
   author = {A. B. Juditsky and A. S. Nemirovski},
   title = {Nonparametric denoising of signals with unknown local structure.
   {I}. {O}racle inequalities},
-  journal = {Appl. Comput. Harmon. Anal.},
+  journal = ACHA,
   year = {2009},
   volume = {27},
   pages = {157--179},
@@ -4940,6 +5082,14 @@ doi = {10.1109/MC.2009.263},
   pages = {115--133}
 }
 
+@inproceedings{Kowalski_Weiss_Gramfort_Anthoine11,
+  title={Accelerating ista with an active set strategy},
+  author={M. Kowalski and P. Weiss and A. Gramfort and S. Anthoine},
+  booktitle={OPT 2011: 4th International Workshop on Optimization for Machine Learning},
+  pages={7},
+  year={2011}
+}
+
 @ARTICLE{Krishnamurthy_Raginsky_Willett10,
   author = { K. Krishnamurthy and M. Raginsky and R. Willett},
   title = {Multiscale photon-limited spectral image reconstruction},
@@ -5116,6 +5266,7 @@ high dimensions},
   title     = {Complexity Analysis of the Lasso Regularization Path},
   booktitle = ICML,
   year      = {2012},
+  pages     = {353--360},
 }
 
 
@@ -5337,6 +5488,14 @@ http://www.wisdom.weizmann.ac.il/~levina/papers/LbDenoise-LevinNadlerCVPR11.pdf}
   fjournal = {The Annals of Statistics}
 }
 
+@article{Li_Haupt_Arora_Liu_Hong_Zhao16,
+  title={A First Order Free Lunch for SQRT-Lasso},
+  author={X. Li and J. Haupt and R. Arora and H. Liu and M. Hong and T. Zhao},
+  journal={arXiv preprint arXiv:1605.07950},
+  year={2016}
+}
+
+
 @ARTICLE{Lian_Liu_Xu_Guo_Shum01,
   author = {L. Liang and C. Liu and Y-Q. Xu and B. Guo and H-Y. Shum},
   title = {Real-time texture synthesis by patch-based sampling},
@@ -5370,13 +5529,26 @@ Weinberger},
 @ARTICLE{Liew76,
   author = {C. K. Liew},
   title = {Inequality constrained least-squares estimation},
-  journal = {J. Amer. Statist. Assoc.},
+  journal = JASA,
   year = {1976},
   volume = {71},
   pages = {746--751},
   number = {355},
   fjournal = {Journal of the American Statistical Association}
 }
+
+@article {Lin_Zhang06,
+    AUTHOR = {Y. Lin and H. H. Zhang},
+     TITLE = {Component selection and smoothing in multivariate
+              nonparametric regression},
+   JOURNAL = AOS,
+  FJOURNAL = {The Annals of Statistics},
+    VOLUME = {34},
+      YEAR = {2006},
+    NUMBER = {5},
+     PAGES = {2272--2297},
+}
+
 
 @ARTICLE{Liu_Yang12,
   author = {S. Liu and Y. Yang},
@@ -5434,8 +5606,8 @@ Columbus, OH
   year    = {2015},
   volume  = {16},
   pages   = {559-616},
-  url     = {http://jmlr.org/papers/v16/loh15a.html}
 }
+  url     = {http://jmlr.org/papers/v16/loh15a.html}
 
 
 @INPROCEEDINGS{Lou_Favaro_Soatto_Bertozzi09,
@@ -5590,7 +5762,7 @@ page= {119--133},
   author = {M. Mahmoudi and G. Sapiro},
   title = {Fast image and video denoising via nonlocal means of similar
 neighborhoods},
-  journal = IEEE_J_SPL,
+  journal = IEEE_J_TSPL,
   year = {2005},
   volume = {12},
   pages = {839--842 }
@@ -5704,7 +5876,7 @@ Journal}
   title = {Anisotropic Nonlocal Means},
   year= {2012},
   publisher={Elsevier},
-  journal = {Applied and Computational Harmonic Analysis},
+  journal = ACHA,
   file =
 {Maleki_Narayan_Baraniuk13.pdf:Articles/Maleki/Maleki_Narayan_Baraniuk12.pdf:PDF
 }
@@ -5713,7 +5885,7 @@ Journal}
 @ARTICLE{Maleki_Narayan_Baraniuk12b,
   author = {A. Maleki and M. Narayan and R. G. Baraniuk},
   title = {Suboptimality of Nonlocal Means for Images with Sharp Edges},
-  journal = {Appl. Comput. Harmon. Anal.},
+  journal = ACHA,
   year = {2012},
   volume = {33},
   pages = {370 - 387},
@@ -6030,6 +6202,15 @@ IPython},
   publisher={SIAM}
 }
 
+@article{Mitra_Zhang14,
+  title={The Benefit of Group Sparsity in Group Inference with De-biased Scaled Group Lasso},
+  author={R. Mitra and  {\CH}. Zhang},
+  journal={arXiv preprint arXiv:1412.4170},
+  year={2014}
+}
+
+
+
 @BOOK{Muirhead82,
   title = {Aspects of multivariate statistical theory},
   publisher = {John Wiley \& Sons Inc.},
@@ -6089,8 +6270,24 @@ IPython},
   author = {E. Ndiaye and O. Fercoq and A. Gramfort and J. Salmon},
   title = {GAP Safe screening rules for sparse multi-task and multi-class models},
   booktitle=NIPS,
+  pages={811--819},
   year = {2015},
 }
+
+@InProceedings{Ndiaye_Fercoq_Gramfort_Salmon16,
+   author = {E. Ndiaye and O. Fercoq and A. Gramfort and  J. Salmon},
+    title = {{GAP} Safe Screening Rules for Sparse-Group-Lasso},
+     year = {2016},
+     booktitle = {NIPS},
+}
+
+@article{Ndiaye_Fercoq_Gramfort_Leclere_Salmon16,
+  author = {E. Ndiaye and O. Fercoq and A. Gramfort and V. Leclere and J. Salmon},
+  title = {Efficient Smoothed Concomitant {Lasso} Estimation for High Dimensional Regression},
+  Journal = {Arxiv preprint arXiv:1606.02702},
+  year = {2016},
+}
+
 
 @ARTICLE{Negahban_Ravikumar_Wainwright_Yu10,
   author = {S. Negahban and P. Ravikumar and M. J. Wainwright and B. Yu},
@@ -6160,6 +6357,17 @@ IPython},
 }
   note = {A basic course},
   file = {Nesterov04.djvu:Livres/Convex/Nesterov04.djvu:Djvu}
+
+@article{Nesterov05,
+  title={Smooth minimization of non-smooth functions},
+  author={Y. Nesterov},
+  journal={Mathematical programming},
+  volume={103},
+  number={1},
+  pages={127--152},
+  year={2005},
+  publisher={Springer}
+}
 
 @ARTICLE{Nielsen_Garcia09,
   author = {F. Nielsen and Garcia, V.},
@@ -6259,6 +6467,28 @@ Obozinski_Wainwright_Jordan11.pdf:Articles/Obozinski/Obozinski_Wainwright_Jordan
   fjournal = {IMA Journal of Numerical Analysis}
 }
 
+
+@article{Osher_Burger_Goldfarb_Xu_Yin05,
+  title={An iterative regularization method for total variation-based image restoration},
+  author={S. Osher and M. Burger and D. Goldfarb and J. Xu and W. Yin},
+  journal={Multiscale Modeling \& Simulation},
+  volume={4},
+  number={2},
+  pages={460--489},
+  year={2005},
+  publisher={SIAM}
+}
+
+
+@article{Osher_Ruan_Xiong_Yao_Yin16,
+  title={Sparse recovery via differential inclusions},
+  author={S. Osher and F. Ruan and J. Xiong and Y. Yao and W. Yin},
+  journal=ACHA,
+  year={2016},
+  publisher={Elsevier}
+}
+
+
 @BOOK{Ouvrard08,
   title = {Probabilit{\'es} : Tome 1, Licence - CAPES},
   publisher = {Cassini},
@@ -6324,7 +6554,7 @@ Natural Language Processing - Volume 10},
   year = {2009}
 }
 
-@ARTICLE{Parikh_Boyd13,
+@ARTICLE{Parikh_Boyd_Chu_Peleato_Eckstein13,
   author = {N. Parikh  and S. Boyd and E. Chu and B. Peleato and J. Eckstein},
   title = {Proximal algorithms},
   journal = {Foundations and Trends in Machine Learning},
@@ -6366,6 +6596,14 @@ Natural Language Processing - Volume 10},
  year={2011}
 }
 
+@inproceedings{Peng_Yan_Yin13,
+  title={Parallel and distributed sparse optimization},
+  author={Z. Peng  and M. Yan and W. Yin},
+  booktitle={2013 Asilomar Conference on Signals, Systems and Computers},
+  pages={659--646},
+  year={2013},
+  organization={IEEE}
+}
 
 @ARTICLE{Perona_Malik90,
   author = {P. Perona and J. Malik},
@@ -6594,6 +6832,16 @@ Methodological},
   publisher={Springer}
 }
 
+
+@ARTICLE{Quinlan86,
+    author = {J. R. Quinlan},
+    title = {Induction of Decision Trees},
+    journal = {Maching Learning},
+    year = {1986},
+    volume = {1},
+    pages = {81--106}
+}
+
 @ARTICLE{Raginsky_Willet_Horn_Silva_Marcia10,
   author = {M. Raginsky and R. Willett and C. Horn and J. Silva and R. Marcia},
   title = {Sequential anomaly detection in the presence of noise and limited
@@ -6658,7 +6906,7 @@ Methodological},
 @ARTICLE{Rao70,
   author = {C. R. Rao},
   title = {Estimation of heteroscedastic variances in linear models},
-  journal = {J. Amer. Statist. Assoc.},
+  journal = JASA,
   year = {1970},
   volume = {65},
   pages = {161--172},
@@ -6774,6 +7022,13 @@ completion},
   fjournal = {Mathematical Methods of Statistics}
 }
 
+@book{Ripley96,
+  title={Pattern recognition and neural networks},
+  author={B. D. Ripley},
+  year={1996},
+  publisher={Cambridge university press}
+}
+
 @BOOK{Robert01,
   title = {The {B}ayesian choice},
   publisher = {Springer-Verlag},
@@ -6850,6 +7105,19 @@ Principles
   mrclass = {94-01 (11T71 94A15 94Bxx)},
   mrnumber = {MR1168212 (93d:94002)}
 }
+
+@article{Rosenbaum_Tsybakov10,
+  title={Sparse recovery under matrix uncertainty},
+  author={M. Rosenbaum and A. Tsybakov},
+  journal={The Annals of Statistics},
+  volume={38},
+  number={5},
+  pages={2620--2651},
+  year={2010},
+  publisher={Institute of Mathematical Statistics}
+}
+
+
 
 @ARTICLE{Rosenblatt56,
   author = {M. Rosenblatt},
@@ -6981,7 +7249,7 @@ d\'ebruitage
 @ARTICLE{Salmon10,
   author = {J. Salmon},
   title = {On two parameters for denoising with {Non-Local Means}},
-  journal = IEEE_J_SPL,
+  journal = IEEE_J_TSPL,
   year = {2010},
   volume = {17},
   pages = {269--272}
@@ -7175,6 +7443,18 @@ optimization, and beyond},
   volume = {139}
 }
 
+@article{Scott_Nowak2006,
+  title={Minimax-optimal classification with dyadic decision trees},
+  author={C. Scott and R. D. Nowak},
+  journal=IEEE_J_IT,
+  volume={52},
+  number={4},
+  pages={1335--1353},
+  year={2006},
+  publisher={IEEE}
+}
+
+
 @ARTICLE{Seeger03,
   author = {M. Seeger},
   title = {Pac-bayesian generalisation error bounds for gaussian process
@@ -7243,6 +7523,15 @@ Selection},
   year={2011},
 note = {\url{http://www.cs.huji.ac.il/~shais/papers/OLsurvey.pdf}},
 }
+
+@book{Shalev-Shwartz_Ben-David14,
+  title={Understanding machine learning: From theory to algorithms},
+  author={S. Shalev-Shwartz and S. Ben-David},
+  year={2014},
+  publisher={Cambridge University Press}
+}
+
+
 
 @article{Shalev-Shwartz_Singer_Srebro_Cotter11,
   title={Pegasos: {Primal} {Estimated} sub-{GrAdient} {SOlver} for {SVM}},
@@ -7337,6 +7626,15 @@ MRREVIEWER = {Yuehua Wu},
   location = {Nashville, Tennessee, United States}
 }
 
+@article{She09,
+  title={Thresholding-based iterative selection procedures for model selection and shrinkage},
+  author={Y. She},
+  journal=EJS,
+  volume={3},
+  pages={384--415},
+  year={2009},
+  publisher={Institute of Mathematical Statistics}
+}
 
 @article{She_Owen11,
   title={Outlier detection using nonconvex penalized regression},
@@ -7347,7 +7645,13 @@ MRREVIEWER = {Yuehua Wu},
   year={2011}
 }
 
-
+@inproceedings{Shibagaki_Suzuki_Karasuyama_Takeuchi15,
+  title={Regularization Path of Cross-Validation Error Lower Bounds},
+  author={A. Shibagaki and Y. Suzuki and M. Karasuyama and I. Takeuchi},
+  booktitle=NIPS,
+  pages={1666--1674},
+  year={2015}
+}
 
 @BOOK{Silverman86,
   title = {Density estimation for statistics and data analysis},
@@ -7407,7 +7711,7 @@ MRREVIEWER = {Su-Yun Chen Huang},
 @ARTICLE{Singer_Feder99,
   author = {A. C. Singer and M. Feder},
   title = {Universal linear prediction by model order weighting},
-  journal = IEEE_J_SP,
+  journal = IEEE_J_TSP,
   year = {1999},
   volume = {47},
   pages = {2685--2699}
@@ -7513,6 +7817,18 @@ consistency and sparse recovery without regularization},
   year = {2012}
 }
 
+@article{Sprechmann_Ramirez_Sapiro_Eldar11,
+  title={C-hilasso: A collaborative hierarchical sparse modeling framework},
+  author={P. Sprechmann and I. Ramirez and G. Sapiro and Y. C. Eldar},
+  journal=IEEE_J_TSP,
+  volume={59},
+  number={9},
+  pages={4183--4198},
+  year={2011},
+  publisher={IEEE}
+}
+
+
 @ARTICLE{Starck_Candes_Donoho02,
   author = {J-L. Starck and E. J. Cand{\`e}s and D. L. Donoho},
   title = {The curvelet transform for image denoising},
@@ -7523,6 +7839,28 @@ consistency and sparse recovery without regularization},
   number = {6},
   fjournal = {IEEE Transactions on Image Processing}
 }
+
+
+@inproceedings{Stein56,
+  title={Inadmissibility of the usual estimator for the mean of a multivariate normal distribution},
+  author={Stein, Charles and others},
+  booktitle={Proc. 3th {B}erkeley {S}ympos. {M}ath. {S}tatist. and {P}rob.},
+  volume={1},
+  number={399},
+  pages={197--206},
+  year={1956}
+}
+
+
+@INPROCEEDINGS{Stein73,
+  author = {C. M. Stein},
+  title = {Estimation of the mean of a multivariate distribution},
+  booktitle = {Proc. Prague Symp. Asymptotic Statist. },
+  year = {1973},
+  location = {Prague},
+  page = {345-381}
+}
+
 
 @ARTICLE{Stein81,
   author = {C. M. Stein},
@@ -7535,14 +7873,6 @@ consistency and sparse recovery without regularization},
   fjournal = {The Annals of Statistics}
 }
 
-@INPROCEEDINGS{Stein73,
-  author = {C. M. Stein},
-  title = {Estimation of the mean of a multivariate distribution},
-  booktitle = {Proc. Prague Symp. Asymptotic Statist. },
-  year = {1973},
-  location = {Prague},
-  page = {345-381}
-}
 
 @book{Strang03,
   title={Introduction to linear algebra},
@@ -7696,7 +8026,7 @@ denoising},
 @ARTICLE{Tibshirani96,
   AUTHOR = {R. Tibshirani},
    TITLE = {Regression shrinkage and selection via the lasso},
-   JOURNAL = {J. Roy. Statist. Soc. Ser. B},
+   JOURNAL = JRSSB,
   FJOURNAL = {Journal of the Royal Statistical Society. Series B.
               Methodological},
     VOLUME = {58},
@@ -7959,6 +8289,14 @@ Akademii
   year = {2006}
 }
 
+@article{Tukey77,
+  title={Exploratory data analysis},
+  author={ J. W. Tukey},
+  year={1977},
+  publisher={Reading, Mass.}
+}
+
+
 @ARTICLE{VanDeVille_Kocher11,
   author = { D. {Van De Ville} and M. Kocher},
   title = {Non-Local Means with Dimensionality Reduction and SURE-Based
@@ -7975,7 +8313,7 @@ Parameter
 @ARTICLE{VanDeVille_Kocher09,
   author = {D. {Van De Ville} and M. Kocher},
   title = {{SURE}-Based {Non-Local Means}},
-  journal = IEEE_J_SPL,
+  journal = IEEE_J_TSPL,
   year = {2009},
   volume = {16},
   pages = {973--976}
@@ -8047,8 +8385,8 @@ and Processes--A Festschrift in Honor of Jon A. Wellner},
    MRCLASS = {62J07 (62F12 62F25 62J12)},
   MRNUMBER = {3224285},
        DOI = {10.1214/14-AOS1221},
-       URL = {http://dx.doi.org/10.1214/14-AOS1221},
 }
+       URL = {http://dx.doi.org/10.1214/14-AOS1221},
 
 
 
@@ -8096,7 +8434,7 @@ operators},
   author = {Z. Wang and A. C. Bovik and H. R. Sheikh and E. P. Simoncelli},
   title = {Image quality assessment: from error visibility to structural
 similarity},
-  journal = IEEE_J_SP,
+  journal = IEEE_J_TSP,
   year = {2004},
   volume = {13},
   pages = {600--612},
@@ -8146,6 +8484,15 @@ note ={\url{http://http://arxiv.org/abs/1309.1541}},
   mrreviewer = {Theo Gasser}
 }
 
+
+@article{Wang_Sharpnack_Smola_Tibshirani14,
+  title={Trend Filtering on Graphs},
+  author={ {\YX}.  Wang and J. Sharpnack and A. Smola and  R. J. Tibshirani},
+  journal={arXiv preprint arXiv:1410.7690},
+  year={2014}
+}
+
+
 @article{Wang_Wonka_Ye12,
   title={Lasso Screening Rules via Dual Polytope Projection},
   author={J. Wang and P. Wonka and J. Ye},
@@ -8177,6 +8524,13 @@ note ={\url{http://http://arxiv.org/abs/1309.1541}},
   year={2014}
 }
 
+@inproceedings{Wang_Ye15,
+  title={Multi-Layer Feature Reduction for Tree Structured Group Lasso via Hierarchical Projection},
+  author={J. Wang and J. Ye},
+  booktitle=NIPS,
+  pages={1279--1287},
+  year={2015}
+}
 
 
 @BOOK{Wasserman07,
@@ -8290,7 +8644,7 @@ note ={\url{http://http://arxiv.org/abs/1309.1541}},
 @ARTICLE{Wright_Nowak_Figueiredo09,
   author = { S. J. Wright and R. D. Nowak and M. A. T. Figueiredo},
   title = {Sparse reconstruction by separable approximation},
-  journal = IEEE_J_SP,
+  journal = IEEE_J_TSP,
   year = {2009},
   volume = {57},
   pages = {2479--2493},
@@ -8401,7 +8755,7 @@ Mathematical
 @ARTICLE{Yang01,
   author = {Y. Yang},
   title = {Adaptive regression by mixing},
-  journal = {J. Amer. Statist. Assoc.},
+  journal = JASA,
   year = {2001},
   volume = {96},
   pages = {574--588},
@@ -8516,10 +8870,24 @@ ISSN={1057-7149},
 Methodology}
 }
 
+
+@article{Yun14,
+  title={On the Iteration Complexity of Cyclic Coordinate Gradient Descent Methods},
+  author={S. Yun},
+  journal={SIAM Journal on Optimization},
+  volume={24},
+  number={3},
+  pages={1567--1580},
+  year={2014},
+  publisher={SIAM}
+}
+
+
+
 @ARTICLE{Yang05,
   author = {Zh. Yuan and Y. Yang},
   title = {Combining linear regression models: when and how?},
-  journal = {J. Amer. Statist. Assoc.},
+  journal = JASA,
   year = {2005},
   volume = {100},
   pages = {1202--1214},
@@ -8624,6 +8992,7 @@ estimation problems},
   year={2012},
   publisher={Institute of Mathematical Statistics}
 }
+
 
 
 @INPROCEEDINGS{Zhou09,
