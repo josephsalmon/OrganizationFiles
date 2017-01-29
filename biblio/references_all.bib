@@ -47,6 +47,8 @@ A
 
 @STRING{JSS = {J. Stat. Softw.}}
 
+@STRING{SS = {Statist. Sci.}}
+
 @STRING{ACHA = {Appl. Comput. Harmon. Anal.}}
 
 @STRING{SIIMS = {SIAM J. Imaging Sci.}}
@@ -2024,16 +2026,11 @@ recovery},
   publisher = {IEEE Computer Society}
 }
 
-@TechReport{Chetelat_Lederer_Salmon14,
+@article{Chetelat_Lederer_Salmon14,
   Title         = {Optimal two-step prediction in regression},
-  Author        = {D. {Ch\'etelat} and J. Lederer and J. Salmon},
-  Year          = {2014},
-  Archiveprefix = {arXiv},
-  Comment       = {<a href="https://github.com/josephsalmon/AVp">
-                    [Python Code]},
-  Eprint        = {1410.5014},
-  Primaryclass  = {math-ST},
-  Url           = {http://arxiv.org/pdf/1410.5014v1.pdf}
+  Author        = {D. Ch\'etelat and J. Lederer and J. Salmon},
+  Year          = {2016},
+   journal      = {Electron. J. Statist. (in revision)},
 }
 
 @PHDTHESIS{Chichignoud,
@@ -2356,12 +2353,17 @@ Sparsity},
   year = {2013},
 }
 
-@article{Dalalyan_Hebiri_Lederer14,
+@article{Dalalyan_Hebiri_Lederer17,
   title={On the Prediction Performance of the {Lasso}},
   author={A. S. Dalalyan and M. Hebiri and  J. Lederer },
-  journal={arXiv preprint arXiv:1402.1700},
-  year={2014}
+  journal={Bernoulli},
+  volume={23},
+  number={1},
+  pages={552--581},
+  year={2017},
 }
+
+
 @ARTICLE{Dalalyan_Salmon12,
   author = {A. S. Dalalyan and J. Salmon},
   title = {Sharp Oracle Inequalities for Aggregation of Affine Estimators},
@@ -3011,7 +3013,7 @@ nonparametric
 }
 
 @ARTICLE{Efron_Hastie_Johnstone_Tibshirani04,
-  author = {B. Efron and T. Hastie and I. M. Johnstone and R. Tibshirani},
+  author = {B. Efron and T. J. Hastie and I. M. Johnstone and R. Tibshirani},
   title = {Least angle regression},
   journal = AOS,
   year = {2004},
@@ -3023,7 +3025,7 @@ nonparametric
 }
 
 @ARTICLE{Efron_Hastie_Tibshirani07,
-  author = {B. Efron and T. Hastie and R. Tibshirani},
+  author = {B. Efron and T. J. Hastie and R. Tibshirani},
   title = {Discussion: ``{T}he {D}antzig selector: statistical estimation when
   {$p$} is much larger than {$n$}'' [{A}nn. {S}tatist. {\bf 35} (2007),
   no. 6, 2313--2351; MR2382644] by {E}. {C}and{\`e}s and {T}. {T}ao},
@@ -3339,7 +3341,7 @@ application to boosting},
 }
 
 @article {Friedman_Hastie_Tibshirani00,
-    AUTHOR = {J. Friedman and T. Hastie  and R. Tibshirani, Robert},
+    AUTHOR = {J. Friedman and T. J. Hastie  and R. Tibshirani, Robert},
      TITLE = {Additive logistic regression: a statistical view of boosting},
       NOTE = {\url{http://www-stat.stanford.edu/~jhf/ftp/boost.pdf}},
    JOURNAL = AOS,
@@ -3352,7 +3354,7 @@ application to boosting},
       NOTE = {With discussion and a rejoinder by the authors},
 
 @ARTICLE{Friedman_Hastie_Hofling_Tibshirani07,
-  author = {J. Friedman and T. Hastie and H. H{\"o}fling and R. Tibshirani},
+  author = {J. Friedman and T. J. Hastie and H. H{\"o}fling and R. Tibshirani},
   title = {Pathwise coordinate optimization},
   journal = AAS,
   year = {2007},
@@ -3364,7 +3366,7 @@ application to boosting},
 
 @article{Friedman_Hastie_Tibshirani08,
   title={Sparse inverse covariance estimation with the graphical lasso},
-  author={J. Friedman and T. Hastie and R. Tibshirani},
+  author={J. Friedman and T. J. Hastie and R. Tibshirani},
   journal={Biostatistics},
   volume={9},
   number={3},
@@ -3375,7 +3377,7 @@ application to boosting},
 
 @article{Friedman_Hastie_Tibshirani10,
   title={Regularization paths for generalized linear models via coordinate descent},
-  author={J. Friedman and T. Hastie and R. Tibshirani},
+  author={J. Friedman and T. J. Hastie and R. Tibshirani},
   journal=JSS,
   volume={33},
   number={1},
@@ -3592,6 +3594,18 @@ Journal}
 Mathematical
   Statistics and Probability}
 }
+
+@article{Giraud_Huet_Verzelen12,
+  title={High-dimensional regression with unknown variance},
+  author={C. Giraud and S. Huet and N. Verzelen},
+  volume={27},
+  journal=SS,
+  number={4},
+  pages={500--518},
+  year={2012},
+  publisher={Institute of Mathematical Statistics}
+}
+
 
 @ARTICLE{Goldenshluger_Lepski11,
   author = {A. Goldenshluger and O. V. Lepski},
@@ -4054,11 +4068,20 @@ ALgorithms
   number = {3}
 }
 
+@book{Hastie_Tibshirani1990,
+  title={Generalized additive models},
+  author={T. J. Hastie and R. J. Tibshirani},
+  volume={43},
+  year={1990},
+  publisher={CRC press}
+}
+
+
 @BOOK{Hastie_Tibshirani_Friedman09,
   title = {The {Elements} of {Statistical} {Learning}},
   publisher = {Springer},
   year = {2009},
-  author = {T. Hastie and R. Tibshirani and J. Friedman},
+  author = {T. J. Hastie and R. Tibshirani and J. Friedman},
   pages = {xxii+745},
   series = {Springer Series in Statistics},
   address = {New York},
@@ -4074,7 +4097,7 @@ Hastie_Tibshirani_Friedman09.pdf:Livres/Statistiques/Hastie_Tibshirani_Friedman0
 
 @book{Hastie_Tibshirani_Wainwright15,
   title={Statistical Learning with Sparsity: The Lasso and Generalizations},
-  author={T. Hastie and R. Tibshirani and M. Wainwright},
+  author={T. J. Hastie and R. Tibshirani and M. Wainwright},
   year={2015},
   publisher={CRC Press}
 }
@@ -4367,7 +4390,7 @@ optimization},
 
 @book{James_Witten_Hastie_Tibshirani13,
   title={An introduction to statistical learning},
-  author={G. James and D. Witten and T. Hastie and R. Tibshirani},
+  author={G. James and D. Witten and T. J. Hastie and R. Tibshirani},
   volume={6},
   year={2013},
   publisher={Springer}
@@ -5369,7 +5392,7 @@ estimation:
 @ARTICLE{Lepski90,
   author = {O. V. Lepski},
   title = {On a Problem of Adaptive Estimation in Gaussian White Noise},
-  journal = {Theory of Probability and its Applications},
+  journal = {Theory Probab. Appl.},
   year = {1990},
   volume = {35},
   pages = {454--466},
@@ -6008,7 +6031,7 @@ MRREVIEWER = {Iosif Pinelis},
 @article{Mazumder_Hastie_Tibshirani10,
   title={Spectral regularization algorithms for learning large incomplete
 matrices},
-  author={R. Mazumder and T. Hastie and R. Tibshirani},
+  author={R. Mazumder and T. J. Hastie and R. Tibshirani},
   journal=JMLR,
   volume={11},
   pages={2287--2322},
@@ -6017,7 +6040,7 @@ matrices},
 }
 
 @article {Mazumder_Friedman_Hastie11,
-    AUTHOR = {R. Mazumder and J. H. Friedman and T. Hastie},
+    AUTHOR = {R. Mazumder and J. H. Friedman and T. J. Hastie},
      TITLE = {{\it {S}parse{N}et}: coordinate descent with nonconvex
               penalties},
    JOURNAL = JASA,
@@ -6920,7 +6943,7 @@ completion},
 @ARTICLE{Rigollet_Tsybakov12,
   author = {P. Rigollet and A. B. Tsybakov},
   title = {Sparse estimation by exponential weighting},
-  journal = {Statistical Science},
+  journal = SS,
   year = {2012},
   volume = {27},
   pages = {558-575},
@@ -7594,7 +7617,7 @@ year={2012},
 }
 
 @article {Simon_Friedman_Hastie_Tibshirani12,
-    AUTHOR = {N. Simon and J. Friedman and T. Hastie and
+    AUTHOR = {N. Simon and J. Friedman and T. J. Hastie and
               R. Tibshirani},
      TITLE = {A sparse-group lasso},
    JOURNAL = {J. Comput. Graph. Statist.},
@@ -7848,10 +7871,11 @@ Practice
   number = {4}
 }
 
+
 @ARTICLE{Sun_Zhang13,
   author = {T. Sun and {\CH}. Zhang},
   title   = {Sparse Matrix Inversion with Scaled Lasso},
-  journal = {Journal of Machine Learning Research},
+  journal = JMLR,
   year    = {2013},
   volume  = {14},
   pages   = {3385-3418},
@@ -7949,7 +7973,7 @@ denoising},
 
 @article{Tibshirani_Bien_Friedman_Hastie_Simon_Tibshirani12,
   title={Strong rules for discarding predictors in lasso-type problems},
-  author={R. Tibshirani and J. Bien and J. Friedman and T. Hastie and N. Simon
+  author={R. Tibshirani and J. Bien and J. Friedman and T. J. Hastie and N. Simon
 and J. Taylor and R. J. Tibshirani},
   journal=JRSSB,
   volume={74},
@@ -8007,7 +8031,7 @@ MRREVIEWER = {Guangliang Chen},
 
 @article{Tibshirani_Walther_Hastie01,
   title={Estimating the number of clusters in a data set via the gap statistic},
-  author={R. Tibshirani and G. Walther and T. Hastie},
+  author={R. Tibshirani and G. Walther and T. J. Hastie},
   journal=JRSS,
   volume={63},
   number={2},
@@ -8876,7 +8900,7 @@ representations},
   title={A general theory of concave regularization for high-dimensional sparse
 estimation problems},
   author={{\CH}. Zhang and T. Zhang},
-  journal={Statistical Science},
+  journal=SS,
   volume={27},
   number={4},
   pages={576--593},
@@ -8898,7 +8922,7 @@ title={Support vector machines, kernel logistic regression and boosting},
 volume={2364},
 url={http://link.springer.com/chapter/10.1007/3-540-45428-4_2},
 journal={Multiple Classifier Systems},
-author={J. Zhu and T. Hastie},
+author={J. Zhu and T. J. Hastie},
 year={2002},
 pages={16–26}
 }
@@ -8944,7 +8968,7 @@ restoration},
 
 @article{Zou_Hastie05,
   title={Regularization and variable selection via the elastic net},
-  author={H. Zou and T. Hastie},
+  author={H. Zou and T. J. Hastie},
   journal=JRSSB,
   volume={67},
   number={2},
@@ -8954,7 +8978,7 @@ restoration},
 }
 
 @ARTICLE{Zou_Hastie_Tibshirani06,
-  author = { H. Zou and T. Hastie and R. Tibshirani},
+  author = { H. Zou and T. J. Hastie and R. Tibshirani},
   title = {Sparse principal component analysis},
   journal = {J. Comput. Graph. Statist.},
   year = {2006},
@@ -8966,7 +8990,7 @@ restoration},
 }
 
 @article {Zou_Hastie_Tibshirani07,
-  author = { H. Zou and T. Hastie and R. Tibshirani},
+  author = { H. Zou and T. J. Hastie and R. Tibshirani},
      TITLE = {On the ``degrees of freedom'' of the lasso},
    JOURNAL = AOS,
   FJOURNAL = {The Annals of Statistics},
