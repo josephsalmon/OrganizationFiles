@@ -29,6 +29,8 @@
 
 @STRING{IEEE_J_TSP = {{IEEE} Trans. Sig. Process.}}
 
+@string{IEEE_J_TAC = {IEEE Trans. Autom. Control}}
+
 @STRING{EJS = {Electron. J. Stat.}}
 
 @STRING{IJCV = {Int. J. Comput. Vision}}
@@ -52,6 +54,10 @@ A
 @STRING{ACHA = {Appl. Comput. Harmon. Anal.}}
 
 @STRING{SIIMS = {SIAM J. Imaging Sci.}}
+
+@string{SIAMOPT = {SIAM J. Optimiz.}}
+
+@string{OPTTHEORY = {J. Optimiz. Theory. App.}}
 
 @preamble{ {\providecommand{\AC}{A.-C}} }
 @preamble{ {\providecommand{\CA}{C.-A}} }
@@ -766,6 +772,14 @@ bilateral
   Title = {{A} {S}urvey on {M}etric {L}earning for {F}eature {V}ectors and {S}tructured {D}ata},
   Year = {2013}}
 
+@book{Bellet_Habrard_Sebban15,
+    Author = {A. Bellet and A. Habrard and M. Sebban},
+    Publisher = {Morgan \& Claypool},
+    Title = {{M}etric {L}earning},
+    Year = {2015}
+}
+
+
 @ARTICLE{Belloni_Chernozhukov_Wang11,
   author = {A. Belloni and V. Chernozhukov and L. Wang},
   title = {Square-root {Lasso}: pivotal recovery of sparse signals via conic
@@ -966,6 +980,18 @@ ISBN = {0-89871-321-8},
   publisher={Athena Scientific}
 }
 
+@article{Bertsimas_King_Mazumder16,
+  title={Best subset selection via a modern optimization lens},
+  author={D. Bertsimas and A. and R. Mazumder},
+  journal=AOS,
+  volume={44},
+  number={2},
+  pages={813--852},
+  year={2016},
+  publisher={Institute of Mathematical Statistics}
+}
+
+
 @TECHREPORT{Bhaskar_Tang_Recht12,
   author = {B. N. Bhaskar and G. Tang and B. Recht},
   title = {Atomic norm denoising with applications to line spectral estimation},
@@ -991,6 +1017,25 @@ to large-scale composite optimization},
   author={P. Bianchi and W. Hachem and F. Iutzeler},
   journal={arXiv preprint arXiv:1407.0898},
   year={2014}
+}
+
+@article{Bianchi_Jakubowicz13,
+    Author = {Pascal Bianchi and J{\'e}r{\'e}mie Jakubowicz},
+    Journal = IEEE_J_TAC,
+    Number = {2},
+    Pages = {391--405},
+    Title = {{Convergence of a multi-agent projected stochastic gradient algorithm for non-convex optimization}},
+    Volume = {58},
+    Year = {2013}}
+
+@article{Biau_Bleakley06,
+    Author = {G. Biau and K. Bleakley},
+    Journal = {Statistics \& Decisions},
+    Keywords = {graph},
+    Pages = {209--232},
+    Title = {{Statistical Inference on Graphs}},
+    Volume = {24},
+    Year = {2006}
 }
 
 @article{Biau_Fischer_Guedj_Malley13,
@@ -1030,9 +1075,6 @@ to large-scale composite optimization},
   volume = {37},
   pages = {1705--1732},
   number = {4},
-  file =
-{Bickel_Ritov_Tsybakov09.pdf:Articles/Bickel/Bickel_Ritov_Tsybakov09.pdf:PDF},
-  fjournal = {The Annals of Statistics}
 }
 
 @article{Bien_Taylor_Tibshirani13,
@@ -2247,7 +2289,6 @@ recovery},
   journal={arXiv preprint arXiv:1407.5915},
 }
 
-
 @article{Chretien_Darses11,
   title={Sparse recovery with unknown variance: a LASSO-type approach},
   author={S. Chr{\'e}tien  and S. Darses},
@@ -2255,7 +2296,13 @@ recovery},
   year={2011}
 }
 
-
+@book{Chung97,
+  title={{S}pectral {G}raph {T}heory},
+  author={F. R. K. Chung},
+  volume={92},
+  year={1997},
+  publisher={American Mathematical Society}
+}
 
 @Book{Ciarlet06,
   author = {P. G. Ciarlet},
@@ -2264,6 +2311,25 @@ l'optimisation.
   Cours et exercices corrig{\'e}s},
   year = {2006},
   publisher = {Dunod}
+}
+
+@article{Clemencon_Lugosi_Vayatis08,
+    Author = {S. Cl\'emen{\c c}on and G. Lugosi and N. Vayatis},
+    Journal = AOS,
+    Number = {2},
+    Pages = {844--874},
+    Title = {Ranking and empirical minimization of {U}-statistics},
+    Volume = {36},
+    Year = {2008}
+}
+
+@inproceedings{Clemencon11,
+  Author = {S. Cl\'emen{\c c}on},
+  Booktitle = NIPS,
+  Pages = {37--45},
+  Timestamp = {2014.10.30},
+  Title = {{O}n {U}-processes and clustering performance},
+  Year = {2011}
 }
 
 @ARTICLE{Cohen66,
@@ -2955,6 +3021,26 @@ institution={Telecom Paristech},
   publisher={Institute of Mathematical Statistics}
 }
 
+@article{Dimakis_Sarwate_Wainwright08,
+    Author = {A. G. Dimakis and A. D. Sarwate and M. J. Wainwright},
+    Journal = IEEE_J_TSP,
+    Number = {3},
+    Pages = {1205--1216},
+    Title = {{Geographic Gossip: Efficient Averaging for Sensor Networks}},
+    Volume = {56},
+    Year = {2008}
+}
+
+@article{Dimakis_Kar_Moura_Rabbat_Scaglione10,
+    Author = {A. G. Dimakis and S. Kar and J. M. F. Moura and M. G. Rabbat and A. Scaglione},
+    Journal = {Proceedings of the {IEEE}},
+    Number = {11},
+    Pages = {1847--1864},
+    Title = {{Gossip algorithms for distributed signal processing}},
+    Volume = {98},
+    Year = {2010}
+}
+
 @ARTICLE{Ding_Kolaczyk12,
   author = {Q. Ding and E. D. Kolaczyk},
   title = {A Compressed PCA Subspace Method for Anomaly Detection in
@@ -3119,7 +3205,7 @@ Methodological}
 }
 
 @INPROCEEDINGS{Duchi_Shalev-Shwartz_Singer_Chandra08,
-  title={Efficient projections onto the l 1-ball for learning in high
+  title={Efficient projections onto the $\ell_1$-ball for learning in high
 dimensions},
   author={J. Duchi and S. Shalev-Shwartz and Y. Singer and T. Chandra},
   booktitle=ICML,
@@ -3140,9 +3226,8 @@ Duchi_Shalev-Shwartz_Singer_Tewari10.pdf:Articles/Duchi/Duchi_Shalev-Shwartz_Sin
 ger_Tewari10.pdf:PDF}
 }
 
-
 @article{Duchi_Agarwal_Wainwright12,
-  title={Dual averaging for distributed optimization: Convergence analysis and network scaling},
+  title={Dual averaging for distributed optimization: convergence analysis and network scaling},
   author={J. C. Duchi and A. Agarwal and M. J. Wainwright},
   journal={IEEE Trans. Automat. Control},
   volume={57},
@@ -4356,6 +4441,16 @@ York-London-Sydney},
   address = {Princeton, NJ}
 }
 
+@article{Hanley_McNeil82,
+  title={{The meaning and use of the area under a receiver operating characteristic (ROC) curve}},
+  author={J. A. Hanley and B. J. {McNeil}},
+  journal={Radiology},
+  volume={143},
+  number={1},
+  pages={29--36},
+  year={1982}
+}
+
 @article{Hao_Zhang14,
   title={Interaction Screening for Ultrahigh-Dimensional Data},
   author={N. Hao and H. H. Zhang},
@@ -4715,6 +4810,13 @@ computing},
   organization={ACM}
 }
 
+@inproceedings{Iutzeler_Bianchi_Ciblat_Hachem13,
+    Author = {F. Iutzeler and P. Bianchi and P. Ciblat and W. Hachem},
+    Booktitle = {CDC},
+    Pages = {3671--3676},
+    Title = {Asynchronous distributed optimization using a randomized alternating direction method of multipliers},
+    Year = {2013}}
+
 @INPROCEEDINGS{Jacob_Obozinski_Vert09,
   title={Group lasso with overlap and graph lasso},
   author={L. Jacob and G. Obozinski and {\JP}. Vert},
@@ -4869,9 +4971,19 @@ on Knowledge discovery and data mining},
   publisher={Springer}
 }
 
+@article{Johansson_Rabi_Johansson10,
+  Author = {B. Johansson and M. Rabi and M. Johansson},
+  Journal = SIAMOPT,
+  Number = {3},
+  Pages = {1157--1170},
+  Title = {A randomized incremental subgradient method for distributed optimization in networked systems},
+  Volume = {20},
+  Year = {2010}}
+
+
 @INPROCEEDINGS{Jonhson_Guestrin15,
   author = {T. B. Johnson and C. Guestrin},
-  title = {Blitz: A Principled Meta-Algorithm for Scaling Sparse Optimization},
+  title = {{BLITZ}: A Principled Meta-Algorithm for Scaling Sparse Optimization},
   booktitle = ICML,
   pages     = {1171--1179},
   year = {2015},
@@ -5023,6 +5135,16 @@ Time-Scale
   number = {6}
 }
 
+@inproceedings{Karp_Schindelhauer_Shenker_Vocking00,
+  title={Randomized rumor spreading},
+  author={R. Karp and C. Schindelhauer and S. Shenker and B. Vocking},
+  booktitle={Symposium on Foundations of Computer Science},
+  pages={565--574},
+  year={2000},
+  organization={IEEE}
+}
+
+
 @ARTICLE{Katkovnik99,
   author = {V. Katkovnik},
   title = {A New Method for Varying Adaptive Bandwidth Selection},
@@ -5116,6 +5238,16 @@ Techniques},
   volume = {17},
   pages = {115-141},
   number = {2-3}
+}
+
+@inproceedings{Kempe_Dobra_Gehrke03,
+  Author = {D. Kempe and A. Dobra and J. Gehrke},
+  Booktitle = {{Symposium on Foundations of Computer Science}},
+  Keywords = {distributed},
+  Pages = {482--491},
+  organization={IEEE},
+  Title = {{Gossip-Based Computation of Aggregate Information}},
+  Year = {2003}
 }
 
 @ARTICLE{Kervrann_Boulanger06,
@@ -5249,7 +5381,6 @@ predictors},
   number = {1},
   added-at = {2010-03-11T20:45:27.000+0100}
 }
-
 
 @Article{Klopp11,
     Author = {S.  {Ga\"{\i}ffas} and O. {Klopp}},
@@ -5483,6 +5614,14 @@ doi = {10.1109/MC.2009.263},
   year={2011}
 }
 
+@inproceedings{Kowalczyk_Vlassis04,
+  title={{Newscast EM}},
+  author={W. Kowalczyk and N. A. Vlassis},
+  booktitle=NIPS,
+  pages={713--720},
+  year={2004}
+}
+
 @ARTICLE{Krishnamurthy_Raginsky_Willett10,
   author = { K. Krishnamurthy and M. Raginsky and R. Willett},
   title = {Multiscale photon-limited spectral image reconstruction},
@@ -5504,6 +5643,13 @@ doi = {10.1109/MC.2009.263},
   Title = {{M}etric {L}earning: {A} {S}urvey},
   Volume = {5},
   Year = {2012}}
+
+@inproceedings{Kumar_Niculescu-Mizil_Kavukcuoglu_Daume12,
+  Booktitle = ICML,
+  author =    {A. Kumar and A. Niculescu-Mizil and K. Kavukcuoglu and H. {Daume III}},
+  title =     {A Binary Classification Framework for Two-Stage Multiple Kernel Learning},
+  pages=      {1295--1302},
+}
 
 @BOOK{Kushner_Yin03,
   title = {Stochastic approximation and recursive algorithms and applications},
@@ -5728,6 +5874,13 @@ MRREVIEWER = {Evarist Gin{\'e}},
   note = {Isoperimetry and processes, Reprint of the 1991 edition}
 }
 
+@book{Lee90,
+  Author = {A. J. Lee},
+  Publisher = {Marcel Dekker, New York},
+  Title = {U-Statistics: {Theory} and {Practice}},
+  Year = {1990}
+}
+
 @INPROCEEDINGS{Lee_Seung01,
   author = {D. D. Lee and H.S. Seung},
   title = {Algorithms for non-negative matrix factorization},
@@ -5898,17 +6051,14 @@ http://www.wisdom.weizmann.ac.il/~levina/papers/LbDenoise-LevinNadlerCVPR11.pdf}
   year={2016}
 }
 
-@ARTICLE{Lian_Liu_Xu_Guo_Shum01,
-  author = {L. Liang and C. Liu and Y-Q. Xu and B. Guo and H-Y. Shum},
-  title = {Real-time texture synthesis by patch-based sampling},
-  journal = {ACM Trans. Graph.},
-  year = {2001},
-  volume = {20},
-  pages = {127--150},
-  number = {3},
-  address = {New York, NY, USA},
-  publisher = {ACM}
-}
+@article{Li_Dai_Zhang10,
+    Author = {W. Li and H. Dai and Y. Zhang},
+    Journal = IEEE_J_IT,
+    Number = {12},
+    Pages = {6208--6227},
+    Title = {{Location-Aided Fast Distributed Consensus in Wireless Networks}},
+    Volume = {56},
+    Year = {2010}}
 
 @article{Li_Uschmajew_Zhang15,
   title={On convergence of the maximum block improvement method},
@@ -5919,6 +6069,18 @@ http://www.wisdom.weizmann.ac.il/~levina/papers/LbDenoise-LevinNadlerCVPR11.pdf}
   pages={210--233},
   year={2015},
   publisher={SIAM}
+}
+
+@ARTICLE{Lian_Liu_Xu_Guo_Shum01,
+  author = {L. Liang and C. Liu and Y-Q. Xu and B. Guo and H-Y. Shum},
+  title = {Real-time texture synthesis by patch-based sampling},
+  journal = {ACM Trans. Graph.},
+  year = {2001},
+  volume = {20},
+  pages = {127--150},
+  number = {3},
+  address = {New York, NY, USA},
+  publisher = {ACM}
 }
 
 @INPROCEEDINGS{Liang_Fadili_Peyere14,
@@ -6385,6 +6547,16 @@ representation},
   fjournal = { Annals of Statistics}
 }
 
+@article{Mann_Whitney47,
+  Author = {H. B. Mann and D. R. Whitney},
+  Journal = {Ann. Math. Stat.},
+  Number = {1},
+  Pages = {50--60},
+  Title = {On a test of whether one of two random variables is stochastically larger than the other},
+  Volume = {18},
+  Year = {1947}
+}
+
 @book{Manning08,
  author = {C. D. Manning and P. Raghavan and H. Sch\"{u}tze},
  title = {Introduction to Information Retrieval},
@@ -6611,6 +6783,16 @@ IPython},
   year={2014}
 }
 
+@article{Mosk-Aoyama_Shah08,
+  Author = {D. Mosk-Aoyama and D. Shah},
+  Journal = IEEE_J_IT,
+  Number = {7},
+  Pages = {2997--3007},
+  Title = {Fast distributed algorithms for computing separable functions},
+  Volume = {54},
+  Year = {2008}
+}
+
 @BOOK{Muirhead82,
   title = {Aspects of multivariate statistical theory},
   publisher = {John Wiley \& Sons Inc.},
@@ -6690,6 +6872,26 @@ IPython},
 }
      Url  = {https://arxiv.org/pdf/1611.05780v1.pdf},
 
+@article{Nedic_Ozdaglar09,
+  Author = {A. Nedi{\'c} and A. E. Ozdaglar},
+  Journal = IEEE_J_TAC,
+  Number = {1},
+  Pages = {48--61},
+  Timestamp = {2013.10.31},
+  Title = {Distributed subgradient methods for multi-agent optimization},
+  Volume = {54},
+  Year = {2009}}
+
+@inproceedings{Nedic_Lee_Raginsky15,
+  title={Decentralized online optimization with global objectives and local communication},
+  author={A. Nedi{\'c} and S. Lee and M. Raginsky},
+  booktitle={ACC},
+  pages={4497--4503},
+  year={2015},
+  organization={IEEE}
+}
+
+
 @ARTICLE{Negahban_Ravikumar_Wainwright_Yu10,
   author = {S. Negahban and P. Ravikumar and M. J. Wainwright and B. Yu},
   title = {A unified framework for high-dimensional analysis of $ M $-estimators  with decomposable regularizers},
@@ -6766,7 +6968,6 @@ IPython},
   year={2005},
   publisher={Springer}
 }
-
 
 @article{Nesterov09,
   title={Primal-dual subgradient methods for convex problems},
@@ -7020,6 +7221,13 @@ Natural Language Processing - Volume 10},
   fjournal = {Annals of Mathematical Statistics},
   issn = {0003-4851}
 }
+
+@inproceedings{Pelckmans_Suykens09,
+  Author = {K. Pelckmans and J. Suykens},
+  Booktitle = {{IFAC Workshop on Estimation and Control of Networked Systems}},
+  Pages = {48--53},
+  Title = {Gossip algorithms for computing {U-statistics}},
+  Year = {2009}}
 
 @article{Pedregosa_etal11,
  title={Scikit-learn: Machine Learning in {P}ython},
@@ -7327,6 +7535,15 @@ Methodological},
   publisher = {Curran Associates, Inc.},
   url = {http://papers.nips.cc/paper/3495-weighted-sums-of-random-kitchen-sinks-replacing-minimization-with-randomization-in-learning.pdf}
 }
+
+@article{Ram_Nedic_Veeravalli10,
+  Author = {S. Ram and A. Nedi{\'c} and V. Veeravalli},
+  Journal = OPTTHEORY,
+  Number = {3},
+  Pages = {516--545},
+  Title = {Distributed stochastic subgradient projection algorithms for convex optimization},
+  Volume = {147},
+  Year = {2010}}
 
 @ARTICLE{Ramani_Blu_Unser08,
   author = {S. Ramani and T. Blu and M. Unser},
@@ -7999,6 +8216,16 @@ Regression
   pages = {1688-1704},
   number = {9}
 }
+
+@article{Shah09,
+  Author = {D. Shah},
+  Journal = {{Foundations and Trends in Networking}},
+  Keywords = {distributed},
+  Number = {1},
+  Pages = {1--125},
+  Title = {{Gossip Algorithms}},
+  Volume = {3},
+  Year = {2009}}
 
 @article{Shah_Samworth13,
   title={Variable selection with error control: Another look at Stability
@@ -8808,6 +9035,18 @@ MRREVIEWER = {A. M. Galperin},
   publisher={Springer}
 }
 
+@inproceedings{Tsianos_Lawlor_Rabbat15,
+    Author = {K. Tsianos and S. Lawlor and M. Rabbat},
+    Booktitle = {CDC},
+    Title = {{Push-Sum} distributed dual averaging for convex optimization},
+    Year = {2015}}
+
+@phdthesis{Tsitsiklis,
+  Author = {J. N. Tsitsiklis},
+  School = {{Massachusetts Institute of Technology}},
+  Title = {{Problems in decentralized decision making and computation}},
+  Year = {1984}}
+
 @BOOK{Tsybakov09,
   title = {Introduction to nonparametric estimation},
   publisher = {Springer},
@@ -9138,6 +9377,20 @@ note ={\url{http://http://arxiv.org/abs/1309.1541}},
   number = {4},
   publisher = {Indian Statistical Institute}
 }
+
+@inproceedings{Wei_Ozdaglar12,
+    Author = {E. Wei and A. Ozdaglar},
+    Booktitle = {CDC},
+    Pages = {5445--5450},
+    Timestamp = {2013.09.27},
+    Title = {Distributed alternating direction method of multipliers},
+    Year = {2012}}
+
+@inproceedings{Wei_Ozdaglar13,
+    Author = {E.Wei and A. Ozdaglar},
+    Booktitle = {{IEEE GlobalSIP}},
+    Title = {On the {O}(1/k) Convergence of Asynchronous Distributed Alternating Direction Method of Multipliers},
+    Year = {2013}}
 
 @BOOK{Weickert98,
   title = {Anisotropic diffusion in image processing},
@@ -9470,6 +9723,17 @@ ISSN={1057-7149},
 Methodology}
 }
 
+@article{Yuan_Xu_Zhao_Rong12,
+  title={Distributed dual averaging method for multi-agent optimization with quantized communication},
+  author={D. Yuan and S. Xu and H. Zhao and L. Rong},
+  journal={Systems \& Control Letters},
+  volume={61},
+  number={11},
+  pages={1053--1061},
+  year={2012},
+  publisher={Elsevier}
+}
+
 @article{Yun14,
   title={On the iteration complexity of cyclic coordinate gradient descent methods},
   author={S. Yun},
@@ -9607,6 +9871,14 @@ estimation problems},
   year={2014},
   publisher={Wiley Online Library}
 }
+
+@inproceedings{Zhao_Hoi_Jin_Yang11,
+    Author = {P. Zhao and S. Hoi and R. Jin and T. Yang},
+    Booktitle = ICML,
+    pages={233--240},
+    Title = {{Online AUC Maximization}},
+    Year = {2011}}
+
 
 @INPROCEEDINGS{Zhou09,
   title={Thresholding procedures for high dimensional variable selection and
