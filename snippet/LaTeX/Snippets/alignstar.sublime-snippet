@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[\begin{align*}
+	$0
+\end{align*}]]></content>
+	<tabTrigger>eq*</tabTrigger>
+	<scope>text.tex.latex</scope>
+	<description>Equation*</description>
+</snippet>

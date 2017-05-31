@@ -1,0 +1,10 @@
+<snippet>
+	<content>
+<![CDATA[\begin{align}\label{eq:${1:env}}
+	${1/(enumerate|itemize|list)|(description)|.*/(?1:\\item )(?2:\\item)/}$0
+\end{align}]]>
+</content>
+	<tabTrigger>align</tabTrigger>
+	<scope>text.tex.latex</scope>
+	<description>New align</description>
+</snippet>
