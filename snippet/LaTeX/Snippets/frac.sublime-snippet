@@ -1,0 +1,9 @@
+<snippet>
+	<content>
+<![CDATA[\frac{${1:env}}{${2:env}}$0
+]]>
+</content>
+	<tabTrigger>frac</tabTrigger>
+	<scope>text.tex.latex</scope>
+	<description>New frac</description>
+</snippet>
