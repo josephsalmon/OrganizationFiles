@@ -1,13 +1,16 @@
 \documentclass{report}
 
+
 \usepackage[latin1]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage[francais]{babel}
+\usepackage[french]{babel}
+\usepackage{geometry}
+
+\usepackage[backend=biber]{biblatex}
+\addbibresource{references_all.bib}
 
 \begin{document}
-\bibliographystyle{plain}
-% \cite{Abernethy_Bartlett_Rakhlin07}
 \nocite{*}
 
-\bibliography{references_all}
+\printbibliography
 \end{document}
