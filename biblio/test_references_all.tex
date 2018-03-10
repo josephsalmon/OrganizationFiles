@@ -1,16 +1,13 @@
-\documentclass{report}
-
-\usepackage[latin1]{inputenc}
-\usepackage[T1]{fontenc}
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
 \usepackage[french]{babel}
 % \usepackage[english]{babel}
-\usepackage{csquotes}
+\usepackage[T1]{fontenc}
 \usepackage{geometry}
-\usepackage[backend=biber]{biblatex}
-\addbibresource{references_all.bib}
-
 \begin{document}
-\nocite{*}
-\printbibliography
 
+\nocite{*}
+
+\bibliographystyle{acm}
+\bibliography{references_all}
 \end{document}
