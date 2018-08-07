@@ -1,5 +1,5 @@
 \documentclass[unknownkeysallowed]{beamer}
-\usepackage[english,french]{babel}
+\usepackage[french,english]{babel}
 \usepackage{../sty/beamer_js}
 \usepackage{../sty/shortcuts_js}
 
@@ -78,23 +78,36 @@ INRA / Université de Montpellier \\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Un premier exemple}
+\label{sub:un_premier_exemple}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{Un exemple en discrimination (classification)}
 
-      Ici, la réponse $Y$ est \mybold{ qualitative}.
+\mytheorem{Théorème}
+{
+\begin{equation*}
+a^2 + b^2 = c^2
+\end{equation*}
+}
 
-      \exemple
-      $\mathcal{Y} = \{\texttt{spam},  \texttt{ham}\}$
-      (\texttt{ham}=e-mail correct) ou bien
-      $\mathcal{Y}= \{0, 1, \dots,9\}$. Les objectifs peuvent être
-      \begin{itemize}
-      \item construire un classifieur $\phi(x)$ qui assigne une nouvelle
-        observation $x$ à l'une des classes dans $\mathcal{Y}$
-      \item évaluer l'incertitude sur cette classification \footfullcite{Massias_Gramfort_Salmon18}
-      \item comprendre les rôles de $X^{(1)}$, \dots, $X^{(p)}$
-      \end{itemize}
+\vspace{1cm}
+
+Ici, la réponse $Y$ est \mybold{ qualitative}.
+
+\exemple
+$\mathcal{Y} = \{\texttt{spam},  \texttt{ham}\}$
+(\texttt{ham}=e-mail correct) ou bien
+$\mathcal{Y}= \{0, 1, \dots,9\}$. Les objectifs peuvent être
+\begin{itemize}
+	\item construire un classifieur $\phi(x)$ qui assigne une nouvelle
+	observation $x$ à l'une des classes dans $\mathcal{Y}$
+	\item évaluer l'incertitude sur cette classification \footfullcite{Massias_Gramfort_Salmon18}
+	\item comprendre les rôles de $X^{(1)}$, \dots, $X^{(p)}$
+\end{itemize}
+
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -103,45 +116,73 @@ INRA / Université de Montpellier \\
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{Problèmes de classification}
-    \begin{columns}
-   \begin{column}[T]{.48\textwidth}
-      \mybold{ classifieur de Bayes} optimal
-      \begin{equation*}
-          \phi^*(x) = \argmax_{y\in \mathcal{Y}} P(Y=y|X=x)
-      \end{equation*}
-      pour la perte  $l(y,y')=1_{y\neq y'}$.
+\begin{columns}
+\begin{column}[T]{.48\textwidth}
+	\mybold{ classifieur de Bayes} optimal
+	\begin{equation*}
+	  \phi^*(x) = \argmax_{y\in \mathcal{Y}} P(Y=y|X=x)
+	\end{equation*}
+	pour la perte  $l(y,y')=1_{y\neq y'}$.
 
-      \vspace{1cm}
+	\vspace{1cm}
 
-      On peut toujours utiliser une méthodes
-      des plus proches voisins pour la construction d'une règle de classification  $\widehat{\phi}(x)$ à partir de $d_1^n$.
+	On peut toujours utiliser une méthodes
+	des plus proches voisins pour la construction d'une règle de classification  $\widehat{\phi}(x)$ à partir de $d_1^n$.
+\end{column}
+\begin{column}[T]{.48\textwidth}
+	\centering
+	\includegraphics[width=0.75\textwidth]{french-flag}
 
-   \end{column}
-    \begin{column}[T]{.48\textwidth}
-    \centering
-      \includegraphics[width=0.75\textwidth]{french-flag}
+	\vspace{1cm}
 
-      \vspace{1cm}
+	Autres méthodes:
+	\begin{itemize}
+		\item régression logistique / analyse linéaire discriminante
+		\item modèles additifs généralisés
+		\item \emph{Support Vector Machine} (SVM)
+	\end{itemize}
+	\vspace{1cm}
 
-      Autres méthodes:
-      \begin{itemize}
-      \item régression logistique / analyse linéaire discriminante
-      \item modèles additifs généralisés
-      \item \emph{Support Vector Machine} (SVM)
-      \end{itemize}
-      \vspace{1cm}
-
-
-
-    \end{column}
-  \end{columns}
+\end{column}
+\end{columns}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}{References}
+\subsection{Un deuxième exemple}
+\label{sub:deuxiem_exmple}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Vide}
+	ou presque...
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Conclusion}
+\label{sec:conclusion}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Rapidement}
+\label{sub:rapidement}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Bibliographie}
 \printbibliography
 \end{frame}
  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
