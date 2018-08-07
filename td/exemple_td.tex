@@ -1,0 +1,120 @@
+\documentclass[a4paper,11pt]{article}
+
+
+\newcommand{\titrecours}{Classifieur de Bayes}
+\newcommand{\titretd}{Apprentissage statistique}
+\newcommand{\auteur}{Joseph Salmon - St\'ephan Cl\'emen\c con}
+\newcommand{\annee}{Master M2MO: 2017/2018}
+\newcommand{\ecole}{Universit\'e Paris Diderot}% \titre{}
+
+\usepackage{../sty/td}
+\usepackage{../sty/shortcuts_js}
+\addbibresource{../biblio/references_all.bib}
+
+
+\begin{document}
+\sloppy
+\feuille{1}
+
+\medskip
+
+% \noident
+\indent St\'ephan \textsc{Clémençon}  \texttt{<stephan.clemencon@telecom-paristech.fr>}
+\\
+\indent Joseph \textsc{Salmon} \texttt{<joseph.salmon@telecom-paristech.fr>}
+
+\medskip
+
+
+% \hrule
+
+\exercice On considère un modèle de classification où le couple aléatoire $(X, Y)$ est de loi $P$ décrite par :
+\begin{align*}
+\L (X \mid Y= 0) & = \U ([0, \theta]) \\
+\L (X \mid Y= 1) & = \U ([0, 1])\\
+p & = \PROB\{Y=1\}
+\end{align*}
+où $p, \theta \in ]0, 1[$ sont fixés. On note $\eta(x)=\PP(Y=1|X=x)$ la fonction de régression correspondante. Donner sa valeur en fonction de $p$ et $\theta$. Donner l'application numérique pour $\theta = 1/2$.
+
+\bigskip
+
+% \hrule
+
+\bigskip
+
+% DGL p.11-12
+\exercice  On considère un modèle de classification où le couple aléatoire $(X, Y)$ est de loi $P$ décrite par :
+\begin{itemize}
+\item la loi de $X$ est une loi de probabilité $P_X$ sur $\RR$
+\item la fonction de régression $\displaystyle \eta(x) = \frac{x}{x+\theta}$ où $\theta>0$ fixé.
+\end{itemize}
+On note $h^*$ le classifieur de Bayes. Expliciter le classifieur de Bayes dans ce modèle. Montrer ensuite que son risque ``0-1'' vaut
+\begin{equation*}
+	R(h^*)=\int \min(\eta(x),1-\eta(x)) dP_X(x).
+\end{equation*}
+ Calculer le risque de Bayes lorsque $P_X = \U([0, \alpha\theta])$ où $\alpha>1$.
+
+\bigskip
+
+% \hrule
+
+\bigskip
+
+\exercice On considère un modèle de classification général. On considère le risque de classification pondéré :
+\[
+L_{\omega}(g) = \EXP \bigl(2\omega(Y) \cdot \ind_{\{Y \neq g(X)\}} \bigr)
+\]
+où $\omega(0)\geq 0, \omega(1)\geq 0$ et $\omega(0) + \omega(1) =1$.
+Donner le classifieur de Bayes et le risque de Bayes pour ce critère.
+Quel est l'intérêt de considérer un tel critère ?
+
+
+\bigskip
+%
+% \hrule
+
+\bigskip
+
+% DGL p.12-14
+\exercice Soit $X = (T, U, V)^T$ où $T, U, V$ sont des variables aléatoires réelles i.i.d. de loi exponentielle $\EE(1)$.
+Soit $Y=\ind_{\{T+U+V<\theta\}}$ où $\theta\in\RR_+$ fixé.
+
+\begin{enumerate}
+\item Calculer le classifieur de Bayes $g^*(T,U)$, lorsque $V$ n'est pas observée.
+ Calculer le risque de Bayes associé à ce classifieur. Donner l'application numérique lorsque $\theta = 9$.
+
+\item On suppose à présent que, seul $T$ est observée. Reprendre les calculs précédents et comparer les risques bayésiens obtenus lorsque  $\theta = 9$.
+
+\item Proposer un classifieur lorsque $X$ n'a aucune composante qui soit observée. Calculer son erreur de classification.
+\end{enumerate}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Conseils bibliographiques}
+\label{sec:bibliographie}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+Vous trouverez ci-dessous quelques points d’entrée utiles pour l'apprentissage automatique:
+
+\begin{itemize}
+	\item Théorique et porté sur les aspects probabilistes: \cite{Devroye_Gyorfi_Lugosi96}
+	\item Utilitaire et porté sur les aspects pratiques: \cite{Hastie_Tibshirani_Friedman09}
+	\item Livre récent porté essentiellement sur l’aspect optimisation: \cite{Shalev-Shwartz_Ben-David14} (et du même auteur sur l'apprentissage en ligne \cite{Shalev-Shwartz11})
+	\item Méthodes Bayésiennes et modèles graphiques: \cite{Murphy12}
+\end{itemize}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Bibliographie}
+\printbibliography
+\end{frame}
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+\end{document}
