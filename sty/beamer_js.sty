@@ -1,56 +1,86 @@
 \usepackage{etex} %solve bugs with listings
-%\documentclass[draft,compress,hyperref={pdfpagelabels=false}]{beamer}
-%\usepackage{beamerthemeshadow}
-\usefonttheme[onlymath]{serif}
-% les arrondis sur les maths.
-% \usepackage[T1]{fontenc}
-% \usepackage[latin1]{inputenc}
+\usefonttheme[onlymath]{serif} % rounded shapes for maths
 \usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc}% gestion des accents (pour les pdf)
+\usepackage[T1]{fontenc}% accents (for pdf)
 \usepackage{lmodern}
-%\usepackage{cite}
 \usepackage{xcolor}
-%\usepackage{footbib}
 \usepackage{verbatim}
 \usepackage{dsfont}
+
+%
 \usepackage{graphicx}
-\usepackage{amsmath}
+\graphicspath{{images/},{prebuiltimages/},{../../sharedimages/}}
+
+\usepackage{amsmath,amssymb,amsfonts,amscd}
+
 \usepackage{multicol}
-\usepackage{amscd}
-\usepackage{amsfonts}
-\usepackage{subfigure}
+\usepackage{subcaption}
+\usepackage{caption}
 % \usepackage{algpseudocode}
-\usepackage{amssymb}
+\hypersetup{colorlinks,linkcolor=,urlcolor=blue}
 \usepackage{latexsym}
-\usepackage{fancyhdr}
-\usepackage{stmaryrd} %%llbracket
-\usepackage{animate}
-\usepackage{transparent}   % for inkscape transparent style
+\usepackage{fancyhdr} % for page layout
+\usepackage{stmaryrd} % for llbracket
+% \usepackage{transparent}   % for inkscape transparent style (in conflict with tikz)
 \usepackage[absolute,overlay]{textpos} % texpos for special fixed positionning of an image
-
 \usepackage{multirow}
-\usepackage{blkarray} % block matrix 
+\usepackage{blkarray} % block matrix
+\usepackage{xparse,soul} %  strikethrough text (barr\'e), \st
 
-% \usepackage{diagbox} % for table diagbox
+\usepackage{mathtools} % to make boxes inside align env.
 
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Movies
+\usepackage{animate}
 % \usepackage{movie15} % to be prefered?
 % \usepackage{media9}
 
+
 %\usepackage{amsbsy}
 %\usepackage{longtable}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\beamersetuncovermixins{\opaqueness<1>{15}}{\opaqueness<2->{15}}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\renewcommand{\labelitemii}{$\star$}
+%\renewcommand{\labelitemi}{$\bullet$}
 
-\graphicspath{{images/}}
-  % and their extensions so you won't have to specify these with
-  % every instance of \includegraphics
-%    \DeclareGraphicsExtensions{.pdf,.jpeg,.png}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% citation/footenote in beamer
+\usepackage[backend=biber,style=verbose,citetracker=true]{biblatex}
+\renewcommand{\footnotesize}{\tiny} % size of footnotes
+\renewcommand\multicitedelim{\addsemicolon\space} % for footfullcite to have multiple elements separated by commas.
+
+\renewcommand{\footnoterule}{%
+\kern -3pt
+\hrule width \textwidth height 1.5pt
+\kern 3pt
+} % control the line before footnotes
+
+
+% Configure style for custom doubled line
+\newcommand*{\doublerule}{\hrule width \hsize height 1pt \kern 0.5mm \hrule width \hsize height 2pt}
+
+% Configure function to fill line with doubled line
+\newcommand\doublerulefill{\leavevmode\leaders\vbox{\hrule width .1pt\kern1pt\hrule}\hfill\kern0pt }
+
+
+\newcommand{\mytheorem}[2]{
+\doublerulefill\ \framebox{\textbf{#1}}\ \doublerulefill
+\vspace{0.1cm}
+
+#2
+
+\doublerulefill
+}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\beamersetuncovermixins{\opaqueness<1>{15}}{\opaqueness<2->{15}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 \mode<presentation>
-{ 
+{
 \usetheme{default}
 \setbeamertemplate{frametitle}
 {
@@ -64,8 +94,21 @@
 \setbeamertemplate{navigation symbols}{}
 \setbeamertemplate{bibliography item}[triangle]
 
-%\usecolortheme[named=macouleur]{structure}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% footnote setting: (1), (2), etc.
+\renewcommand*{\thefootnote}{(\arabic{footnote})}
+
+% How to solve problem of comas between footfullcite
+\usepackage{fnpct}
+\AdaptNoteOpt\footfullcite\multfootfullcite
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Colors
+
+%\usecolortheme[named=macouleur]{structure}
 \definecolor{macouleur}{cmyk}{0.2,0.45,0.9,0}%{0.05,0.22,0.89,0}
 \definecolor{rltred}{rgb}{0.75,0,0}
 \definecolor{oneblue}{rgb}{0,0,0.75}
@@ -83,30 +126,47 @@
 \definecolor{LightBack}{rgb}{0,0.2,0.4}%{0.2, 0.2,0.4}
 \definecolor{freeblue}{rgb}{0.25,0.41,0.88}
 \usecolortheme{rose}
-
 }
 
+\newcommand{\tbrown}[1]{\textcolor{brown}{#1}}
+
+
+\usecolortheme[named=marron]{structure}
 \setbeamercolor{block title}{use=structure,fg=white,bg=freeblue}
 %\setbeamercolor{math text}{fg=LightBack,bg=macouleur}
 \setbeamercolor{block body example}{bg=white}
 \beamertemplateroundedblocks
 \beamertemplateshadowblocks
 
-%\setbeamercolor{block title example}{use=structure text,fg=white,bg=forestgreen}
-%\usecolortheme{sidebartab}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% To add numbering
+\setbeamerfont{page number in head/foot}{size=\tiny}
+\setbeamertemplate{footline}[frame number]
 
-\usecolortheme[named=marron]{structure}
+
 %\setbeamercolor{structure}{fg=marron,bg=white}
-
 
 
 \newcommand{\citer}[2]{\textcolor{brown}{#1}\nocite{#2}}
 
 
+% new version for algorithm:
 
-\usepackage[algo2e]{algorithm2e}% http://csweb.ucc.ie/~dongen/LAF/Algorithms.pdf
-% \usepackage{algorithmic}
-\usepackage{float}
+% FRENCH VERSION:
+% \usepackage[titlenumbered,ruled,noend,french,onelanguage]{algorithm2e}
+
+% ENGLISH VERSION:
+\usepackage[titlenumbered,ruled,noend,onelanguage]{algorithm2e}
+
+\newcommand\mycommfont[1]{\footnotesize\ttfamily\textcolor{blue}{#1}}
+\SetCommentSty{mycommfont}
+\SetEndCharOfAlgoLine{}
+\resetcounteronoverlays{algocf} % for overlay aware algorithms.
+\renewcommand{\thealgocf}{} % turn of caption numbering
+%% old version for algorithm:
+%\usepackage[algo2e]{algorithm2e}% http://csweb.ucc.ie/~dongen/LAF/Algorithms.pdf
+%
+%\usepackage{float}
 
 
 
@@ -118,11 +178,12 @@
 \usepackage{fancyvrb}                  % for fancy verbatim
 \usepackage{textcomp}
 \usepackage[procnames]{listings}
-\usepackage{setspace}
+% \usepackage{setspace} % need for \setstretch{1}
 \lstset{%
- language   = python,%
- basicstyle = \ttfamily\setstretch{1},%
- columns    = flexible,%
+language   = python,%
+ % basicstyle = \ttfamily\setstretch{1},%
+basicstyle = \ttfamily,%
+columns    = flexible,%
 keywordstyle=\color{javared},
 firstnumber=100,
 frame=shadowbox,
@@ -133,14 +194,14 @@ as,del,except,exec,finally,global,import,lambda,pass,print,raise,try,assert},
 keywordstyle={\color{javared}\bfseries},
 commentstyle=\color{javagreen}, %vsomb_col white comments
 morecomment=[s][\color{javagreen}]{"""}{"""},
-upquote=true, 
+upquote=true,
 %% style for number
 numbers=none,
 resetmargins=true,
 xleftmargin=10pt,
-linewidth= \linewidth, 
-numberstyle=\tiny, 
-stepnumber=1, 
+linewidth= \linewidth,
+numberstyle=\tiny,
+stepnumber=1,
 numbersep=8pt, %
 frame=shadowbox,
 rulesepcolor=\color{black},
@@ -164,28 +225,7 @@ procnamestyle=\color{oneblue}\textbf,
 \definecolor{orange_js}{RGB}{230,159,0}
 
 \newcommand{\mybold}[1]{\textcolor{marron}{\textbf{#1}}}
+\newcommand{\cRm}[1]{\textsc{\romannumeral #1}}
 
 
-% 
-% \lstset{%
-%  upquote,%
-%  literate   = {"}{\textquotedbl}1,%
-%  language   = R,%
-%  basicstyle = \ttfamily,%
-%  columns    = flexible,%
-% keywordstyle=\color{red},
-% firstnumber=100,
-% frame=shadowbox,
-% commentstyle=\color{orange_js}, %vsomb_col white comments
-% %% style for number
-% numbers=none,
-% resetmargins=true,
-% xleftmargin=10pt,
-% linewidth= \linewidth, 
-% numberstyle=\tiny, 
-% stepnumber=1, 
-% numbersep=8pt, %
-% frame=shadowbox,
-% rulesepcolor=\color{black},
-% }
-% 
+\AtBeginDocument{\setlength\abovedisplayskip{0pt}}% remove top align blanks

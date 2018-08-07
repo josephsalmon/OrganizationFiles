@@ -1,137 +1,152 @@
-%\documentclass[11pt]{beamer}
-%\documentclass[11pt,handout]{beamer}
-% \documentclass[hyperref={pdfpagelabels=false}]{beamer}
+\documentclass[unknownkeysallowed]{beamer}
+\usepackage[english,french]{babel}
+\usepackage{../sty/beamer_js}
+\usepackage{../sty/shortcuts_js}
 
-\documentclass{beamer}
-\usepackage[francais]{babel}
-% \usepackage[francais,american]{babel}
-\usepackage{/home/jo/Documents/organization_files/sty/beamer_js}    %/home/jo/Documents/organization_files/sty
-\usepackage{/home/jo/Documents/organization_files/sty/shortcuts_js} %/home/jo/Documents/organization_files/sty
+\addbibresource{../biblio/references_all.bib}
 
+
+% % Uncomment when you need to add notes to the beamer
+% \usepackage{../../sty/handoutWithNotes}
+% \pgfpagesuselayout{3 on 1 with notes}[a4paper,border
+% shrink=5mm]
 
 
 \begin{document}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%             Headers               %%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%          Headers	   %%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
 \bigskip
-\bigskip 
+\bigskip
 \begin{center}{
 \LARGE\color{marron}
-\textbf{CES DATA scientist}\\
-\vspace{1cm}
-Apprentissage supervisé: (théorie) et algorithmes}
-\end{center}
-\bigskip
-\begin{center}
-\textbf{ Joseph Salmon} \\ 
-\url{http://josephsalmon.eu} \\
-T\'el\'ecom Paristech, Institut Mines-T\'el\'ecom \\
-\end{center}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%   co-authors    pictures   %%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\end{frame}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%       PLAN     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-\begin{frame}
-  \frametitle{Motivation -- enjeux}
-  \begin{itemize}
-  \item Point de départ : diverses m\'ethodes usuelles et retour sur quelques
-\'el\'ements de statistiques
-\vspace{1cm}
-  \item Compr\'ehension des m\'ethodes  
-\vspace{1cm} 
-  \item Implémenter celles-ci en Python
-\vspace{1cm} 
-\end{itemize}
-\end{frame}
-
-\begin{frame}{Plan}
-\tableofcontents[section]
-% You might wish to add the option [pausesections]
-\end{frame}
-
-
-% \AtBeginSection[] % Do nothing for \subsection*
-% {
-%   \begin{frame}%<beamer>
-%     \frametitle{Plan}
-% %      \tableofcontents[currentsubsection,hideothersubsections]
-%      \tableofcontents[currentsection,currentsubsection,hideothersubsections,hideothersubsubsections]
-% %     \tableofcontents[ 
-% % currentsubsection, 
-% % hideothersubsections, 
-% % subsectionstyle=show/shaded, 
-%   \end{frame}
-% }
-% 
-\AtBeginSubsection[]
-{
-  \begin{frame}
-    \frametitle{Sommaire}
-%     \tableofcontents[ currentsubsection, hideothersubsections, sectionstyle=show/hide, subsectionstyle=show/shaded, ]
- \tableofcontents[currentsection,hideothersubsections,hideothersubsubsections,subsectionstyle=show/shaded]
-  \end{frame}
+\textbf{Apprentissage Statistique}\\
+\textbf{}\\
+\vspace{0.5cm}
 }
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%       Movie Example     %%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{center}
 
-% \begin{frame}{Real data}
-% \begin{figure}
-% \animategraphics[width=6cm,autoplay,every=2]{10}
-% \caption{Youngest supernova explosion in the Milky Way, supernova remnant G1.9+0.3  (\symbol{64} NASA/CXC/SAO)
-% Thanks: Steven Reynolds, NC State}
-% \end{figure}
-% \end{frame}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Pr\'erequis}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Optimisation / statistiques / Alg\`ebre}
-\begin{frame}{Optimisation / statistiques} 
-\begin{exampleblock}{Optimisation/Analyse}
-\begin{itemize}
- \item Projection sur un sous-espace
- \item R\'egression lin\'eaire, moindre carr\'es:\\
-$Y=X\theta+\varepsilon$,\quad $\hat{\theta}=(X^\top X)^{-1}X^\top Y $
- \item M\'ethode de Newton
-\end{itemize}
-\end{exampleblock}
-
-\begin{exampleblock}{Alg\`ebre}
-\begin{itemize}
- \item D\'ecomposition spectrale des matrices symétriques (carr\'ees): 
-\begin{equation*}
-\Sigma=UDU^{\top} \in \bbR^{p \times p}
-\end{equation*}
-pour une matrice orthonormale  $U$ (\ie $U^\top U =\Id_p$) et une matrice diagonale $D=\diag(d_1,\dots,d_p)$
-\end{itemize}
-\end{exampleblock}
+\begin{center}
+\textbf{Nicolas Verzelen, Joseph Salmon} \\
+\vspace{0.5cm}
+INRA / Université de Montpellier \\
+\end{center}
 \end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{frame}[allowframebreaks]
-%[allowframebreaks]
-\frametitle{R\'ef\'erences}
-\bibliographystyle{alpha}
-% \bibliography{/data/salmon/organization_files/biblio/references_all}%TSI. if needed:IEEEabrv
-% \bibliography{/home/jo/Documents/organization_files/biblio/references_all}%laptop
-\bibliography{/home/jo/Documents/organization_files/biblio/references_all}% /home/jo/Documents/organization_files/biblio
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%       PLAN      %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Outline}
+\tableofcontents[hideallsubsections]
 \end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\AtBeginSection[]
+{
+\begin{frame}<beamer>{Table of Contents}
+\tableofcontents[currentsubsection,
+    hideothersubsections,
+    sectionstyle=show/shaded,
+]
+\end{frame}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Introduction}
+\label{sec:introdcution}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Un exemple en discrimination (classification)}
+
+      Ici, la réponse $Y$ est \mybold{ qualitative}.
+
+      \exemple
+      $\mathcal{Y} = \{\texttt{spam},  \texttt{ham}\}$
+      (\texttt{ham}=e-mail correct) ou bien
+      $\mathcal{Y}= \{0, 1, \dots,9\}$. Les objectifs peuvent être
+      \begin{itemize}
+      \item construire un classifieur $\phi(x)$ qui assigne une nouvelle
+        observation $x$ à l'une des classes dans $\mathcal{Y}$
+      \item évaluer l'incertitude sur cette classification \footfullcite{Massias_Gramfort_Salmon18}
+      \item comprendre les rôles de $X^{(1)}$, \dots, $X^{(p)}$
+      \end{itemize}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Problèmes de classification}
+    \begin{columns}
+   \begin{column}[T]{.48\textwidth}
+      \mybold{ classifieur de Bayes} optimal
+      \begin{equation*}
+          \phi^*(x) = \argmax_{y\in \mathcal{Y}} P(Y=y|X=x)
+      \end{equation*}
+      pour la perte  $l(y,y')=1_{y\neq y'}$.
+
+      \vspace{1cm}
+
+      On peut toujours utiliser une méthodes
+      des plus proches voisins pour la construction d'une règle de classification  $\widehat{\phi}(x)$ à partir de $d_1^n$.
+
+   \end{column}
+    \begin{column}[T]{.48\textwidth}
+    \centering
+      \includegraphics[width=0.75\textwidth]{french-flag}
+
+      \vspace{1cm}
+
+      Autres méthodes:
+      \begin{itemize}
+      \item régression logistique / analyse linéaire discriminante
+      \item modèles additifs généralisés
+      \item \emph{Support Vector Machine} (SVM)
+      \end{itemize}
+      \vspace{1cm}
+
+
+
+    \end{column}
+  \end{columns}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{References}
+\printbibliography
+\end{frame}
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 
 \end{document}
+
