@@ -1,19 +1,20 @@
 \usepackage[french]{babel}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
-% \usepackage[latin1]{inputenc}
 
 
 % references:
-
 \usepackage[backend=biber,style=verbose,citetracker=true]{biblatex}
+
+
 \usepackage{amssymb,amsmath,amsthm,amscd}
 \usepackage{dsfont}
 \usepackage{enumitem}
-
 \usepackage{xifthen}
-\textheight = 24 cm \textwidth = 16 cm \oddsidemargin = 0 cm \topmargin =
--1 cm
+\textheight = 24 cm
+\textwidth = 16 cm
+\oddsidemargin = 0 cm
+\topmargin = -1 cm
 
 
 % Macro pour l'en-tête : la première entrée est le numéro de la feuille, la deuxième le thème de la feuille
@@ -39,22 +40,13 @@
 % Macro pour l'exercice
 \newcounter{numeroexo}
 \newcounter{numeroexp}
-% \newcommand{\exercice}{\vspace{0.3cm}
-%  \par\noindent\stepcounter{numeroexo}
-% \hspace{-.25cm}\textsc{\textbf{Exercice \arabic{numeroexo}.}}\quad}
+
 
 % Enumération
 \renewcommand{\labelenumi}{\theenumi)}
 
-%
-% \newcommand{\exercice}[1][]{%
-% \ifthenelse{\equal{#1}{}}{ \vspace{0.3cm}
-%  \par\noindent\stepcounter{numeroexo}
-% \hspace{-.25cm}\textsc{\textbf{Exercice \arabic{numeroexo}.}}\quad}{given}%
-% }
 
-
-
+% Exercice:
 \newcommand{\exercice}[1][]{%
   \ifthenelse{\isempty{#1}}%
     {\vspace{0.3cm}
@@ -65,7 +57,6 @@
     \hspace{-.25cm}\textsc{\textbf{Exercice \arabic{numeroexo}.}}\quad
     \textbf{(#1)}}% if #1 is not empty
 }
-
 
 
 \newcommand{\experience}[1][]{%
@@ -96,64 +87,11 @@
 \usepackage{subfigure}
 \usepackage{bm}   			% bold for greek letters
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%  		Couleurs			      %%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\definecolor{test}{rgb}{0.64,0.16,0.16}
-\definecolor{vsomb_col}{rgb}{0.00,0.57,0.1}
-\definecolor{fb_col}{rgb}{0.25,0.41,0.88}
-\definecolor{macouleur}{cmyk}{0.2,0.45,0.9,0}%{0.05,0.22,0.89,0}
-\definecolor{rltred}{rgb}{0.75,0,0}
-\definecolor{oneblue}{rgb}{0,0,0.8}
-\definecolor{marron}{rgb}{0.64,0.16,0.16}
-\definecolor{forestgreen}{rgb}{0.13,0.54,0.13}
-\definecolor{verte}{rgb}{0.13,0.74,0.23}
-\definecolor{marronchocolat}{cmyk}{0.15,0.32,0.59,0.19}
-\definecolor{parme}{cmyk}{0.05,0.22,0.19,0.5}
-\definecolor{rltgreen}{rgb}{0.5,0.01,0.9}%violet
-\definecolor{purple}{rgb}{0.5,0.5,0.98}
-\definecolor{purpleone}{rgb}{0.9,0.5,0.5}
-\definecolor{dockerblue}{rgb}{0.11,0.56,0.98}
-\definecolor{myblue}{rgb}{0,0.2,0.4}%bien
-\definecolor{LightBack}{rgb}{0,0.2,0.4}%{0.2, 0.2,0.4}
-\definecolor{freeblue}{rgb}{0.25,0.41,0.88}
-% \definecolor{lightgreen}{rgb}{.2,1,.2}
-% \definecolor{lightblue}{rgb}{.2,.2,1}
-% \definecolor{vermillon}{RGB}{213,94,0}
- \definecolor{orange_js}{RGB}{230,159,0}
-\definecolor{javared}{rgb}{0.6,0,0} % for strings
-\definecolor{javagreen}{rgb}{0.25,0.5,0.35} % comments
-\definecolor{javapurple}{rgb}{0.5,0,0.35} % keywords
-\definecolor{javadocblue}{rgb}{0.25,0.35,0.75} % javadoc
-\definecolor{marron}{rgb}{0.64,0.16,0.16}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Couleurs
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-
-
-
-\usepackage[ruled,vlined,french]{algorithm2e}
-
-%  \usepackage{algpseudocode}
-%  \usepackage{algorithm}
-% \usepackage{float}
-% \newfloat{algorithm}{h}{lop}
-% \usepackage{algpascal}
-% \usepackage{float}
-% \usepackage{algorithmic}
-% \usepackage[ruled,vlined]{algorithm2e}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%  		Hyperlinks                            %%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\PassOptionsToPackage{hyphens}{url}
-\usepackage[pdftex,linkcolor=test,citecolor=vsomb_col,
-colorlinks=true,pagebackref,bookmarks=true,plainpages=true,
-urlcolor=fb_col]{hyperref}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%  		Display		                      %%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{geometry}                       % large display
 
 \setlength{\headheight}{15pt}
@@ -176,12 +114,11 @@ urlcolor=fb_col]{hyperref}
  {\end{tabular}\end{center}
 }
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Algorithmes
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%% 	        Algorithmes		             %%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+\usepackage[ruled,vlined,french]{algorithm2e}
 \usepackage{fancyvrb}                  % for fancy verbatim
 \usepackage{textcomp}
 \usepackage[procnames]{listings}
@@ -214,10 +151,9 @@ procnamekeys={def,class},
 procnamestyle=\color{oneblue}\textbf,
 }
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%  		 Environnements                       %%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Environnements
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \DefineVerbatimEnvironment{rcode}{lstlisting}
 {\framed,fontsize=\normalsize}
 \newcommand{\titlesec}[1]{\bigskip \begin{center}  {\sc - {#1} -} \end{center}}
@@ -230,7 +166,8 @@ procnamestyle=\color{oneblue}\textbf,
 \newcommand\mytodo[1]{\textcolor{red}{#1}}
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%  		 Graphics and images                  %%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Graphics and images
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \graphicspath{{images/}}
