@@ -135,11 +135,18 @@ urlcolor=fb_col]{hyperref}
 
 \usepackage{fancyvrb}                  % for fancy verbatim
 \usepackage{textcomp}
+\usepackage[space=true]{accsupp}
+% requires the latest version of package accsupp
+\newcommand{\copyablespace}{
+    \BeginAccSupp{method=hex,unicode,ActualText=00A0}
+\ %
+    \EndAccSupp{}
+}
 \usepackage[procnames]{listings}
 \lstset{%
- language   = python,%
- basicstyle = \ttfamily\setstretch{1},%
- columns    = flexible,%
+language   = Python,%
+% basicstyle = \ttfamily\setstretch{1},%
+columns    = fullflexible,%
 keywordstyle=\color{javared},
 firstnumber=100,
 frame=shadowbox,
@@ -150,21 +157,23 @@ as,del,except,exec,finally,global,import,lambda,pass,print,raise,try,assert},
 keywordstyle={\color{javared}\bfseries},
 commentstyle=\color{javagreen}, %vsomb_col white comments
 morecomment=[s][\color{javagreen}]{"""}{"""},
-upquote=true, 
+upquote=true,
 %% style for number
 numbers=none,
 resetmargins=true,
 xleftmargin=10pt,
-linewidth= \linewidth, 
-numberstyle=\tiny, 
-stepnumber=1, 
+linewidth= \linewidth,
+numberstyle=\tiny,
+stepnumber=1,
 numbersep=8pt, %
 frame=shadowbox,
 rulesepcolor=\color{black},
 procnamekeys={def,class},
 procnamestyle=\color{oneblue}\textbf,
+literate={*}{{\char42}}1
+         {-}{{\char45}}1
+         {\ }{{\copyablespace}}1
 }
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%  		 Environnements                       %%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
