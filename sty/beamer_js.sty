@@ -6,7 +6,8 @@
 \usepackage{xcolor}
 \usepackage{verbatim}
 \usepackage{dsfont}
-
+\usepackage[thicklines]{cancel}  % to strike out a text / text rayé
+\renewcommand{\CancelColor}{\red}
 %
 \usepackage{graphicx}
 \graphicspath{{images/},{prebuiltimages/},{../../sharedimages/}}
@@ -47,6 +48,19 @@
 \usepackage[backend=biber,style=verbose,citetracker=true]{biblatex}
 \renewcommand{\footnotesize}{\tiny} % size of footnotes
 \renewcommand\multicitedelim{\addsemicolon\space} % for footfullcite to have multiple elements separated by commas.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%   Footnote without marker
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand\blfootnote[1]{%
+  \begingroup
+  \renewcommand\thefootnote{}\footnote{#1}%
+  \addtocounter{footnote}{-1}%
+  \endgroup
+}
+
 
 \renewcommand{\footnoterule}{%
 \kern -3pt
