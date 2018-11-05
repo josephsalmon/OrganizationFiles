@@ -68,6 +68,7 @@
 @string{OPTTHEORY = {J. Optimiz. Theory. App.}}
 
 % double names shortcuts
+% Beware such shortcuts might conflict with beamer + biber
 @preamble{ {\providecommand{\AC}{A.-C}} }
 @preamble{ {\providecommand{\CA}{C.-A}} }
 @preamble{ {\providecommand{\CH}{C.-H}} }
@@ -412,12 +413,6 @@ Series,
   pages = {46--54}
 }
 
-@article{Arnold_Tibshirani14,
-  title={Efficient implementations of the generalized lasso dual path algorithm},
-  author={T. Arnold and R. Tibshirani},
-  journal={arXiv preprint arXiv:1405.3222},
-  year={2014}
-}
 
 @article{Arlot_Celisse10,
   title={A survey of cross-validation procedures for model selection},
@@ -426,6 +421,13 @@ Series,
   volume={4},
   pages={40--79},
   year={2010},
+}
+
+@article{Arnold_Tibshirani14,
+  title={Efficient implementations of the generalized lasso dual path algorithm},
+  author={T. Arnold and R. Tibshirani},
+  journal={arXiv preprint arXiv:1405.3222},
+  year={2014}
 }
 
 @inproceedings{Arthur_Vassilvitskii07,
@@ -1650,6 +1652,7 @@ equations},
 @ARTICLE{Brinkmann_Burger_Rasch_Sutour17,
    author = {E.-M. Brinkmann and M. Burger and J. Rasch and C. Sutour
   },
+  title={Bias-reduction in variational regularization},
   journal={J. Math. Imaging Vis.},
   volume={59},
   number={3},
@@ -2709,7 +2712,7 @@ proximable and linear composite terms},
   title={Informatique pour tous en classes pr{\'e}paratoires aux grandes {\'e}coles: Manuel d'algorithmique et programmation structur{\'e}e avec Python},
   author={J. Courant and M. {de Falco} and S. Gonnord and {\JC}. Filli{\^a}tre and S. Conchon and G. Dowek and B. Wack},
   year={2013},
-  publisher={Eyrolles}
+  publisher={Eyrolles},
 }
 
 @book{Cover_Thomas91,
@@ -3947,7 +3950,6 @@ distributions.},
 @inproceedings{Franceschi_Frasconi_Salzo_Pontil18,
   title={Bilevel Programming for Hyperparameter Optimization and Meta-Learning},
   author={L. Franceschi and P. Frasconi and S. Salzo and M. Pontil},
- title     = {Bilevel Programming for Hyperparameter Optimization and Meta-Learning},
   pages     = {1563--1572},
   year      = {2018},
   booktitle = ICML
@@ -4683,6 +4685,17 @@ York-London-Sydney},
   pages = {225--248},
   address = {Boston, MA},
 }
+
+@article{Hale_Yin_Zhang08,
+author = {E. Hale and W. Yin and Y. Zhang},
+title = {Fixed-Point Continuation for $\ell\_1$-Minimization: Methodology and Convergence},
+journal = SIAMOPT,
+volume = {19},
+number = {3},
+pages = {1107-1130},
+year = {2008},
+}
+
 
 @ARTICLE{Halko_Martinsson_Tropp11,
   author = {N. Halko and P. Martinsson and J. A. Tropp},
@@ -7413,6 +7426,14 @@ matrices},
   pages   = {1--33},
 }
 
+@ARTICLE{Ndiaye_Le_Fercoq_Salmon_Takeuchi18,
+   author = {E. Ndiaye and T. Le and O. Fercoq and J. Salmon and 
+  I. Takeuchi},
+    title = "{Safe Grid Search with Optimal Complexity}",
+  journal = {ArXiv e-prints},
+     year = 2018,
+}
+
 @article{Nedic_Ozdaglar09,
   Author = {A. Nedi{\'c} and A. E. Ozdaglar},
   Journal = IEEE_J_TAC,
@@ -8431,7 +8452,6 @@ author = "R.T. Rockafellar and J.O. Royset and S.I. Miranda",
     YEAR = {2007},
   NUMBER = {3},
    PAGES = {1012--1030},
-     year={2007},
 }
 
 @inproceedings{Roth_Fischer08,
@@ -10187,6 +10207,18 @@ year = {1988},
   volume = {5},
   pages = {241--259},
   number = {2}
+}
+
+@ARTICLE{Wright12,
+  author = {S. J. Wright},
+  title = {Accelerated Block-Coordinate Relaxation for
+    regularized optimization},
+  journal = SIAMOPT,
+  year = {2012},
+  volume={22},
+  number={1},
+  pages={159--186},
+  year={2012},
 }
 
 @ARTICLE{Wright_Nowak_Figueiredo09,
