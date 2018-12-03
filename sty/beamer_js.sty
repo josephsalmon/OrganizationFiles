@@ -49,24 +49,21 @@
 \renewcommand{\footnotesize}{\tiny} % size of footnotes
 \renewcommand\multicitedelim{\addsemicolon\space} % for footfullcite to have multiple elements separated by commas.
 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%   Footnote without marker
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\newcommand\blfootnote[1]{%
-  \begingroup
-  \renewcommand\thefootnote{}\footnote{#1}%
-  \addtocounter{footnote}{-1}%
-  \endgroup
-}
-
-
 \renewcommand{\footnoterule}{%
 \kern -3pt
 \hrule width \textwidth height 1.5pt
 \kern 3pt
 } % control the line before footnotes
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% footnote setting: (1), (2), etc.
+\usepackage{fnpct}
+\AdaptNoteOpt\footcite\multfootcite
+\renewcommand*{\thefootnote}{(\arabic{footnote})}
+
+% How to solve problem of comas between footfullcite
+\AdaptNoteOpt\footfullcite\multfootfullcite
 
 
 % Configure style for custom doubled line
@@ -84,6 +81,7 @@
 
 \doublerulefill
 }
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -105,16 +103,6 @@
 
 \setbeamertemplate{navigation symbols}{}
 \setbeamertemplate{bibliography item}[triangle]
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% footnote setting: (1), (2), etc.
-\renewcommand*{\thefootnote}{(\arabic{footnote})}
-
-% How to solve problem of comas between footfullcite
-\usepackage{fnpct}
-\AdaptNoteOpt\footfullcite\multfootfullcite
-
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
