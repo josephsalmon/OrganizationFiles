@@ -1,0 +1,94 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[margin=2.5cm]{geometry}
+
+\usepackage{amssymb,amsmath,amsthm}
+\usepackage{color}
+\usepackage{enumitem}
+\usepackage{dsfont}
+\usepackage{bm}
+
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}{Proposition}
+\newtheorem{cor}{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+\newtheorem{remark}{Remark}
+\newtheorem{example}{Example}
+\newtheorem{claim}{Claim}
+\newtheorem{lemma}{Lemma}
+
+
+\usepackage{times} % use Times
+
+\usepackage{../sty/shortcuts_js} % possibly adapted from https://github.com/josephsalmon/OrganizationFiles/sty/shortcuts_js.sty
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% IMAGES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Use prebuiltimages/ for images extracted from code (e.g. python)
+% or to share images built from a software not available by the whole team (say matlab .fig, or inskcape .svg).
+% .svg files should be stored in dir srcimages/ and built from moosetex if needed:
+% https://www.charles-deledalle.fr/pages/moosetex.php
+% NEVER (GIT) versions files in images/ : only prebuiltimages/ & srcimages/ !
+
+\usepackage{graphicx} % For figures
+\graphicspath{{images/}, {prebuiltimages/}}
+\usepackage{subcaption}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Algorithms
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{algorithm}
+\usepackage[noend]{algorithmic}
+\usepackage{hyperref}
+\newcommand{\theHalgorithm}{\arabic{algorithm}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% For citations
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage[authoryear]{natbib}
+\usepackage{cleveref} % mandatory for no pbs with hyperlinks theorem etc...
+\crefformat{equation}{Eq.~(#2#1#3)} % format for equations
+\Crefformat{equation}{Equation~(#2#1#3)} % format for equations
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Header and document start
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\author{???, Joseph Salmon}
+\title{Privacy preserving Lasso etc.}
+
+\begin{document}
+
+\maketitle
+
+\vskip 0.3in
+
+\begin{abstract}
+\input{content/abstract}
+\end{abstract}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Sections in separated files
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input{content/introduction}
+% ...more text here.
+\input{content/algorithm}
+
+% if needed add appendix here:
+% \input{content/appendix}
+
+\newpage
+\bibliographystyle{plainnat}
+\bibliography{biblio/references_all}
+% see https://github.com/josephsalmon/OrganizationFiles/biblio/references_all.bib, or adapt your own from that one.
+
+\end{document}
