@@ -1,0 +1,115 @@
+%% Headings
+\newcommand{\lecture}[4]{
+   \pagestyle{myheadings}
+   \thispagestyle{plain}
+   \newpage
+   \setcounter{page}{1}
+   \noindent
+   \begin{center}
+   \framebox{
+      \vbox{\vspace{2mm}
+    \hbox to 6.28in { {\bf #1\hfill} }
+       \vspace{6mm}
+       \hbox to 6.28in { {\Large \hfill #2  \hfill} }
+       \vspace{6mm}
+       \hbox to 6.28in { {\it Cours: #3 \hfill Scribes: #4} }
+      \vspace{2mm}}
+   }
+   \end{center}
+   \markboth{#1}{#1}
+   \vspace*{4mm}
+}
+
+%% Lengths imported
+\setlength{\oddsidemargin}{0.25 in}
+\setlength{\evensidemargin}{-0.25 in}
+\setlength{\topmargin}{-0.6 in}
+\setlength{\textwidth}{6.5 in}
+\setlength{\textheight}{8.5 in}
+\setlength{\headsep}{0.75 in}
+\setlength{\parindent}{0 in}
+\setlength{\parskip}{0.1 in}
+
+%% Pictures
+\DeclareGraphicsExtensions{.eps,.pdf,.png,.jpg}
+
+%% Algorithms
+\renewcommand{\algorithmicrequire}{\textbf{Input:}}
+\renewcommand{\algorithmicensure}{\textbf{Output:}}
+\renewcommand{\algorithmiccomment}[1]{$//$ \textit{\small{#1}}}
+
+%% Theorems
+\theoremstyle{plain}
+\newtheorem*{definition}{Definition}
+\newtheorem*{exemple}{Exemple}
+\newtheorem*{remark}{Remark}
+\newtheorem*{corollary}{Corollary}
+
+\newtheorem*{theorem}{Theorem}
+\newtheorem*{proposition}{Proposition}
+\newtheorem*{lemma}{Lemma}
+
+%% Personal math shortcuts
+% for edition purpose
+\newcommand{\todo}[1]{\textbf{TODO :} #1}
+% others
+\newcommand{\bb}{\mathbbm}
+\newcommand{\proba}{\bb P}
+\newcommand{\esp}{\bb E}
+\newcommand{\ind}{\bb 1}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathds{N}}
+\newcommand{\argmin}{\mathop{\mathrm{arg\,min}}}
+\newcommand{\trans}[1]{{#1}^\intercal} % transposition
+\newcommand{\cx}{\mathcal{X}}
+\newcommand{\cy}{\mathcal{Y}}
+\newcommand{\ch}{\mathcal{H}}
+\newcommand{\dn}{\mathcal{D}_n}
+
+\newcommand{\nl}{} %\vspace{11pt}}
+\renewcommand{\phi}{\varphi}
+% \renewcommand{\epsilon}{\varepsilon}
+
+\newcommand{\abbr}[1]{\textbf{#1}}
+\renewcommand{\mathbb}[1]{\mathds{#1}}
+\newcommand{\intro}[1]{\textit{#1}}
+
+% to remove the CQFD symbol at the end of proofs :
+% \renewcommand{\qedsymbol}{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Shortcuts and commands
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\subgrad}{\partial}
+\newcommand{\alp}{\alpha}
+\newcommand{\walp}{w_{\alpha}}
+\newcommand{\wst}{w^{*}}
+\newcommand{\malp}{(1-\alp)}
+\newcommand{\norm}[1]{\left\| #1 \right\|}
+\newcommand{\scalprod}[2]{\left< {#1 ,#2} \right>}
+\newcommand{\lambtwo}{\frac{\lambda}{2}}
+\newcommand{\sgrf}{\subgrad f}
+\newcommand{\Ll}{\mathcal{L}}
+\newcommand{\F}{\mathcal{F}}
+\DeclareMathOperator{\diag}{diag}
+\DeclareMathOperator{\Tr}{Tr}
+\DeclareMathOperator{\Var}{Var}
+\DeclareMathOperator{\Id}{Id}
+\newcommand{\bbR}{\mathbb{R}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Images
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\graphicspath{{images/}, {prebuiltimages/}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Couleurs
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\definecolor{test}{rgb}{0.64,0.16,0.16}
+\definecolor{vsomb_col}{rgb}{0.00,0.57,0.1}
+\definecolor{fb_col}{rgb}{0.25,0.41,0.88}
+
