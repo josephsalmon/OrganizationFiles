@@ -31,7 +31,7 @@
 
 \usepackage{stackengine}
 \usepackage{scalerel}
-\newcommand\danger[1][2ex]{%
+\newcommand\mydanger[1][2ex]{%
   \renewcommand\stacktype{L}%
   \scaleto{\stackon[1.3pt]{\color{red}$\triangle$}{\tiny\bfseries !}}{#1}%
 }
@@ -255,8 +255,7 @@
 \def\shat{{\mathbb S}}
 \def\IND#1{{\mathbb I}_{{\left[ #1 \right]}}}
 
-\usepackage{mathabx} % for \vvvert operator norms
-
+% \usepackage{mathabx} % for \vvvert operator norms, dangerous: conflict with \widering, fourier etc.
 
 \newcommand{\norm}[1]{\left \lVert #1 \right \rVert}
 \newcommand{\normin}[1]{\lVert #1 \rVert}
