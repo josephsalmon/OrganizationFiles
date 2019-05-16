@@ -8,7 +8,7 @@ This repository provides tex elements of interest for researchers/professor:
     
     - beamer slides
     
-    - exams
+    - exams [exams](sharedimage/smiley.png){:height="36px" width="36px"}.
     
     - scribes in classroom
 - snippets used for Sublime (to be adapted for VSCode)
