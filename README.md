@@ -1,9 +1,11 @@
 # OrganizationFiles
 
-This repository provides tex elements of interest for researchers/professor:
+This repository provides tex elements of interest for researchers and professor:
 
-- References harmonized for my group (.bib files)
-- Templates tex files for
+- References harmonized for my group (a huge .bib files)
+
+- TeX templates for:
+
     - articles
 
     <img src="sharedimages/article.png" width="105" height="150">
@@ -20,4 +22,4 @@ This repository provides tex elements of interest for researchers/professor:
     
     <img src="sharedimages/scribe.png" width="105" height="150">
 
-- snippets used for Sublime (to be adapted for VSCode)
+- Snippets used for LaTeXing with Sublime (to be adapted for VSCode).
