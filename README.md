@@ -8,7 +8,9 @@ This repository provides tex elements of interest for researchers/professor:
     
     - beamer slides
     
-    - exams : <img src="sharedimages/examen.png" width="105" height="150">
+    - exams :
+    
+    <img src="sharedimages/examen.png" width="105" height="150">
     
     - scribes in classroom
 - snippets used for Sublime (to be adapted for VSCode)
