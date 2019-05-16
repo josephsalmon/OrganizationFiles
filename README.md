@@ -2,7 +2,9 @@
 
 This repository provides tex elements of interest for researchers and professor:
 
-- References harmonized for my group (a huge .bib files)
+- References harmonized for my group in a huge .bib file
+
+- Snippets used for LaTeXing with Sublime (to be adapted for VSCode).
 
 - TeX templates for:
 
@@ -22,4 +24,3 @@ This repository provides tex elements of interest for researchers and professor:
     
     <img src="sharedimages/scribe.png" width="105" height="150">
 
-- Snippets used for LaTeXing with Sublime (to be adapted for VSCode).
