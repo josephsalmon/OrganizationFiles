@@ -1,0 +1,228 @@
+
+\usepackage{latexsym,amsthm,amsfonts,amsgen,amssymb,amsmath}
+\usepackage[utf8]{inputenc}
+\usepackage[french]{babel}
+\usepackage{rotating}
+%\usepackage{fullpage}
+%\pagestyle{empty}
+\usepackage{fourier}
+\usepackage{geometry}
+\geometry{a4paper, textwidth=7.4in, textheight=10in,
+  marginparsep=9pt, marginparwidth=.6in,top=.8in}
+\setlength\parindent{.6cm}
+\setlength\itemsep{0in}
+\setlength\parsep{.2cm}
+\setlength\parskip{.2cm}
+
+\usepackage{mathrsfs}
+\usepackage{graphicx}
+\usepackage{color}
+
+\graphicspath{{images/},{prebuiltimages/},{srcimages/}, {../../../sharedimages/}}
+
+% \usepackage{fancyhdr}
+
+\firstpageheader{\ecole}{}{\titrecours}
+\runningheader{\ecole}{}{\titrecours}
+\runningheadrule
+\firstpageheadrule
+\firstpagefootrule
+\runningfootrule
+
+\firstpagefooter{Examen \annee~-- Session  \numsession}{}{Page \thepage\ sur \numpages}
+\runningfooter{Examen \annee~-- Session  \numsession}{}{Page \thepage\ sur \numpages}
+
+% \fancyhead{}
+% \fancyhead[LO,RE]{\ecole}
+% \fancyhead[RO,LE]{\titrecours} % clear all header fields
+% \fancyfoot{} % clear all footer fields
+% \fancyfoot[LO,RE]{Examen \annee~-- Session  \numsession}
+% \fancyfoot[RO,LE]{\thepage}
+% \renewcommand{\headrulewidth}{0.4pt}
+% \renewcommand{\footrulewidth}{0.4pt}
+% \pagestyle{fancy}
+
+\usepackage{titling}
+\newcommand{\subtitle}[1]{%
+  \posttitle{%
+    \par\end{center}
+    \begin{center}\large#1\end{center}
+    \vskip0.5em}%
+}
+
+\usepackage{enumitem}
+\setlist[enumerate]{leftmargin=*, font=\bf, itemsep = 0cm}
+
+
+\newcommand{\myheader}{\begin{center}
+\begin{tabular}{lcc}
+\centering
+\includegraphics [height = 2cm]{umontpellier_logo_nb}
+\hspace{2cm}
+&
+\centering
+\begin{tabular}{c}
+{\huge Université de Montpellier}\\
+{\huge Faculté des Sciences}
+\end{tabular}
+&
+\hspace{3cm}
+\hfill \hfill
+\centering
+\includegraphics [height = 2cm]{fds_logo_nb}
+\end{tabular}
+\end{center}
+% \thispagestyle{fancy}
+\noindent\hrulefill\vspace{3mm}\par
+
+\begin{tabular}{ll}
+{\bf Session : \numsession }   & \hspace{0cm} {\bf Durée de l'épreuve : } \duree \\
+{\bf Date : } \dateexam & \hspace{0cm}  {\bf Documents autorisés : } \documentok\\
+{\bf Licence} \quad $\boxtimes$  \quad {\bf Master} \quad $\Box$ &  \hspace{-3cm}  \\
+{\bf Mention : } SV& \hspace{0cm}  {\bf Matériels autorisés : } \materielok \\
+& \\
+{\bf Code de l'UE et libellé : } \titrecours & \hspace{-3cm}  \\
+& \\
+%{\bf Numéro d'anonymat : $\cdots \cdots \cdots \cdots \cdots \cdots \cdots \cdots \cdots$}  &
+\end{tabular}
+
+\noindent\hrulefill\vspace{3mm}\par}
+
+
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% % Macros for corrections
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \newif\ifcorrection
+% \makeatletter
+% \def\correction{\correction@i  \color{blue}\textbf{\underline{Correction}:}\newline\correction@ii}
+% \def\correction@i#1\correction@ii#2 \end{\correction@ii{#1#2}}
+% \def\correction@ii#1#2{%
+%     \def\temp@a{#2}\@nameuse{@\ifx\temp@a\@currenvir first\else second\fi oftwo}
+%     {\@nameuse{@\ifcorrection firstofone\else gobble\fi}{#1}\endgroup}{\correction@i#1\color{black}\end{#2}\correction@ii}%
+% }
+% \makeatother
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Algorithmes
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\usepackage{fancyvrb}                  % for fancy verbatim
+\usepackage{textcomp}
+\usepackage[space=true]{accsupp}
+% requires the latest version of package accsupp
+\newcommand{\copyablespace}{
+    \BeginAccSupp{method=hex,unicode,ActualText=00A0}
+\ %
+    \EndAccSupp{}
+}
+\usepackage[procnames]{listings}
+% \usepackage{setspace} % need for \setstretch{1}
+\lstset{%
+language   = python,%
+ % basicstyle = \ttfamily\setstretch{1},%
+basicstyle = \ttfamily,%
+columns    = flexible,%
+keywordstyle=\color{javared},
+firstnumber=100,
+frame=shadowbox,
+showstringspaces=false,
+morekeywords={import,from,class,def,for,while,if,is,in,elif,
+else,not,and,or,print,break,continue,return,True,False,None,access,
+as,del,except,exec,finally,global,import,lambda,pass,print,raise,try,assert,!=},
+keywordstyle={\color{javared}\bfseries},
+commentstyle=\color{javagreen}, %vsomb_col white comments
+morecomment=[s][\color{javagreen}]{"""}{"""},
+upquote=true,
+%% style for number
+numbers=none,
+resetmargins=true,
+xleftmargin=10pt,
+linewidth= \linewidth,
+numberstyle=\tiny,
+stepnumber=1,
+numbersep=8pt, %
+frame=shadowbox,
+rulesepcolor=\color{black},
+procnamekeys={def,class},
+procnamestyle=\color{oneblue}\textbf,
+literate={á}{{\'a}}1
+{à}{{\`a }}1
+{ã}{{\~a}}1
+{é}{{\'e}}1
+{ê}{{\^e}}1
+{è}{{\`e}}1
+{í}{{\'i}}1
+{î}{{\^i}}1
+{ó}{{\'o}}1
+{õ}{{\~o}}1
+{ô}{{\^o}}1
+{ú}{{\'u}}1
+{ü}{{\"u}}1
+{ç}{{\c{c}}}1
+}
+
+\lstnewenvironment{Exemplecode}{}{}
+
+
+\newenvironment{Framecode}[1]
+{\begin{frame}[fragile, environment=Framecode]{#1}}
+{\end{frame}}
+
+
+\definecolor{javared}{rgb}{0.6,0,0} % for strings
+\definecolor{javagreen}{rgb}{0.25,0.5,0.35} % comments
+\definecolor{javapurple}{rgb}{0.5,0,0.35} % keywords
+\definecolor{javadocblue}{rgb}{0.25,0.35,0.75} % javadoc
+\definecolor{marron}{rgb}{0.64,0.16,0.16}
+\definecolor{orange_js}{RGB}{230,159,0}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Environnements
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\DefineVerbatimEnvironment{rcode}{lstlisting}
+{\framed,fontsize=\normalsize}
+\newcommand{\titlesec}[1]{\bigskip \begin{center}  {\sc - {#1} -} \end{center}}
+\newcommand{\titlefront}[1]
+{\vspace*{0.2cm}
+   \begin{center} \bigskip\textsc{\textbf{\huge #1}}\bigskip\end{center}
+\vspace{0.8cm}
+}
+\newcommand{\mailperso}[1]{\bigskip    {\noindent\sc {#1} } }
+
+\newcommand\mytodo[1]{\textcolor{red}{#1}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Macro pour l'exercice
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{xifthen}
+
+\newcounter{numeroexo}
+\newcounter{numeroexp}
+
+% Enumération
+\renewcommand{\labelenumi}{\theenumi )}
+
+\newcommand{\exercice}[1][]{%
+  \ifthenelse{\isempty{#1}}%
+    {\par\noindent\stepcounter{numeroexo}
+      \hspace{-.25cm}
+      \begin{center}
+    \underline{\large \textbf{Exercice \Roman{numeroexo}}}
+      \end{center}
+      \vspace{-.15cm}
+      }
+      % \textsc{\textbf{Exercice \arabic{numeroexo}.}}\quad}% if #1 is empty
+    {\par\noindent\stepcounter{numeroexo}
+  \underline{\large \textbf{Exercice \Roman{numeroexo}}}
+    \hspace{-.25cm}\textsc{\textbf{Exercice \Roman{numeroexo}.}}\quad
+    \textbf{(#1)}}% if #1 is not empty
+}

@@ -1,0 +1,120 @@
+\documentclass{article}
+%\usepackage{fullpage}
+
+\usepackage[english,french]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\usepackage{amsmath, amsfonts, amssymb, amsthm}
+\usepackage{bbm,algorithmic,algorithm,verbatim}
+
+\usepackage{color}
+\usepackage{subcaption}
+\usepackage[pdftex]{graphicx}
+\usepackage{epsfig}
+\usepackage{ulem, stmaryrd, dsfont}
+
+% \usepackage{mathabx} % for \vvvert ||| |||
+\usepackage{../sty/scribe}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Hyperlinks
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\PassOptionsToPackage{hyphens}{url}
+\usepackage[pdftex,linkcolor=test,citecolor=vsomb_col,
+colorlinks=true,pagebackref,bookmarks=true,plainpages=true,
+urlcolor=fb_col]{hyperref}
+\usepackage{cleveref}
+
+
+
+
+\begin{document}
+\sloppy
+\lecture{HMMA237}{Complement de Schur et applications}{Joseph Salmon}{nomeleve1 et nomeleve2}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Introduction}
+\label{sec:introduction}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Filtre de Kallman}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+Part of the elements in this part can be found in \cite{Hiriart-Urruty_Lemarechal93,Hiriart-Urruty_Lemarechal93b}
+\begin{definition}[Strong convexity]
+A function $f$ is said $\lambda$-strongly convex if the function
+$\left(f - \lambtwo \norm{\cdot}^2\right)$ is convex.
+\end{definition}
+
+\begin{remark}
+The norm used in this document is always the Euclidean norm: $\norm{\,\cdot\,} = \norm{\,\cdot\,}_2$.
+\end{remark}
+
+
+\begin{proposition}
+The function $f$ is $\lambda$-strongly convex if and only if $
+\forall w_1 w_2, \forall \alp \in [0,1]:$
+\begin{equation}\label{eq:strong}
+f\left(\alp w_1 + \malp w_2\right)
+\leq
+\alp f(w_1) + \malp f(w_2) - \lambtwo \alp \malp \norm{w_1-w_2}^2
+\end{equation}
+\end{proposition}
+
+
+We will then use $\walp$ denoting $\alp w_1 + \malp w_2$.
+
+\begin{proof}
+Firstly, we remark that for all $\alp \in [0,1]$,
+$$ \norm{\walp}^2 = \alp^2\norm{w_1}^2 + \malp^2\norm{w_2}^2 + 2 \alp \malp \scalprod{w_1}{w_2}$$
+Then, we prove the equivalence of the two statements.
+$f$ is strongly convex if and only if the following inequality is valid for all $\alp \in [0,1]$.
+\begin{equation*}
+f(\walp) - \lambtwo \norm{\walp}^2 \leq  \alp f(w_1) + \malp f(w_2) - \lambtwo \left( \alp \norm{w_1}^2 + \malp\norm{w_2}^2\right)\\
+\end{equation*}
+Then, by replacing $\norm{\walp}$ by its expression, we obtain:
+\begin{equation*}
+f(\walp) \leq \alp f(w_1) + \malp f(w_2) -
+ \lambtwo \left( \left(\alp-\alp^2\right) \norm{w_1}^2 +\left(\malp-\malp^2\right)\norm{w_2}^2 + 2 \alp\malp\scalprod{w_1}{w_2}\right)
+\end{equation*}
+By reducing and factorizing, we get the following inequalities
+\begin{equation*}
+f(\walp) \leq \alp f(w_1) + \malp f(w_2) -
+ \lambtwo \alp \malp \left( \norm{w_1}^2 +\norm{w_2}^2 - 2 \scalprod{w_1}{w_2}\right)
+\end{equation*}
+\end{proof}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.95\textwidth]{cible_biais_variance}
+  \caption{A figure explaining the bias/variance tradeoff}
+  \label{fig:my_nice_figure}
+\end{figure}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Pour aller plus loin sur ce thème}
+\label{sec:pour_aller_plus_loin_sur_ce_theme}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Parmi les livres intéressant on notera aussi:
+\cite{Boyd_Vandenberghe04}, \cite{Beck17}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\bibliographystyle{alpha}
+\bibliography{../biblio/references_all}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\end{document}
