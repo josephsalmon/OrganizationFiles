@@ -1,27 +1,27 @@
-*Author* : Joseph Salmon
+**Author** : Joseph Salmon
 
-Inspired by (https://www.nature.com/articles/d41586-018-06167-w) and the Parietal team guidelines.
+Inspired by https://www.nature.com/articles/d41586-018-06167-w and the Parietal team guidelines.
 
 **Disclaimer**:
 This text is subject to changes so suggestions of improvements are more than welcome !
 
 
-#General Policies
+# General Policies
 
 ## Office Hours
 
-In France an academic job comes with the same benefits and rules than any work contract: social security, eligibility to unemployment benefits, but also office hours. Office hours are flexible, however to encourage lab interaction, try to be in during 'peak' hours– e.g., between 10am and 5pm. Please also do your best to attend to the Monday EPS seminar and let your supervisor know if you cannot. It is also a good idea to attend to other meetings whenever possible to help you think of broader impacts of your current work. Keep in mind that being in lab is a good way of learning from others, helping others, building camaraderie, having fast and easy access to resources (and people) you need.
+In France an academic job comes with the same benefits and rules than any work contract: social security, eligibility to unemployment benefits, but also office hours. Office hours are flexible, however to encourage lab interaction, try to be in during 'peak' hours -- e.g., between 10am and 5pm. Please also do your best to attend to the Monday EPS seminar and let your supervisor know if you cannot. It is also a good idea to attend to other meetings whenever possible to help you think of broader impacts of your current work. Keep in mind that being in lab is a good way of learning from others, helping others, building camaraderie, having fast and easy access to resources (and people) you need.
 
 P.I.s sometimes work at night and during the weekends. This means that you might sometimes receive emails or instant messages outside of normal working hours. We do not expect you to respond until you are back at work (you can ignore them, and you're welcome to systematically filter out professional messages on your preferred device outside working hours). We do not expect cases when we suddenly and urgently need something from you over the weekend (e.g., for a grant deadline or last minute talk preparation), but should we anticipate that happening, we will bring it up in advance so we can plan accordingly. All this said, we realize that being told you can ignore messages might not take away the stress of seeing messages if you check work email or instant messaging system in the evenings or on weekends. If our off-hours messages are unwelcome and cause distress, please talk to us, and we will be better at not bothering you during your time off.
 Holidays
 
-We are lucky in France to have a fair amount of holidays, so enjoy it! If you are a post-doc, phd or engineer you MUST take them before the end of your contract. Taking days off on a regular basis is important. It helps you to step back from work and in the end be more creative and productive. Taking holidays after deadlines is good, as rushes before deadlines are generally tiring and stressful. It is recommended to anticipate your days off (let's say at least a week before), although it is possible to do it at the last minute a day before if needed.
+We are lucky in France to have a fair amount of holidays, so enjoy it! If you are a post-doc, Phd student or engineer you MUST take them before the end of your contract. Taking days off on a regular basis is important. It helps you to step back from work and in the end be more creative and productive. Taking holidays after deadlines is good, as rushes before deadlines are generally tiring and stressful. It is recommended to anticipate your days off (let's say at least a week before), although it is possible to do it at the last minute a day before if needed.
 
 # Communication and Individual Meetings
 
 You'll find that my door is closed only when I am not in the office or I have an in-person or phone meeting. Whenever the door is open, please feel free to come in and ask brief questions or give quick updates. I will always have time for a spontaneous very brief discussion. If it's not a good time for a longer chat, I'll let you know. Just ask or write me to schedule time to discuss something that requires more time or thought.
 
-You may text me directly (e.g. with Slack of gchat) with questions or comments that I would be able to answer quickly with a few words. During working hours, you can expect a quick response most of the time (whether they I am in office or not). When working with some member of the team you are also encouraged to use the #general slack channel to reach the entire group, or of course another group member directly, when appropriate. Anything that requires deeper thought or a longer discussion should be an e-mail or in-person meeting instead.
+You may text me directly (e.g. with Slack of Google Hangouts) with questions or comments that I would be able to answer quickly with a few words. During working hours, you can expect a quick response most of the time (whether they I am in office or not). When working with some member of the team you are also encouraged to use the #general slack channel to reach the entire group, or of course another group member directly, when appropriate. Anything that requires deeper thought or a longer discussion should be an e-mail or in-person meeting instead.
 
 You should meet me for an extended individual discussion on a regular basis.
 
@@ -34,7 +34,7 @@ In developing your PhD proposal, you agreed on certain topics and objectives to 
 
 # Conferences
 
-You will identify me conferences that make sense for you to attend, but if you come across an interesting conference or workshop that you would like to attend, simply ask. If budget allows, you will typically get one “free ride” at the beginning of your PhD with no accepted paper or abstract, but then you have to get some work accepted to travel.
+You will identify me conferences that make sense for you to attend, but if you come across an interesting conference or workshop that you would like to attend, simply ask. If budget allows, you will typically get one "free ride" at the beginning of your PhD with no accepted paper or abstract, but then you have to get some work accepted to travel.
 
 # Deadline management
 
@@ -44,7 +44,7 @@ You will have deadlines and you should anticipate them. Deadlines for NeurIPS, I
 
 In the event of friction or conflict with another colleague, whatever the nature, you are welcome to discuss it with me or other permanent team members. This includes any difficulties within the group, or with external collaborators.
 
-In case you feel a conflict developing, with any of us or anyone you're expected to work with, schedule a meeting to discuss it with your PI or another a permanent team member. If this option is not appropriate, the university human resources  (https://www.umontpellier.fr/universite/directions/direction-des-ressources-humaines) can provide advice, including directing you to confidential resources.
+In case you feel a conflict developing, with any of us or anyone you're expected to work with, schedule a meeting to discuss it with your PI or another a permanent team member. If this option is not appropriate, the university human resources (https://www.umontpellier.fr/universite/directions/direction-des-ressources-humaines) can provide advice, including directing you to confidential resources.
 
 # Communication
 
