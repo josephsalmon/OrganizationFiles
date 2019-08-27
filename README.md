@@ -22,7 +22,7 @@ To use it, it is recommended to fork the repository by clicking **Fork** in the 
     
     <img src="sharedimages/examen.png" width="105" height="150">
     
-    - scribes in classroom: cf. [scrib.tex](draft-scribe/scribe.tex)
+    - scribes in classroom: cf. [scribe.tex](draft-scribe/scribe.tex)
     
     <img src="sharedimages/scribe.png" width="105" height="150">
 
