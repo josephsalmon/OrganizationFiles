@@ -1,6 +1,8 @@
 # OrganizationFiles
 
 This repository provides elements of interest (TeX files, advice, guidelines, etc.) for researchers and professor, but mostly for people in my lab.
+To use it, it is recommended to fork the repository by clicking **Fork** in the top-right corner of the page.
+
 
 - References harmonized for my group in (a huge) .bib file
 
@@ -20,7 +22,7 @@ This repository provides elements of interest (TeX files, advice, guidelines, et
     
     <img src="sharedimages/examen.png" width="105" height="150">
     
-    - scribes in classroom:
+    - scribes in classroom: cf. (scrib.tex)[draft-scribe/scrib.tex]
     
     <img src="sharedimages/scribe.png" width="105" height="150">
 
