@@ -10,7 +10,7 @@ To use it, it is recommended to fork the repository by clicking **Fork** in the 
 
 - TeX templates and examples for:
 
-    - articles: [beamer.tex](draft-beamer/article.tex)
+    - articles: [beamer.tex](draft-article/article.tex)
 
     <img src="sharedimages/article.png" width="105" height="150">
     
