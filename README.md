@@ -10,15 +10,15 @@ To use it, it is recommended to fork the repository by clicking **Fork** in the 
 
 - TeX templates for:
 
-    - articles:
+    - articles: [beamer.tex](draft-beamer/article.tex)
 
     <img src="sharedimages/article.png" width="105" height="150">
     
-    - beamer slides:
+    - beamer slides: [beamer.tex](draft-beamer/beamer.tex)
     
     <img src="sharedimages/beamer.png" width="150" height="105">
 
-    - exams:
+    - exams:  cf. [exam.tex](draft-exam/exam.tex)
     
     <img src="sharedimages/examen.png" width="105" height="150">
     
