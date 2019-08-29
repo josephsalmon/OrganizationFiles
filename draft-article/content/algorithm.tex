@@ -1,0 +1,27 @@
+%!TEX root = ../main.tex
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Algorithms}
+\label{sec:algorithms}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Considerin the techniques mentioned by \citet{Jaggi13}, you can use a different algorithm a in say \Cref{alg:DC}
+
+
+\begin{algorithm}
+\label{alg:DC}
+\caption{DC programming algorithm}
+\begin{algorithmic}
+\STATE Set $k = 0$ and $\hat{\beta}_0 \in {\rm dom} J_1$, where ${\rm dom} J_1 = \{\beta \in \bbR : J_1(\beta) < \infty\}$
+\REPEAT
+\STATE Compute $\alpha_{k} \in \partial J_2(\beta_{k})$
+\STATE Compute $\hat{\beta}_{k+1} \in \argmin_{\beta \in \bbR^d} J_1(\beta) - \langle \alpha_k, \beta \rangle$
+\UNTIL{convergence}
+\end{algorithmic}
+\end{algorithm}
+
+
+It is also possible to use the standard citation style \cite{Tibshirani96}.
