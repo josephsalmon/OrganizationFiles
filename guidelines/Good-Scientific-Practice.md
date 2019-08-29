@@ -20,6 +20,7 @@
 ```math
 SNR \neq $SNR$
 ```
+
 2. Add space on wich you optimize:
 ```math
 \min_{x \in X}
@@ -29,6 +30,7 @@ is **good**,
 \min_{x}
 ```
 is *forbidden*.
+
 3 **Always use**  *\enspace* at the of align/equation environnements; eg : 
 ```math
 \begin{align}
