@@ -17,6 +17,8 @@ Holidays
 
 We are lucky in France to have a fair amount of holidays, so enjoy it! If you are a post-doc, Phd student or engineer you MUST take them before the end of your contract. Taking days off on a regular basis is important. It helps you to step back from work and in the end be more creative and productive. Taking holidays after deadlines is good, as rushes before deadlines are generally tiring and stressful. It is recommended to anticipate your days off (let's say at least a week before), although it is possible to do it at the last minute a day before if needed.
 
+Last but not least, in case you cannot be in your office for a full day (because you are sick, on a business trip, etc.), please inform your P.I. as soon as possible that you will be absent.
+
 # Communication and Individual Meetings
 
 You'll find that my door is closed only when I am not in the office or I have an in-person or phone meeting. Whenever the door is open, please feel free to come in and ask brief questions or give quick updates. I will always have time for a spontaneous very brief discussion. If it's not a good time for a longer chat, I'll let you know. Just ask or write me to schedule time to discuss something that requires more time or thought.
@@ -44,7 +46,7 @@ You will have deadlines and you should anticipate them. Deadlines for NeurIPS, I
 
 In the event of friction or conflict with another colleague, whatever the nature, you are welcome to discuss it with me or other permanent team members. This includes any difficulties within the group, or with external collaborators.
 
-In case you feel a conflict developing, with any of us or anyone you're expected to work with, schedule a meeting to discuss it with your PI or another a permanent team member. If this option is not appropriate, the university human resources (https://www.umontpellier.fr/universite/directions/direction-des-ressources-humaines) can provide advice, including directing you to confidential resources.
+In case you feel a conflict developing, with any of us or anyone you're expected to work with, schedule a meeting to discuss it with your P.I. or another a permanent team member. If this option is not appropriate, the university human resources (https://www.umontpellier.fr/universite/directions/direction-des-ressources-humaines) can provide advice, including directing you to confidential resources.
 
 # Communication
 
