@@ -78,9 +78,7 @@
 \begin{tabular}{ll}
 {\bf Session : \numsession }   & \hspace{0cm} {\bf Durée de l'épreuve : } \duree \\
 {\bf Date : } \dateexam & \hspace{0cm}  {\bf Documents autorisés : } \documentok\\
-{\bf Licence} \quad $\boxtimes$  \quad {\bf Master} \quad $\Box$ &  \hspace{-3cm}  \\
-{\bf Mention : } SV& \hspace{0cm}  {\bf Matériels autorisés : } \materielok \\
-& \\
+{\bf Niveau : } \niveau  & \hspace{0cm} {\bf Matériels autorisés : } \materielok  \\
 {\bf Code de l'UE et libellé : } \titrecours & \hspace{-3cm}  \\
 & \\
 %{\bf Numéro d'anonymat : $\cdots \cdots \cdots \cdots \cdots \cdots \cdots \cdots \cdots$}  &
@@ -226,3 +224,11 @@ literate={á}{{\'a}}1
     \hspace{-.25cm}\textsc{\textbf{Exercice \Roman{numeroexo}.}}\quad
     \textbf{(#1)}}% if #1 is not empty
 }
+
+
+
+\usepackage{color} % définit une nouvelle couleur
+\shadedsolutions % définit le style des réponses
+% \framedsolutions % définit le style des réponses
+\definecolor{SolutionColor}{rgb}{0.8,0.9,1} % bleu ciel
+\renewcommand{\solutiontitle}{\noindent\textbf{Solution:}\par\noindent} % Définit le titre des solutions

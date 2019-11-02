@@ -8,12 +8,7 @@
 % \addpoints % Pour compter les points
 % \noaddpoints % pour ne pas compter les points
 % \qformat{\textbf{Question\thequestion}\quad(\thepoints)\hfill} % Pour définir le style des questions (facultatif)
-\usepackage{color} % définit une nouvelle couleur
 
-\shadedsolutions % définit le style des réponses
-% \framedsolutions % définit le style des réponses
-\definecolor{SolutionColor}{rgb}{0.8,0.9,1} % bleu ciel
-\renewcommand{\solutiontitle}{\noindent\textbf{Solution:}\par\noindent} % Définit le titre des solutions
 
 \newcommand{\titrecours}{HMMA 237 -- Séries Temporelles Avancées
 }
@@ -24,31 +19,40 @@
 \newcommand{\duree}{2h}
 \newcommand{\documentok}{Aucun}
 \newcommand{\materielok}{Aucun}
+\newcommand{\niveau}{Master}
 
 \usepackage{../sty/examens} % locate examens.sty
 \usepackage{../sty/shortcuts_js} % locate shortcuts_js.sty
 
 % Logo images in prebuiltimages/
 
-
 \usepackage{tikz}
 \usetikzlibrary{arrows}
-
 
 
 \begin{document}
 \sloppy
 \myheader
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{center}
 \textbf{Le soin apporté à la rédaction sera un élément important d'appréciation.}
 \end{center}
-% \textbf{Un formulaire est disponible à la fin du sujet et peut-être réutilisé à loisir.}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{center}
 \bigskip
 \underline{\large \textbf{Questions de cours}} % (5 points)
 \end{center}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{enumerate}[label=QdC - \arabic*.]
     \item Rappeler la définition de l'estimateur Ridge comme solution d'un problème de minimisation.
     On pourra noter $X \in \bbR^{n\times p}$ la matrice des variables explicatives, et $y\in \bbR^n$ le signal observé.
@@ -61,6 +65,11 @@
     \end{solution}
     \item Donner la formule de mise à jour pour effectuer une étape de descente de gradient (avec un pas $\alpha$) afin de minimiser la fonction
 \end{enumerate}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{exercice} % (??? points)
