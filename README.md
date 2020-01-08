@@ -10,19 +10,19 @@ To use it, it is recommended to fork the repository by clicking **Fork** in the 
 
 - TeX templates and examples for:
 
-    - articles: [beamer.tex](draft-article/article.tex)
+    - articles: [beamer.tex](tex/draft-article/article.tex)
 
     <img src="sharedimages/article.png" width="105" height="150">
-    
-    - beamer slides: [beamer.tex](draft-beamer/beamer.tex)
-    
+
+    - beamer slides: [beamer.tex](tex/draft-beamer/beamer.tex)
+
     <img src="sharedimages/beamer.png" width="150" height="105">
 
-    - exams: [exam.tex](draft-exam/exam.tex)
-    
+    - exams: [exam.tex](tex/draft-exam/exam.tex)
+
     <img src="sharedimages/examen.png" width="105" height="150">
-    
-    - scribe in classroom: [scribe.tex](draft-scribe/scribe.tex)
-    
+
+    - scribe in classroom: [scribe.tex](tex/draft-scribe/scribe.tex)
+
     <img src="sharedimages/scribe.png" width="105" height="150">
 
