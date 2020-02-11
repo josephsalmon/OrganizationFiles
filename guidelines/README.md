@@ -42,7 +42,7 @@ You will identify me conferences that make sense for you to attend, but if you c
 
 # Deadline management
 
-You will have deadlines and you should anticipate them. Deadlines for NeurIPS, ICML, AISTATS, ISBI, IPMI, OHBM or any other conference are known months in advance. So when submitting to a conference do not wait till the last minute to share the paper with me. It is likely that more than one paper is in the loop and I need many hours to help with writing and figure improvements. You are expected to send me one week before the deadline a full paper that can be realistically improved within one week. Of course, you are welcome to share the figures and results earlier than one week before the deadline.
+You will have deadlines and you should anticipate them. Deadlines for NeurIPS, ICML, AISTATS, etc. or any other conference are known months in advance. So when submitting to a conference do not wait till the last minute to share the paper with me. It is likely that more than one paper is in the loop and I need many hours to help with writing and figure improvements. You are expected to send me one week before the deadline a full paper that can be realistically improved within one week. Of course, you are welcome to share the figures and results earlier than one week before the deadline.
 
 # Difficulties?
 
@@ -52,4 +52,5 @@ In case you feel a conflict developing, with any of us or anyone you're expected
 
 # Communication
 
-We are mostly communicating using Slack (http://salmonlab.slack.com) in the group and Google Hangouts to communicate via instant messaging.
+We are mostly communicating using Slack (http://salmonlab.slack.com) and Mattermost (its open source alternative) in the group.
+For visio-conferences you can use https://rendez-vous.renater.fr/ .
