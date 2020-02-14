@@ -1,5 +1,38 @@
 # Good Scientific Practice
 
+
+## Latex rules
+
+1. Tools for Latex: Table generator (www.tablesgenerator.com/) and  OCR for Latex formulas (https://mathpix.com/)
+
+2. **Warning** font style :
+```math
+SNR \neq $SNR$
+```
+
+3. Add space on wich you optimize:
+```math
+\min_{x \in X}
+```
+is **good**,
+```math
+\min_{x}
+```
+is *forbidden*.
+
+4. **Always use**  *\enspace* at the of align/equation environnements; e.g., :
+```math
+\begin{align}
+x + 3 \enspace.
+\end{align}
+```
+and not
+```math
+\begin{align}
+x + 3.
+\end{align}
+
+
 ## English rules
 1. **HARMONIZE notation**
 1. isn't -> **is not**, can't -> **can not**, let's -> **let us**
@@ -14,31 +47,3 @@
 
 1. **Define** (almost) all "symbols you use".
 1. **Define** concept in correct order.
-
-## Latex rules
-1. **Warning** font style :
-```math
-SNR \neq $SNR$
-```
-
-2. Add space on wich you optimize:
-```math
-\min_{x \in X}
-```
-is **good**,
-```math 
-\min_{x}
-```
-is *forbidden*.
-
-3 **Always use**  *\enspace* at the of align/equation environnements; eg : 
-```math
-\begin{align}
-x + 3 \enspace.
-\end{align}
-```
-and not
-```math
-\begin{align}
-x + 3.
-\end{align}
