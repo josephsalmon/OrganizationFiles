@@ -43,7 +43,7 @@ x + 3.
 1. "permit" no so popular, **use** "allow".
 1. **Number should often be a letter**: "3 times larger" -> "three times larger"
 1. Notation without **s** for math.
-1. Present + "he,she,it", **add* an "s" at the end.
+1. Present tense, third person: "he, she, it", **add* an "s" at the end.
 
 1. **Define** (almost) all "symbols you use".
-1. **Define** concept in correct order.
+1. **Define** concepts in correct order.
