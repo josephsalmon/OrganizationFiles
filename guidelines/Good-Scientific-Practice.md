@@ -1,16 +1,15 @@
-# Good Scientific Practice
-
+# Good Scientific Writing Practice
 
 ## Latex rules
 
-1. Tools for Latex: Table generator (www.tablesgenerator.com/) and  OCR for Latex formulas (https://mathpix.com/)
+1. Tools for Latex: Table generator http://www.tablesgenerator.com/ and  OCR for Latex formulas https://mathpix.com/
 
 2. **Warning** font style :
 ```math
 SNR \neq $SNR$
 ```
 
-3. Add space on wich you optimize:
+3. Add space on which you optimize:
 ```math
 \min_{x \in X}
 ```
@@ -20,7 +19,7 @@ is **good**,
 ```
 is *forbidden*.
 
-4. **Always use**  *\enspace* at the of align/equation environnements; e.g., :
+4. **Always use**  *\enspace* at the of align/equation environments; e.g., :
 ```math
 \begin{align}
 x + 3 \enspace.

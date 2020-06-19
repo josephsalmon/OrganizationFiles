@@ -52,5 +52,5 @@ In case you feel a conflict developing, with any of us or anyone you're expected
 
 # Communication
 
-We are mostly communicating using Slack (http://salmonlab.slack.com) and Mattermost (its open source alternative) in the group.
-For visio-conferences you can use https://rendez-vous.renater.fr/ .
+We are mostly communicating using Slack http://salmonlab.slack.com and Mattermost https://mattermost.math.cnrs.fr/salmonlab/channels/general its open source alternative in the group.
+For visio-conferences you can use https://rendez-vous.renater.fr/ or https://meet.jit.si/.

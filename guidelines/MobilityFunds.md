@@ -26,3 +26,6 @@ http://www.gdr-isis.fr/doctorants.html
 http://smai.emath.fr/spip.php?article548&lang=fr
 
 Warning: BOUM projects are not meant to finance classic collaborations between researchers.
+
+
+# Mobility Funds for France-Germany
