@@ -4,7 +4,7 @@
 
 1. Use images that you created whenever you can.
 
-2. If you don't know how to create a figure (well [inkscape](https://inkscape.org/) should be enough thoug in most cases), borrow it and cite the source. Favor CreativeCommons ones, see for instance ressources at
+2. If you don't know how to create a figure (well [Inkscape](https://inkscape.org/) should be enough though in most cases), borrow it and cite the source appropriately. Favor CreativeCommons ones, see for instance resources at
 https://ccsearch.creativecommons.org/
 
 
