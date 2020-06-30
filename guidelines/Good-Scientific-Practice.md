@@ -1,5 +1,13 @@
 # Good Scientific Writing Practice
 
+## Images
+
+1. Use images that you created whenever you can.
+
+2. If you don't know how to create a figure (well [inkscape](https://inkscape.org/) should be enough thoug in most cases), borrow it and cite the source. Favor CreativeCommons ones, see for instance ressources at
+https://ccsearch.creativecommons.org/
+
+
 ## Latex rules
 
 1. Tools for Latex: Table generator http://www.tablesgenerator.com/ and  OCR for Latex formulas https://mathpix.com/
