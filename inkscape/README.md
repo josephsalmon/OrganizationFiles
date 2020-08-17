@@ -1,10 +1,7 @@
-**Author** : Joseph Salmon
-
-
-# Inskcape help
+# Inkscape help
 
 Inkscape is full of joy.
-Below are some interesting patterns you can create, along with the way to learn to draw with it.
+Below are some interesting patterns you can create, and some help on how to learn to master Inkscape with it.
 
 - [Repeat an Object Around a Shape with Inkscape](https://www.youtube.com/watch?v=3jve45Z60iU)
 to get something like
@@ -14,4 +11,4 @@ to get something like
 <img src="images/pattern_along_path.svg?sanitize=true" width="300">
 
 
-**Challenge**: can you replicate this https://ssdesai.wordpress.com/2020/06/30/mandala/ in inkscape?
+**Challenge**: can you replicate this https://ssdesai.wordpress.com/2020/06/30/mandala/ in Inkscape?

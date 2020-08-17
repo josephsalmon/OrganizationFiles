@@ -22,8 +22,15 @@ Articles [article.tex](tex/draft-article/article.tex), Slides [beamer.tex](tex/d
 [<img src="sharedimages/scribe.png" width="150" height="105">](tex/draft-scribe/scribe.tex)
 
 ## Python
-Here is provided an example of a Python package: [draft-package](python/draft-package/README.md) to start a new project.
+In section [draft-package](python/draft-package/README.md) 
+an example of a Python package
+ to start a new project.
+If you are looking for more help on (scientific) Python I can only recommend my course with B. Charlier, see: https://github.com/bcharlier/HMMA238 
 
 
-## Advice for (mostly) PhD students
-This is mostly for people in my group, but could be helpful for others. This includes standard information for working in the group, but also summer schools, fundings tips for traveling, etc. 
+## Inkscape
+In section [inkscape](inkscape/README.md), I am giving some insights on why **inkscape** is an incredible tool to master for a PhD student or a modern researcher. 
+
+
+## Advice (mostly) for PhD students
+In section [guidelines](guidelines/README), standard information and work practices for working in my the group is provided. Information on summer schools, fundings tips for traveling, etc. is also given. 
