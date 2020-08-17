@@ -12,3 +12,6 @@ to get something like
 
 <p float="left">
 <img src="images/pattern_along_path.svg?sanitize=true" width="300">
+
+
+**Challenge**: can you replicate this https://ssdesai.wordpress.com/2020/06/30/mandala/ in inkscape?
