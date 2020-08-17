@@ -13,10 +13,9 @@ to get something like
 this use case is particularly helpful if you need to create (and guess what you do!) a numeric **signature** from a scanned version:
 https://www.youtube.com/watch?v=21S_aGhyDeY
 see also https://inkscape.org/doc/tutorials/tracing/tutorial-tracing.html.
+
     Example:
-    [IMAG.png](images/IMAG.svg) <p float="left"> <img src="images/IMAG.png?sanitize=true" width="300">
-    vs.
-    [IMAG.svg](images/IMAG.svg) <p float="left"> <img src="images/IMAG.svg?sanitize=true" width="300">
+    [IMAG.png](images/IMAG.svg) <p float="left"> <img src="images/IMAG.png?sanitize=true" width="300"> vs. [IMAG.svg](images/IMAG.svg) <p float="left"> <img src="images/IMAG.svg?sanitize=true" width="300">
 
 
 PS: for some (math) art see for instance https://github.com/josephsalmon/Tweets/
