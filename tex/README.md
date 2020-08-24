@@ -1,0 +1,39 @@
+# TeX / LaTeX / BibTeX
+
+## Content
+
+- References harmonized for my group in (a huge) .bib file: [references_all.bib](biblio/references_all.bib)
+
+- Snippets used for LaTeXing with Sublime (to be adapted for VSCode).
+
+- TeX templates and examples for:
+
+
+
+## Editor advice 
+
+Among the useful tools a modern editor (like [VSCode](https://code.visualstudio.com/) or [Sublime Text](https://www.sublimetext.com/).
+On top of that useful tools connected to LaTeX include:
+, is mandatory.
+In particular useful tools include 
+- snippets
+- multi-cursors 
+- forward/backward search: so you can click the generated pdf and find the tex location in your document.
+
+
+## Additional tools
+
+- https://www.tablesgenerator.com/ : to create LaTeX tables from copy/paste values or .csv files
+- Inkscape (see for more information in the [Inkscape](../inkscape/README.md) section): useful for sketching figures with, especially with the [TexText](https://inkscape.org/~jcwinkler/%E2%98%85textext) extension.
+
+
+## Files / examples
+Articles [article.tex](draft-article/article.tex), Slides [beamer.tex](draft-beamer/beamer.tex), Exams [exam.tex](draft-exam/exam.tex), Scribe notes in classroom [scribe.tex](draft-scribe/scribe.tex)
+
+
+[<img src="sharedimages/article.png" width="105" height="150">](draft-article/article.tex)
+[<img src="sharedimages/beamer.png" width="150" height="105">](draft-beamer/beamer.tex)
+[<img src="sharedimages/examen.png" width="150" height="105">](draft-exam/exam.tex)
+[<img src="sharedimages/scribe.png" width="150" height="105">](draft-scribe/scribe.tex)
+
+XXX TODO Table creation.

@@ -54,3 +54,18 @@ In case you feel a conflict developing, with any of us or anyone you're expected
 
 We are mostly communicating using Slack http://salmonlab.slack.com and Mattermost https://mattermost.math.cnrs.fr/salmonlab/channels/general its open source alternative in the group.
 For visio-conferences you can use https://rendez-vous.renater.fr/ or https://meet.jit.si/.
+
+
+# TeX / LaTeX
+
+TeX / LaTeX is mandatory when writing research in Mathematics, Computer Science or signal processing. A full [TeX / LaTeX section](../tex/README.md) is dedicated here. 
+Among the useful tools a modern editor, say one that can handle **snippet** or multi-cursors, is recommended (like [VSCode](https://code.visualstudio.com/) or [Sublime Text](https://www.sublimetext.com/).
+On top of that useful tools connected to LaTeX include:
+
+- https://www.tablesgenerator.com/ : to create LaTeX tables from copy/paste values or .csv files
+- Inkscape (see for more information in the [Inkscape](../inkscape/README.md) section): useful for sketching figures with, especially with the [TexText](https://inkscape.org/~jcwinkler/%E2%98%85textext) extension.
+
+
+# Coding (with Python or not)
+
+XXX TODO
