@@ -5,6 +5,7 @@ To use it, it is recommended to fork the repository by clicking **Fork** in the 
 
 
 ## TeX and BibTeX
+In the [TeX/LaTeX section](tex/REAMDE.md) is provided:
 
 - References harmonized for my group in (a huge) .bib file: [references_all.bib](tex/biblio/references_all.bib)
 
