@@ -4,7 +4,7 @@ This repository provides elements and guidelines for writing scientific document
 To use it, it is recommended to fork the repository by clicking **Fork** in the top-right corner of the page.
 
 
-## TeX and BibTeX
+## TeX / LaTeX / BibTeX
 In the [TeX/LaTeX section](tex/REAMDE.md) is provided:
 
 - References harmonized for my group in (a huge) .bib file: [references_all.bib](tex/biblio/references_all.bib)
@@ -30,7 +30,7 @@ If you are looking for more help on (scientific) Python I can only recommend my 
 
 
 ## Inkscape
-In section [inkscape](inkscape/README.md), I am giving some insights on why **inkscape** is an incredible tool to master for a PhD student or a modern researcher. 
+In the [Inkscape](inkscape/README.md) section, I am giving some insights on why **Inkscape** is an incredible tool to master for a PhD student or a modern researcher. 
 
 
 ## Advice (mostly) for PhD students
