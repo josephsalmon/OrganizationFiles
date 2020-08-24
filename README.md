@@ -5,11 +5,11 @@ To use it, it is recommended to fork the repository by clicking **Fork** in the 
 
 
 ## TeX / LaTeX / BibTeX
-In the [TeX/LaTeX section](tex/REAMDE.md) is provided:
+In the [LaTeX section](tex/README.md) is provided:
 
 - References harmonized for my group in (a huge) .bib file: [references_all.bib](tex/biblio/references_all.bib)
 
-- Snippets used for LaTeXing with Sublime (to be adapted for VSCode).
+- Snippets used for LaTeXing with Sublime text (XXX TODO: to be described for VSCode too!).
 
 - TeX templates and examples for:
 
@@ -34,4 +34,4 @@ In the [Inkscape](inkscape/README.md) section, I am giving some insights on why 
 
 
 ## Advice (mostly) for PhD students
-In section [guidelines](guidelines/README), standard information and work practices for working in my the group is provided. Information on summer schools, fundings tips for traveling, etc. is also given. 
+In section [guidelines](guidelines/README.md), standard information and work practices for working in my the group is provided. Information on summer schools, fundings tips for traveling, etc. is also given. 
