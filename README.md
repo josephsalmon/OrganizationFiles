@@ -1,6 +1,7 @@
 # OrganizationFiles
 
-This repository provides elements and guidelines for writing scientific documents (Tex / LaTeX / BibTeX and Python especially) for researchers and professor, but mostly for people in my lab.
+This repository provides some advice and guidelines for researchers and professors working in applied mathematics, statistics or machine learning. The primal objective is to provide such information for people in my lab, but others might benefit from the resources as well. 
+You will find a focus on: writing scientific documents (Tex / LaTeX / BibTeX), coding (with Python) and sketching figures with Inkscape.
 Feel free to fork the repository (by clicking **Fork** in the top-right corner of the page) and submit pull-request to improve it.
 
 
