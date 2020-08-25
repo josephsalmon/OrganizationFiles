@@ -1,4 +1,4 @@
-# Inkscape help
+# Inkscape
 
 Inkscape is full of joy!
 Below are some interesting patterns you can create, and some help on how to learn to master Inkscape with it.
