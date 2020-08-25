@@ -15,9 +15,9 @@ In the [LaTeX section](tex/README.md) is provided:
 
 ### File examples
 
-|[article.tex](tex/draft-article/article.tex)| Slides [beamer.tex](tex/draft-beamer/beamer.tex) | [exam.tex](tex/draft-exam/exam.tex)| [scribe.tex](tex/draft-scribe/scribe.tex) |
+|[article.tex](tex/draft-article/article.tex)|[beamer.tex](tex/draft-beamer/beamer.tex) | [exam.tex](tex/draft-exam/exam.tex)| [scribe.tex](tex/draft-scribe/scribe.tex) |
 | ----------- | ----------- |----------- |----------- |
-|[<img src="sharedimages/article.png" width="105" height="150">](tex/draft-article/article.tex)|[<img src="sharedimages/beamer.png" width="150" height="105">](tex/draft-beamer/beamer.tex)|[<img src="sharedimages/examen.png" width="150" height="105">](tex/draft-exam/exam.tex)|[<img src="sharedimages/scribe.png" width="150" height="105">](tex/draft-scribe/scribe.tex)|
+|[<img src="sharedimages/article.png" width="105" height="150">](tex/draft-article/article.tex)|[<img src="sharedimages/beamer.png" width="200" height="150">](tex/draft-beamer/beamer.tex)|[<img src="sharedimages/examen.png" width="105" height="150">](tex/draft-exam/exam.tex)|[<img src="sharedimages/scribe.png" width="105" height="150">](tex/draft-scribe/scribe.tex)|
 
 
 ## Python
