@@ -30,4 +30,4 @@ In particular useful tools include
 ## Files / examples
 |[article.tex](draft-article/article.tex)|[beamer.tex](draft-beamer/beamer.tex) | [exam.tex](draft-exam/exam.tex)| [scribe.tex](draft-scribe/scribe.tex) |
 | ----------- | ----------- |----------- |----------- |
-|[<img src="../sharedimages/article.png" width="105" height="150">](draft-article/article.tex)|[<img src="../sharedimages/beamer.png" width="200" height="150">](draft-beamer/beamer.tex)|[<img src="../sharedimages/examen.png" width="105" height="150">](draft-exam/exam.tex)|[<img src="../sharedimages/scribe.png" width="105" height="150">](draft-scribe/scribe.tex)|
+|[<img src="../sharedimages/article.png" width="210" height="300">](draft-article/article.tex)|[<img src="../sharedimages/beamer.png" width="400" height="300">](draft-beamer/beamer.tex)|[<img src="../sharedimages/examen.png" width="210" height="300">](draft-exam/exam.tex)|[<img src="../sharedimages/scribe.png" width="210" height="300">](draft-scribe/scribe.tex)|
