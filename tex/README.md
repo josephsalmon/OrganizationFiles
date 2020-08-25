@@ -28,12 +28,6 @@ In particular useful tools include
 
 
 ## Files / examples
-Articles [article.tex](draft-article/article.tex), Slides [beamer.tex](draft-beamer/beamer.tex), Exams [exam.tex](draft-exam/exam.tex), Scribe notes in classroom [scribe.tex](draft-scribe/scribe.tex)
-
-
-[<img src="../sharedimages/article.png" width="105" height="150">](draft-article/article.tex)
-[<img src="../sharedimages/beamer.png" width="150" height="105">](draft-beamer/beamer.tex)
-[<img src="../sharedimages/examen.png" width="150" height="105">](draft-exam/exam.tex)
-[<img src="../sharedimages/scribe.png" width="150" height="105">](draft-scribe/scribe.tex)
-
-XXX TODO Table creation.
+|[article.tex](draft-article/article.tex)|[beamer.tex](draft-beamer/beamer.tex) | [exam.tex](draft-exam/exam.tex)| [scribe.tex](draft-scribe/scribe.tex) |
+| ----------- | ----------- |----------- |----------- |
+|[<img src="sharedimages/article.png" width="105" height="150">](draft-article/article.tex)|[<img src="sharedimages/beamer.png" width="200" height="150">](draft-beamer/beamer.tex)|[<img src="sharedimages/examen.png" width="105" height="150">](draft-exam/exam.tex)|[<img src="sharedimages/scribe.png" width="105" height="150">](draft-scribe/scribe.tex)|
