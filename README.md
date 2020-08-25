@@ -31,3 +31,17 @@ In the [Inkscape](inkscape/README.md) section, I am giving some insights on why 
 
 ## Advice (mostly) for PhD students
 In section [guidelines](guidelines/README.md), standard information and work practices for working in my the group is provided. Information on summer schools, fundings tips for traveling, etc. is also given. 
+
+
+## Contributors
+
+- Joseph Salmon: http://josephsalmon.eu 
+
+- Mathurin Massias: https://mathurinm.github.io/
+
+- Quentin Bertrand: https://qb3.github.io/
+
+- Florent Bascou: https://bascouflorent.github.io/ 
+
+- Nidham Gazagnadou: https://ngazagna.github.io/
+

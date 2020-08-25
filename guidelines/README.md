@@ -1,5 +1,3 @@
-**Author** : Joseph Salmon
-
 Inspired by https://www.nature.com/articles/d41586-018-06167-w and the Parietal team guidelines.
 
 **Disclaimer**:
