@@ -6,7 +6,11 @@
 
 - Snippets used for LaTeXing with Sublime (to be adapted for VSCode).
 
-- TeX templates and examples for:
+- TeX templates and examples
+
+|[article.tex](draft-article/article.tex)|[beamer.tex](draft-beamer/beamer.tex) | [exam.tex](draft-exam/exam.tex)| [scribe.tex](draft-scribe/scribe.tex) |
+| ----------- | ----------- |----------- |----------- |
+|[<img src="../sharedimages/article.png" width="210" height="300">](draft-article/article.tex)|[<img src="../sharedimages/beamer.png" width="400" height="300">](draft-beamer/beamer.tex)|[<img src="../sharedimages/examen.png" width="210" height="300">](draft-exam/exam.tex)|[<img src="../sharedimages/scribe.png" width="210" height="300">](draft-scribe/scribe.tex)|
 
 
 
@@ -27,7 +31,3 @@ In particular useful tools include
 - Inkscape (see for more information in the [Inkscape](../inkscape/README.md) section): useful for sketching figures with, especially with the [TexText](https://inkscape.org/~jcwinkler/%E2%98%85textext) extension.
 
 
-## Files / examples
-|[article.tex](draft-article/article.tex)|[beamer.tex](draft-beamer/beamer.tex) | [exam.tex](draft-exam/exam.tex)| [scribe.tex](draft-scribe/scribe.tex) |
-| ----------- | ----------- |----------- |----------- |
-|[<img src="../sharedimages/article.png" width="210" height="300">](draft-article/article.tex)|[<img src="../sharedimages/beamer.png" width="400" height="300">](draft-beamer/beamer.tex)|[<img src="../sharedimages/examen.png" width="210" height="300">](draft-exam/exam.tex)|[<img src="../sharedimages/scribe.png" width="210" height="300">](draft-scribe/scribe.tex)|

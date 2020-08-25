@@ -11,9 +11,7 @@ In the [LaTeX section](tex/README.md) is provided:
 
 - Snippets used for LaTeXing with Sublime text (XXX TODO: to be described for VSCode too!).
 
-- TeX templates and examples for:
-
-### File examples
+- TeX templates and examples:
 
 |[article.tex](tex/draft-article/article.tex)|[beamer.tex](tex/draft-beamer/beamer.tex) | [exam.tex](tex/draft-exam/exam.tex)| [scribe.tex](tex/draft-scribe/scribe.tex) |
 | ----------- | ----------- |----------- |----------- |
