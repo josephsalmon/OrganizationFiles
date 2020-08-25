@@ -14,19 +14,16 @@ In the [LaTeX section](tex/README.md) is provided:
 - TeX templates and examples for:
 
 ### File examples
-Articles [article.tex](tex/draft-article/article.tex), Slides [beamer.tex](tex/draft-beamer/beamer.tex), Exams [exam.tex](tex/draft-exam/exam.tex), Scribe notes in classroom [scribe.tex](tex/draft-scribe/scribe.tex)
 
+|Articles [article.tex](tex/draft-article/article.tex) | Slides [beamer.tex](tex/draft-beamer/beamer.tex) | Exams [exam.tex](tex/draft-exam/exam.tex)|Scribe notes for classroom [scribe.tex](tex/draft-scribe/scribe.tex)|
+|[<img src="sharedimages/article.png" width="105" height="150">](tex/draft-article/article.tex)|[<img src="sharedimages/beamer.png" width="150" height="105">](tex/draft-beamer/beamer.tex)|[<img src="sharedimages/examen.png" width="150" height="105">](tex/draft-exam/exam.tex)|[<img src="sharedimages/scribe.png" width="150" height="105">](tex/draft-scribe/scribe.tex)|
 
-[<img src="sharedimages/article.png" width="105" height="150">](tex/draft-article/article.tex)
-[<img src="sharedimages/beamer.png" width="150" height="105">](tex/draft-beamer/beamer.tex)
-[<img src="sharedimages/examen.png" width="150" height="105">](tex/draft-exam/exam.tex)
-[<img src="sharedimages/scribe.png" width="150" height="105">](tex/draft-scribe/scribe.tex)
 
 ## Python
 In section [draft-package](python/draft-package/README.md) 
 an example of a Python package
  to start a new project.
-If you are looking for more help on (scientific) Python I can only recommend my course with B. Charlier, see: https://github.com/bcharlier/HMMA238 
+If you are looking for more help on (scientific) Python I can only recommend my course with [B. Charlier](https://imag.umontpellier.fr/~charlier), see: https://github.com/bcharlier/HMMA238 
 
 
 ## Inkscape
