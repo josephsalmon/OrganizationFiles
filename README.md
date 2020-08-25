@@ -1,17 +1,17 @@
 # OrganizationFiles
 
-This repository provides elements and guidelines for writing scientific documents (TeX, BibTeX and Python especially) for researchers and professor, but mostly for people in my lab.
-To use it, it is recommended to fork the repository by clicking **Fork** in the top-right corner of the page.
+This repository provides elements and guidelines for writing scientific documents (Tex / LaTeX / BibTeX and Python especially) for researchers and professor, but mostly for people in my lab.
+Feel free to fork the repository (by clicking **Fork** in the top-right corner of the page) and submit pull-request to improve it.
 
 
 ## TeX / LaTeX / BibTeX
 In the [LaTeX section](tex/README.md) is provided:
 
-- References harmonized for my group in (a huge) .bib file: [references_all.bib](tex/biblio/references_all.bib)
+- Large harmonized reference file for my group : [references_all.bib](tex/biblio/references_all.bib)
 
 - Snippets used for LaTeXing with Sublime text (XXX TODO: to be described for VSCode too!).
 
-- TeX templates and examples:
+- LaTeX / TeX templates and examples:
 
 |[article.tex](tex/draft-article/article.tex)|[beamer.tex](tex/draft-beamer/beamer.tex) | [exam.tex](tex/draft-exam/exam.tex)| [scribe.tex](tex/draft-scribe/scribe.tex) |
 | ----------- | ----------- |----------- |----------- |
