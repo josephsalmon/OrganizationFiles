@@ -7,6 +7,7 @@
 
 \begin{document}
 
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%             Headers               %%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -19,17 +20,28 @@
 \bigskip
 \begin{center}{
 \LARGE\color{marron}
-\textbf{Apprentissage Statistique}\\
-\textbf{}\\
+\textbf{HLMA408: Robust Statistics}
+\textbf{ }\\
 \vspace{0.5cm}
 }
+
+\color{marron}
+\textbf{or... an introduction to Beamer instead}
 \end{center}
 
-\begin{center}
-\textbf{Nicolas Verzelen, Joseph Salmon} \\
 \vspace{0.5cm}
-INRA / Université de Montpellier \\
+
+\begin{center}
+\textbf{Joseph Salmon} \\
+\vspace{0.1cm}
+\url{http://josephsalmon.eu}\\
+\vspace{0.5cm}
+Université de Montpellier \\
 \end{center}
+
+\centering
+\includegraphics[width=0.13\textwidth]{Logo}
+
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -42,7 +54,7 @@ INRA / Université de Montpellier \\
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}{Outline}
+\begin{frame}{Table of Contents}
 \tableofcontents[hideallsubsections]
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -72,33 +84,35 @@ INRA / Université de Montpellier \\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Un premier exemple}
+\subsection{A first example}
 \label{sub:un_premier_exemple}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}{Un exemple en discrimination (classification)}
+\begin{frame}{Display a theorem and talk about it}
 
-\mytheorem{Théorème}
+\vspace{0.4cm}
+
+\mytheorem{Theorem}
 {
 \begin{equation*}
 a^2 + b^2 = c^2
 \end{equation*}
 }
 
-\vspace{1cm}
+\vspace{0.25cm}
 
-Ici, la réponse $Y$ est \mybold{ qualitative}.
+Here, the response vector $Y$ is \mybold{qualitative}.
 
-\exemple
-$\mathcal{Y} = \{\texttt{spam},  \texttt{ham}\}$
-(\texttt{ham}=e-mail correct) ou bien
-$\mathcal{Y}= \{0, 1, \dots,9\}$. Les objectifs peuvent être
+\vspace{0.25cm}
+
+\exple
+$\mathcal{Y} = \{\texttt{spam},  \texttt{ham}\}$ (\texttt{ham}=correct e-mail) or $\mathcal{Y}= \{0, 1, \dots,9\}$.
+
+The objective could be
 \begin{itemize}
-	\item construire un classifieur $\phi(x)$ qui assigne une nouvelle
-	observation $x$ à l'une des classes dans $\mathcal{Y}$
-	\item évaluer l'incertitude sur cette classification \footfullcite{Massias_Gramfort_Salmon18}\footfullcite{Dalalyan_Tsybakov07}
-	\item comprendre les rôles de $X^{(1)}$, \dots, $X^{(p)}$
+	\item create a classifier $\phi(x)$ that maps $x$ to one of the classes in $\mathcal{Y}$
+	\item evaluate the classification incertitude \footfullcite{Massias_Gramfort_Salmon18}\footfullcite{Dalalyan_Tsybakov07}
 \end{itemize}
 
 
@@ -108,19 +122,18 @@ $\mathcal{Y}= \{0, 1, \dots,9\}$. Les objectifs peuvent être
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}{Problèmes de classification}
+\begin{frame}{Double column when needed}
 \begin{columns}
 \begin{column}[T]{.48\textwidth}
-	\mybold{ classifieur de Bayes} optimal
+	\mybold{Bayes classifier is} optimal
 	\begin{equation*}
 	  \phi^*(x) = \argmax_{y\in \mathcal{Y}} P(Y=y|X=x)
 	\end{equation*}
-	pour la perte  $l(y,y')=1_{y\neq y'}$.
+	for the loss  $l(y,y')=1_{y\neq y'}$.
 
 	\vspace{1cm}
 
-	On peut toujours utiliser une méthodes
-	des plus proches voisins pour la construction d'une règle de classification  $\widehat{\phi}(x)$ à partir de $d_1^n$.
+	One can always use  $\widehat{\phi}(x)$.
 \end{column}
 \begin{column}[T]{.48\textwidth}
 	\centering
@@ -128,11 +141,11 @@ $\mathcal{Y}= \{0, 1, \dots,9\}$. Les objectifs peuvent être
 
 	\vspace{1cm}
 
-	Autres méthodes:
+	Alternatives:
 	\begin{itemize}
-		\item régression logistique / analyse linéaire discriminante
-		\item modèles additifs généralisés
-		\item \emph{Support Vector Machine} (SVM)
+		\item logistic regression / LDA
+		\item GAM
+		\item SVM
 	\end{itemize}
 	\vspace{1cm}
 
@@ -144,15 +157,30 @@ $\mathcal{Y}= \{0, 1, \dots,9\}$. Les objectifs peuvent être
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Un deuxième exemple}
+\subsection{A second example}
 \label{sub:deuxiem_exmple}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}{Vide}
-	ou presque...
+\begin{frame}{Empty}
+	... or so.
+
+
+	But note that
+	\only<2->{only creates this effect}%
+	\visible<3->{while visible create a different one}%
+	\pause
+	is also possible and is simple to use.
+	And a common issue is not using the percentage symbol ($\%$) enough !
+
+	\vspace{3cm}
+
+	But note that
+	\only<4->{only creates this effect}
+	\visible<5->{while visible create a different one}
+
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -164,6 +192,29 @@ $\mathcal{Y}= \{0, 1, \dots,9\}$. Les objectifs peuvent être
 \label{sec:conclusion}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Lectures:}
+\begin{itemize}
+ \item[$\bullet$] \textbf{Joseph Salmon} :
+\begin{itemize}
+\visible<1->{\item current situation:  Professor at Université de Montpellier}
+\visible<2->{\item Previously: Paris Diderot-Paris 7, Duke University, Télécom ParisTech, University of Washington}
+\visible<3->{\item Research topics: high dimensional statistics, optimization, aggregation, images}
+\visible<4->{\item Bureau: 415, Bat. 9}
+
+\end{itemize}
+\end{itemize}
+
+\vspace{0.4cm}
+\centering
+\includegraphics[width=0.93\textwidth]{contact_js}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
 
 
 
