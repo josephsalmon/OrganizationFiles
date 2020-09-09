@@ -1,4 +1,4 @@
-%!TEX root = ../main.tex
+%!TEX root = ../article.tex
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -8,20 +8,53 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Considerin the techniques mentioned by \citet{Jaggi13}, you can use a different algorithm a in say \Cref{alg:DC}
+Considering the techniques mentioned by \citet{Jaggi13}, you can use a different algorithm a in say \Cref{alg:DC}
 
 
-\begin{algorithm}
-\label{alg:DC}
-\caption{DC programming algorithm}
-\begin{algorithmic}
-\STATE Set $k = 0$ and $\hat{\beta}_0 \in {\rm dom} J_1$, where ${\rm dom} J_1 = \{\beta \in \bbR : J_1(\beta) < \infty\}$
-\REPEAT
-\STATE Compute $\alpha_{k} \in \partial J_2(\beta_{k})$
-\STATE Compute $\hat{\beta}_{k+1} \in \argmin_{\beta \in \bbR^d} J_1(\beta) - \langle \alpha_k, \beta \rangle$
-\UNTIL{convergence}
-\end{algorithmic}
+
+{\fontsize{4}{4}\selectfont
+\begin{algorithm}[h]  % again h stands for here
+\SetKwInOut{Input}{input}
+\SetKwInOut{Init}{init}
+\SetKwInOut{Parameter}{param}
+\caption{\textsc{Implicit differentiation}
+}
+%
+\Input{$
+    X \in \bbR^{n \times p},
+    y \in \bbR^{n},
+    \lambda \in \bbR,
+    n_{\text{iter}} \in \bbN$}
+    \tcp{jointly compute coef. and Jacobian}
+
+    \If{Lasso}{
+    Get $\beta = Lasso(X, y, \lambda, n_{\text{iter}})
+    $ and its support $\hat S$.
+
+    $\hat J_{\phantom{\hat S}} = 0_{p}$ 
+    \tcp{affectation}
+
+    $\hat J_{\hat S} =
+    - n e^\lambda (X_{\hat S}^\top X_{\hat S})^{-1} \sign \beta_{\hat S} $
+    }
+    \If{wLasso}{
+    Get $\beta = wLasso(X, y, \lambda, n_{\text{iter}})
+    $ and its support $\hat S$.
+
+    $\hat J = 0_{p \times p}$
+
+    $\hat J_{\hat S, \hat S} =
+    - (X_{\hat S}^\top X_{\hat S})^{-1}
+    \diag ( n e^{\lambda_{\hat S}}
+    \odot \sign \beta_{\hat S})$
+    }
+\For{$k = 0,\dots, n_{\text{iter\_jac}} - 1$
+    }{a = 1}
+
+\Return{$\beta, \hat J$}
+\label{alg:compute_jac_implicit_diff}
 \end{algorithm}
+}
 
 
 It is also possible to use the standard citation style \cite{Tibshirani96}.
