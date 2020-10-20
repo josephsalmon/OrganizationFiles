@@ -8,7 +8,7 @@ This text is subject to changes so suggestions of improvements are more than wel
 
 ## Office Hours
 
-In France an academic job comes with the same benefits and rules than any work contract: social security, eligibility to unemployment benefits, but also office hours. Office hours are flexible, however to encourage lab interaction, try to be in during 'peak' hours -- e.g., between 10am and 5pm. Please also do your best to attend to the Monday [EPS seminar](https://imag.edu.umontpellier.fr/seminaires/seminaires-eps/) and let your supervisor know if you cannot. It is also a good idea to attend to other meetings whenever possible to help you think of broader impacts of your current work. Keep in mind that being in lab is a good way of learning from others, helping others, building camaraderie, having fast and easy access to resources (and people) you need.
+In France an academic job comes with the same benefits and rules than any work contract: social security, eligibility to unemployment benefits, but also office hours. Office hours are flexible, however to encourage lab interaction, try to be in during 'peak' hours -- e.g., between 10am and 5pm. Please also do your best to attend to the Monday [EPS seminar](https://imag.edu.umontpellier.fr/seminaires/seminaires-eps/) and let your supervisor know if you cannot. It is also a good idea to attend to other meetings whenever possible to help you think of broader impacts of your current work. Keep in mind that being in a lab is a good way of learning from others, helping others, building camaraderie, having fast and easy access to resources (and people) you need.
 
 P.I.s sometimes work at night and during the weekends. This means that you might sometimes receive emails or instant messages outside of normal working hours. We do not expect you to respond until you are back at work (you can ignore them, and you're welcome to systematically filter out professional messages on your preferred device outside working hours). We do not expect cases when we suddenly and urgently need something from you over the weekend (e.g., for a grant deadline or last minute talk preparation), but should we anticipate that happening, we will bring it up in advance so we can plan accordingly. All this said, we realize that being told you can ignore messages might not take away the stress of seeing messages if you check work email or instant messaging system in the evenings or on weekends. If our off-hours messages are unwelcome and cause distress, please talk to us, and we will be better at not bothering you during your time off.
 Holidays
@@ -32,11 +32,11 @@ Resources for that could be [arXiv.org](https://arxiv.org/), [The arXivist](http
 Online data bases for bib files of interests are [DBLP](https://dblp.uni-trier.de/), [mathscinet](https://mathscinet.ams.org/mathscinet/index.html), [Zentralblatt MATH](https://zbmath.org/) among others.
 
 
-In developing your PhD proposal, you agreed on certain topics and objectives to reach. These are not written in stone, and can be amended with mutual agreement. Notably, as you become more experienced, you will develop several new ideas. Of course, it may be possible for you to develop a new idea into a full component of your thesis.
+In developing your PhD proposal, you agreed on certain topics and objectives to reach. These are not written in stone and can be amended with mutual agreement. Notably, as you become more experienced, you will develop several new ideas. Of course, it may be possible for you to develop a new idea into a full component of your thesis.
 
 # Conferences
 
-You will identify me conferences that make sense for you to attend, but if you come across an interesting conference or workshop that you would like to attend, simply ask. If budget allows, you will typically get one "free ride" at the beginning of your PhD with no accepted paper or abstract, but then you have to get some work accepted to travel.
+You will identify me conferences that make sense for you to attend, but if you come across an interesting conference or workshop that you would like to attend, simply ask. If the budget allows, you will typically get one "free ride" at the beginning of your PhD with no accepted paper or abstract, but then you have to get some work accepted to travel.
 
 # Deadline management
 
@@ -44,7 +44,7 @@ You will have deadlines and you should anticipate them. Deadlines for NeurIPS, I
 
 # Difficulties?
 
-In the event of friction or conflict with another colleague, whatever the nature, you are welcome to discuss it with me or other permanent team members. This includes any difficulties within the group, or with external collaborators.
+In the event of friction or conflict with another colleague, whatever nature, you are welcome to discuss it with me or other permanent team members. This includes any difficulties within the group, or with external collaborators.
 
 In case you feel a conflict developing, with any of us or anyone you're expected to work with, schedule a meeting to discuss it with your P.I. or another a permanent team member. If this option is not appropriate, the university human resources (https://www.umontpellier.fr/universite/directions/direction-des-ressources-humaines) can provide advice, including directing you to confidential resources.
 
@@ -56,7 +56,7 @@ For visio-conferences you can use https://rendez-vous.renater.fr/ or https://mee
 
 # TeX / LaTeX
 
-TeX / LaTeX is mandatory when writing research in Mathematics, Computer Science or signal processing. A full [TeX / LaTeX section](../tex/README.md) is dedicated here. 
+TeX / LaTeX is mandatory when writing research in Mathematics, Computer Science or signal processing. A full [TeX / LaTeX section](../tex/README.md) is dedicated here.
 Among the useful tools a modern editor, say one that can handle **snippet** or multi-cursors, is recommended (like [VSCode](https://code.visualstudio.com/) or [Sublime Text](https://www.sublimetext.com/).
 On top of that useful tools connected to LaTeX include:
 
