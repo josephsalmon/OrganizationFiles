@@ -29,11 +29,11 @@ see also https://inkscape.org/doc/tutorials/tracing/tutorial-tracing.html.
 
 Weaving Interlacing in vector graphics is useful for  making nice pictures often requires manipulating **layers** in Inkscape. Layers helps creating overlaps, occlusions, etc. (see for instance: https://www.youtube.com/watch?v=3ChqcAdTMAU) and is a key tool for vector graphics, combine with the "fill bounded area" tool.
 
-	Some advice can be found here wooden https://m.youtube.com/watch?v=n-Yz4ec-xew
-	and here
-	https://design.tutsplus.com/tutorials/geometric-design-knots-and-weaves--cms-23968
+Some advice can be found here wooden https://m.youtube.com/watch?v=n-Yz4ec-xew
+and here
+https://design.tutsplus.com/tutorials/geometric-design-knots-and-weaves--cms-23968
 
-	<p float="left"> <img src="https://github.com/josephsalmon/Tweets/blob/master/IslamicArt/svg/Celting_knot_color.svg" width="300">
+<p float="left"> <img src="https://github.com/josephsalmon/Tweets/blob/master/IslamicArt/svg/Celting_knot_color.svg" width="300">
 
 
 ## pdftk
