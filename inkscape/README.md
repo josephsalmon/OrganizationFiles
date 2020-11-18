@@ -20,4 +20,14 @@ see also https://inkscape.org/doc/tutorials/tracing/tutorial-tracing.html.
     <img src="images/IMAG.svg?sanitize=true" width="300">
 
 
+- Weaving / Interlacing in vector graphics: this is hard, but makes some beautiful pictures:
+
+	Some advice can be Inkscape can be found here wooden https://m.youtube.com/watch?v=n-Yz4ec-xew
+	and here
+	https://design.tutsplus.com/tutorials/geometric-design-knots-and-weaves--cms-23968
+
+	<p float="left"> <img src="https://github.com/josephsalmon/Tweets/blob/master/IslamicArt/svg/Celting_knot_color.svg" width="300">
+
+
+
 PS: for some (math) art see for instance https://github.com/josephsalmon/Tweets/

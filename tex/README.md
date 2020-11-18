@@ -29,6 +29,11 @@ In particular useful tools include
 
 - https://www.tablesgenerator.com/ : to create LaTeX tables from copy/paste values or .csv files
 - Inkscape (see for more information in the [Inkscape](../inkscape/README.md) section): useful for sketching figures with, especially with the [TexText](https://inkscape.org/~jcwinkler/%E2%98%85textext) extension.
+- latexdiff : allows to visualize the diff in the pdf (useful for revision / v2 in a publication):
+	
+	`file1.tex file2.tex > diff.tex`
+	
+	Then, you can compile the file diff.tex and you get some nice difference file in the output pdf.
 
 
 ## Latex tips
