@@ -6,9 +6,9 @@ Below are some interesting patterns you can create, and some help on how to lear
 ## TexText
 The first point is to use LaTeX with Inkscape. A toolbox interface for that is given by [TexText](https://inkscape.org/~jcwinkler/%E2%98%85textext) and can help you make graph like that:
 
-  Example:
-    [dome.svg](images/dome.svg)
-    <p float="left"><img src="images/dome.svg?sanitize=true" width="300">
+ ### Example:
+[dome.svg](images/dome.svg)
+<p float="left"><img src="images/dome.svg?sanitize=true" width="300">
 
 
 
@@ -19,10 +19,10 @@ this use case is particularly helpful if you need to create (and guess what you 
 https://www.youtube.com/watch?v=21S_aGhyDeY
 see also https://inkscape.org/doc/tutorials/tracing/tutorial-tracing.html.
 
-    **Example**:
-    [IMAG.png](images/IMAG.svg) vs.[IMAG.svg](images/IMAG.svg)
-    <p float="left"><img src="images/IMAG.png?sanitize=true" width="300">
-    <img src="images/IMAG.svg?sanitize=true" width="300">
+### Example
+[IMAG.png](images/IMAG.svg) vs.[IMAG.svg](images/IMAG.svg)
+<p float="left"><img src="images/IMAG.png?sanitize=true" width="300">
+<img src="images/IMAG.svg?sanitize=true" width="300">
 
 
 ## Layers, weaving and interlacing
@@ -38,13 +38,13 @@ https://design.tutsplus.com/tutorials/geometric-design-knots-and-weaves--cms-239
 
 ## pdftk
 
-In connection with Inkscape **[pdftk](https://www.pdflabs.com/tools/pdftk-server/)** on Linux  can be used to burst pdf, or merge pdf together: see e.g.,
+In connection with Inkscape the software **[pdftk](https://www.pdflabs.com/tools/pdftk-server/)** (on Linux at least) can be used to burst pdfs, or merge pdfs together: see e.g.,
 
-	```pdftk myfile.pdf burst```
+```pdftk myfile.pdf burst```
 
-	or
+or
 
-	```pdftk *.pdf cat output newfile.pdf```
+```pdftk *.pdf cat output newfile.pdf```
 
 
 ## Tiling / Repetition of object along a shape
@@ -53,6 +53,6 @@ In connection with Inkscape **[pdftk](https://www.pdflabs.com/tools/pdftk-server
 to get something like
 [pattern_along_path.svg](images/pattern_along_path.svg) <p float="left"> <img src="images/pattern_along_path.svg?sanitize=true" width="300">
 
-    **Challenge**: can you replicate this https://ssdesai.wordpress.com/2020/06/30/mandala/ in Inkscape?
+**Challenge**: can you replicate this https://ssdesai.wordpress.com/2020/06/30/mandala/ in Inkscape?
 
 PS: see https://github.com/josephsalmon/Tweets/ for some additional (math) art
