@@ -3,7 +3,8 @@
 Inkscape is full of joy!
 Below are some interesting patterns you can create, and some help on how to learn to master Inkscape with it.
 
-- The first point is to use LaTeX with Inkscape. A toolbox interface for that is given by [TexText](https://inkscape.org/~jcwinkler/%E2%98%85textext) and can help you make graph like that:
+## TexText
+The first point is to use LaTeX with Inkscape. A toolbox interface for that is given by [TexText](https://inkscape.org/~jcwinkler/%E2%98%85textext) and can help you make graph like that:
 
   Example:
     [dome.svg](images/dome.svg)
@@ -11,25 +12,22 @@ Below are some interesting patterns you can create, and some help on how to lear
 
 
 
+## Converting .png to .svg files
 
-- [Repeat an Object Around a Shape with Inkscape](https://www.youtube.com/watch?v=3jve45Z60iU)
-to get something like
-[pattern_along_path.svg](images/pattern_along_path.svg) <p float="left"> <img src="images/pattern_along_path.svg?sanitize=true" width="300">
-
-    **Challenge**: can you replicate this https://ssdesai.wordpress.com/2020/06/30/mandala/ in Inkscape?
-
-- How to convert a .png to .svg  file with Inkscape:
+How to convert a .png to .svg  file with Inkscape:
 this use case is particularly helpful if you need to create (and guess what you do!) a numeric **signature** from a scanned version:
 https://www.youtube.com/watch?v=21S_aGhyDeY
 see also https://inkscape.org/doc/tutorials/tracing/tutorial-tracing.html.
 
-    Example:
+    **Example**:
     [IMAG.png](images/IMAG.svg) vs.[IMAG.svg](images/IMAG.svg)
     <p float="left"><img src="images/IMAG.png?sanitize=true" width="300">
     <img src="images/IMAG.svg?sanitize=true" width="300">
 
 
-- **Weaving** / Interlacing in vector graphics:  making nice pictures often requires manipulating **layers** in Inkscape. Layers helps creating overlaps, occlusions, etc. (see for instance: https://www.youtube.com/watch?v=3ChqcAdTMAU) and is a key tool for vector graphics, combine with the "fill bounded area" tool.
+## Layers, weaving and interlacing
+
+Weaving Interlacing in vector graphics is useful for  making nice pictures often requires manipulating **layers** in Inkscape. Layers helps creating overlaps, occlusions, etc. (see for instance: https://www.youtube.com/watch?v=3ChqcAdTMAU) and is a key tool for vector graphics, combine with the "fill bounded area" tool.
 
 	Some advice can be found here wooden https://m.youtube.com/watch?v=n-Yz4ec-xew
 	and here
@@ -38,7 +36,9 @@ see also https://inkscape.org/doc/tutorials/tracing/tutorial-tracing.html.
 	<p float="left"> <img src="https://github.com/josephsalmon/Tweets/blob/master/IslamicArt/svg/Celting_knot_color.svg" width="300">
 
 
-- In connection with Inkscape **[pdftk](https://www.pdflabs.com/tools/pdftk-server/)** on Linux  can be used to burst pdf, or merge pdf together: see e.g.,
+## pdftk
+
+In connection with Inkscape **[pdftk](https://www.pdflabs.com/tools/pdftk-server/)** on Linux  can be used to burst pdf, or merge pdf together: see e.g.,
 
 	```pdftk myfile.pdf burst```
 
@@ -47,4 +47,12 @@ see also https://inkscape.org/doc/tutorials/tracing/tutorial-tracing.html.
 	```pdftk *.pdf cat output newfile.pdf```
 
 
-PS: for some (math) art see for instance https://github.com/josephsalmon/Tweets/
+## Tiling / Repetition of object along a shape
+
+[Repeat an Object Around a Shape with Inkscape](https://www.youtube.com/watch?v=3jve45Z60iU)
+to get something like
+[pattern_along_path.svg](images/pattern_along_path.svg) <p float="left"> <img src="images/pattern_along_path.svg?sanitize=true" width="300">
+
+    **Challenge**: can you replicate this https://ssdesai.wordpress.com/2020/06/30/mandala/ in Inkscape?
+
+PS: see https://github.com/josephsalmon/Tweets/ for some additional (math) art
