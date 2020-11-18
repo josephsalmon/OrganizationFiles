@@ -29,7 +29,7 @@ see also https://inkscape.org/doc/tutorials/tracing/tutorial-tracing.html.
 	<p float="left"> <img src="https://github.com/josephsalmon/Tweets/blob/master/IslamicArt/svg/Celting_knot_color.svg" width="300">
 
 
-- In connection with Inkscape **pdftk** can be used to burst pdf, or merge pdf together: see e.g.,
+- In connection with Inkscape **[pdftk](https://www.pdflabs.com/tools/pdftk-server/)** on Linux  can be used to burst pdf, or merge pdf together: see e.g.,
 
 ```pdftk myfile.pdf burst```
 
