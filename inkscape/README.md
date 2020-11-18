@@ -55,4 +55,7 @@ to get something like
 
 **Challenge**: can you replicate this https://ssdesai.wordpress.com/2020/06/30/mandala/ in Inkscape?
 
-PS: see https://github.com/josephsalmon/Tweets/ for some additional (math) art
+
+## Additional miscellaneous (math) art
+
+You will find more examples and math art creations here: https://github.com/josephsalmon/Tweets/
