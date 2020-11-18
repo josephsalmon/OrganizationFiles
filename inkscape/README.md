@@ -6,7 +6,7 @@ Below are some interesting patterns you can create, and some help on how to lear
 ## TexText
 The first point is to use LaTeX with Inkscape. A toolbox interface for that is given by [TexText](https://inkscape.org/~jcwinkler/%E2%98%85textext) and can help you make graph like that:
 
- ### Example:
+### Example:
 [dome.svg](images/dome.svg)
 <p float="left"><img src="images/dome.svg?sanitize=true" width="300">
 
