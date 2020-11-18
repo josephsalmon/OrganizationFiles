@@ -31,7 +31,9 @@ see also https://inkscape.org/doc/tutorials/tracing/tutorial-tracing.html.
 
 - In connection with Inkscape **[pdftk](https://www.pdflabs.com/tools/pdftk-server/)** on Linux  can be used to burst pdf, or merge pdf together: see e.g.,
 
-```pdftk myfile.pdf burst```
+	```pdftk myfile.pdf burst```
+	or
+	```pdftk *.pdf cat output newfile.pdf```
 
 
 PS: for some (math) art see for instance https://github.com/josephsalmon/Tweets/
