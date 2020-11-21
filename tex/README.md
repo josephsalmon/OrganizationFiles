@@ -8,9 +8,9 @@
 
 - TeX templates and examples
 
-|[article.tex](draft-article/article.tex)|[beamer.tex](draft-beamer/beamer.tex) | [exam.tex](draft-exam/exam.tex)| [scribe.tex](draft-scribe/scribe.tex) |
-| ----------- | ----------- |----------- |----------- |
-|[<img src="../sharedimages/article.png" width="210" height="300">](draft-article/article.tex)|[<img src="../sharedimages/beamer.png" width="400" height="300">](draft-beamer/beamer.tex)|[<img src="../sharedimages/examen.png" width="210" height="300">](draft-exam/exam.tex)|[<img src="../sharedimages/scribe.png" width="210" height="300">](draft-scribe/scribe.tex)|
+|[article.tex](draft-article/article.tex)|[beamer_js.tex](draft-beamer/beamer_js.tex) | [beamer_tl.tex](draft-beamer/beamer_tl.tex) | [exam.tex](draft-exam/exam.tex)| [scribe.tex](draft-scribe/scribe.tex) |
+| ----------- | ----------- |----------- |----------- |----------- |
+|[<img src="../sharedimages/article.png" width="210" height="300">](draft-article/article.tex)|[<img src="../sharedimages/beamer_js.png" width="400" height="300">](draft-beamer/beamer_js.tex)|[<img src="../sharedimages/beamer_tl.png" width="400" height="300">](draft-beamer/beamer_tl.tex)|[<img src="../sharedimages/examen.png" width="210" height="300">](draft-exam/exam.tex)|[<img src="../sharedimages/scribe.png" width="210" height="300">](draft-scribe/scribe.tex)|
 
 
 
