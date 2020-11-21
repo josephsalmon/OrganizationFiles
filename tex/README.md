@@ -16,13 +16,13 @@
 
 ## Text Editor 
 
-Among the useful tools a modern editor (like [VSCode](https://code.visualstudio.com/) or [Sublime Text](https://www.sublimetext.com/).
+Among the useful tools a modern editor (like [VSCode](https://code.visualstudio.com/) or [Sublime Text](https://www.sublimetext.com/)).
 On top of that useful tools connected to LaTeX include:
 , is mandatory.
 In particular useful tools include 
 - snippets
 - multi-cursors 
-- forward/backward search: so you can click the generated pdf and find the tex location in your document.
+- forward/backward search: so you can click the generated pdf and find the tex location in your document (something now common with Overleaf).
 
 
 ## Additional tools
