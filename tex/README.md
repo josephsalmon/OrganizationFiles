@@ -10,7 +10,7 @@
 
 |[article.tex](draft-article/article.tex)|[beamer_js.tex](draft-beamer/beamer_js.tex) | [beamer_tl.tex](draft-beamer/beamer_tl.tex) | [exam.tex](draft-exam/exam.tex)| [scribe.tex](draft-scribe/scribe.tex) |
 | ----------- | ----------- |----------- |----------- |----------- |
-|[<img src="../sharedimages/article.png" width="210" height="300">](draft-article/article.tex)|[<img src="../sharedimages/beamer_js.png" width="400" height="300">](draft-beamer/beamer_js.tex)|[<img src="../sharedimages/beamer_tl.png" width="400" height="300">](draft-beamer/beamer_tl.tex)|[<img src="../sharedimages/examen.png" width="210" height="300">](draft-exam/exam.tex)|[<img src="../sharedimages/scribe.png" width="210" height="300">](draft-scribe/scribe.tex)|
+|[<img src="../sharedimages/article.png" width="210" height="150">](draft-article/article.tex)|[<img src="../sharedimages/beamer_js.png" width="400" height="150">](draft-beamer/beamer_js.tex)|[<img src="../sharedimages/beamer_tl.png" width="400" height="150">](draft-beamer/beamer_tl.tex)|[<img src="../sharedimages/examen.png" width="210" height="150">](draft-exam/exam.tex)|[<img src="../sharedimages/scribe.png" width="210" height="150">](draft-scribe/scribe.tex)|
 
 
 
