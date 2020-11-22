@@ -21,21 +21,11 @@
 \RequirePackage{calc}
 \RequirePackage{fp}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Theme options and definitions
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%theme options
-
-\DeclareOptionBeamer{progressstyle}{\PassOptionsToPackage{progressstyle=#1}{beamerouterthemeUniNA}}
-\DeclareOptionBeamer{rotationcw}{\PassOptionsToPackage{rotationcw}{beamerouterthemeUniNA}}
-\DeclareOptionBeamer{shownavsym}{\PassOptionsToPackage{shownavsym}{beamerouterthemeUniNA}}
-\DeclareOptionBeamer{sectionpages}{\PassOptionsToPackage{sectionpages}{beamerinnerthemeUniNA}}
-\DeclareOptionBeamer{logo}{\PassOptionsToPackage{logo=#1}{beamerouterthemeUniNA}}
-\ProcessOptionsBeamer
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %beamer specific options
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \mode<presentation>%refers to the first four modes (beamer,handout,second and trans). That is, to all modes except the article mode
 {
 
@@ -82,8 +72,13 @@
 	%templates
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	%title page
-	\titlegraphic{%
-    \includegraphics[width=.2\textwidth]{\mylogo}\hfill
+	
+	\setbeamertemplate{title graphic}{
+  		\vbox to 0pt {
+    	\vspace*{-6em} \hspace*{\fill}
+    	\inserttitlegraphic%
+  		}%
+  	\nointerlineskip%
 	}
 
 	\setbeamertemplate{title page}{%
@@ -99,15 +94,19 @@
 				\vspace*{\baselineskip}\usebeamerfont{subtitle}\usebeamercolor[fg]{subtitle}\insertsubtitle\par
 				\fi
 			}\vspace*{\baselineskip}
-			\begin{beamercolorbox}[wd=\paperwidth,ht=.5\paperheight,sep=1cm]{frametitle}%
+			\begin{beamercolorbox}[wd=\paperwidth,ht=.5\paperheight,sep=1cm]{frametitle}%			
 				{\usebeamerfont{date}\insertdate}\vspace*{\baselineskip}
 
 				{\usebeamerfont{author}\insertauthor}\vspace*{\baselineskip}
 
-				{\usebeamerfont{institute}\insertinstitute}\vspace*{\baselineskip}
-			\begin{tikzpicture}[overlay, remember picture]
-				\node[above left=1cm and .8cm of current page.south east] {\includegraphics[width=2cm]{\mylogo}};
-			\end{tikzpicture}
+				{\usebeamerfont{institute}\insertinstitute}
+
+				{\ifx\inserttitlegraphic\@empty\else\usebeamertemplate*{title graphic}\fi}
+
+%			\begin{tikzpicture}[overlay, remember picture]
+%				\node[above left=1cm and .8cm of current page.south east] {\includegraphics[width=2cm]{\mylogo}};
+%			\end{tikzpicture}
+			
 			\end{beamercolorbox}%
 		\end{minipage}
 		}
@@ -264,7 +263,7 @@
 	      
 	      % draw the outer circle
 	      \fill[fill=UniNA.fg] (logopos) circle (\beamer@logoouterradius);
-	      
+
 	      % draw the inner circle
 	      \fill[fill=background canvas.bg] (logopos) circle (\beamer@logoinnerradius);
 

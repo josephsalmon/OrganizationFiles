@@ -1,24 +1,10 @@
 \documentclass[10pt,aspectratio=43]{beamer}
 
-
-\newcommand{\mylogo}{../../sharedimages/Logo.pdf} % where is the logo locally.
 \usepackage{graphicx}
 \graphicspath{{images/},{prebuiltimages/},{../../sharedimages/}}
-
-
-%% this is to get the local folder ../sty/ known, to load UniNA theme.
-\makeatletter
-  \def\beamer@calltheme#1#2#3{%
-    \def\beamer@themelist{#2}
-    \@for\beamer@themename:=\beamer@themelist\do
-    {\usepackage[{#1}]{\beamer@themelocation/#3\beamer@themename}}}
-
-  \def\usefolder#1{
-    \def\beamer@themelocation{#1}
-  }
-  \def\beamer@themelocation{}
-\usefolder{../sty}  % where the sty files are locally.
-\usetheme[sectionpages]{UniNA}
+\usepackage[sectionpages,
+			rotationcw % clockwise, default is counterclockwise
+			]{../sty/beamerthemeGlobalUniNA}
 
 \usepackage[utf8]{inputenc}
 \usepackage[english]{babel}
@@ -69,9 +55,6 @@
 \newcommand{\cRm}[1]{\textsc{\romannumeral #1}}
 
 
-
-
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % HEADER
@@ -95,6 +78,20 @@
     University of Montpellier
 }
 
+\titlegraphic{% logos are put in the bottom-right part of the page
+    \includegraphics[width=2cm]{Logo.pdf}~ % also support multi-logos
+    %\includegraphics[width=2cm]{Logo.pdf}~ % up to 3 (after it gets messy)  
+    %\includegraphics[width=2cm]{Logo.pdf} % if more, combine them in one image.
+}
+
+% you can also move it to your wants...
+% this place 3 logos above the title to the left-center-right
+%\titlegraphic{%
+%  \begin{picture}(0,0)
+%    \put(18,165){\makebox(0,0)[rt]{\includegraphics[width=2cm]{Logo.pdf}
+%    \hspace{8em}\includegraphics[width=2cm]{Logo.pdf}
+%    \hspace{8em}\includegraphics[width=2cm]{Logo.pdf}}}
+%  \end{picture}}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
