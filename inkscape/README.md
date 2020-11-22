@@ -56,6 +56,10 @@ to get something like
 **Challenge**: can you replicate this https://ssdesai.wordpress.com/2020/06/30/mandala/ in Inkscape?
 
 
+## Cloning with rotation
+
+https://www.youtube.com/watch?v=YZLwVpeu2-g&ab_channel=cuttingtimes
+
 ## Additional miscellaneous (math) art
 
 You will find more examples and math art creations here: https://github.com/josephsalmon/Tweets/
