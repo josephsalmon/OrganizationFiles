@@ -46,6 +46,13 @@ or
 
 ```pdftk *.pdf cat output newfile.pdf```
 
+## Tiling and Cloning with rotation
+Here is an example of the function "Edit\Clone\Clone\Create Tiled Clone...", starting from the image on the left, centering the rotation point on the gray dot, and then applying the techniques with correct parameter (see https://www.youtube.com/watch?v=YZLwVpeu2-g&ab_channel=cuttingtimes) you get:
+[Sultan_Uljaytu_Frontispiece_before_tilling.svg](images/Sultan_Uljaytu_Frontispiece_before_tilling.svg) <p float="left"> <img src="images/Sultan_Uljaytu_Frontispiece_before_tilling.svg?sanitize=true" width="300">
+[Sultan_Uljaytu_Frontispiece_after_tilling.svg](images/Sultan_Uljaytu_Frontispiece_after_tilling.svg) <p float="left"> <img src="images/Sultan_Uljaytu_Frontispiece_after_tilling.svg?sanitize=true" width="300">
+
+
+
 
 ## Tiling / Repetition of object along a shape
 
@@ -54,11 +61,6 @@ to get something like
 [pattern_along_path.svg](images/pattern_along_path.svg) <p float="left"> <img src="images/pattern_along_path.svg?sanitize=true" width="300">
 
 **Challenge**: can you replicate this https://ssdesai.wordpress.com/2020/06/30/mandala/ in Inkscape?
-
-
-## Cloning with rotation
-
-https://www.youtube.com/watch?v=YZLwVpeu2-g&ab_channel=cuttingtimes
 
 ## Additional miscellaneous (math) art
 
