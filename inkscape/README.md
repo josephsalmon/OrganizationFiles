@@ -48,7 +48,7 @@ or
 
 ## Tiling and Cloning with rotation
 Here is an example of the function "Edit\Clone\Clone\Create Tiled Clone...", starting from the image on the left, centering the rotation point on the gray dot, and then applying the techniques with correct parameter (see https://www.youtube.com/watch?v=YZLwVpeu2-g&ab_channel=cuttingtimes) you get:
-<p float="left"> <img src="images/Sultan_Uljaytu_Frontispiece_before_tilling.svg?sanitize=true" width="300"><p float="left"> <img src="images/Sultan_Uljaytu_Frontispiece_after_tilling.svg?sanitize=true" width="300">
+<p float="left"><img src="images/Sultan_Uljaytu_Frontispiece_before_tilling.svg?sanitize=true" width="300"><img src="images/Sultan_Uljaytu_Frontispiece_after_tilling.svg?sanitize=true" width="300">
 
 
 
