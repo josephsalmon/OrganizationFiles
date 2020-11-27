@@ -1,5 +1,10 @@
 # Good scientific writing / presenting practices
 
+
+## Typing
+Learn keyboard typing. It is really useful!
+See for instance the "game": https://www.typingclub.com/sportal/program-3/124.play
+
 ## Poster
 
 You can use Tex/Latex (see for instance [poster.tex](../tex/draft-poster/poster.tex)).
