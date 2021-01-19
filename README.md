@@ -26,8 +26,8 @@ an example of a Python package
 If you are looking for more help on (scientific) Python I can only recommend my course with [B. Charlier](https://imag.umontpellier.fr/~charlier), see: https://github.com/bcharlier/HMMA238
 
 
-## [Inkscape](inkscape/README.md)
-In the [Inkscape](inkscape/README.md) section, I am giving some insights on why **Inkscape** is an incredible tool to master for a PhD student or a modern researcher.
+## [Images and Inkscape](inkscape/README.md)
+In the [Images and Inkscape](inkscape/README.md) section, I am giving some insights on using images in science and communications, and discuss why **Inkscape** is an incredible tool to master for a PhD student or a modern researcher.
 
 
 ## [Advice (mostly) for PhD students](guidelines/README.md)

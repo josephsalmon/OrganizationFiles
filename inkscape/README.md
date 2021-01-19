@@ -1,7 +1,10 @@
-# Inkscape
+# Images and Inkscape
 
 Inkscape is full of joy!
 Below are some interesting patterns you can create, and some help on how to learn to master Inkscape with it.
+
+
+
 
 ## TexText
 The first point is to use LaTeX with Inkscape. A toolbox interface for that is given by [TexText](https://inkscape.org/~jcwinkler/%E2%98%85textext) and can help you make graph like that:
@@ -9,8 +12,6 @@ The first point is to use LaTeX with Inkscape. A toolbox interface for that is g
 ### Example:
 [dome.svg](images/dome.svg)
 <p float="left"><img src="images/dome.svg?sanitize=true" width="300">
-
-
 
 ## Converting .png to .svg files
 
@@ -60,6 +61,14 @@ to get something like
 [pattern_along_path.svg](images/pattern_along_path.svg) <p float="left"> <img src="images/pattern_along_path.svg?sanitize=true" width="300">
 
 **Challenge**: can you replicate this https://ssdesai.wordpress.com/2020/06/30/mandala/ in Inkscape?
+
+
+##  (Open) Sources for svg files
+
+- https://search.creativecommons.org/
+- http://www.clker.com/
+- https://openclipart.org/
+- https://freesvg.org/
 
 ## Additional miscellaneous (math) art
 
