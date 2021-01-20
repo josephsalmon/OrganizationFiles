@@ -36,8 +36,9 @@ https://design.tutsplus.com/tutorials/geometric-design-knots-and-weaves--cms-239
 
 <p float="left"> <img src="https://github.com/josephsalmon/Tweets/blob/master/IslamicArt/svg/Celting_knot_color.svg" width="300">
 
-## Splines and simples shapes
-Learn how to use splines to create the symbol : `{`
+## Splines and simple shapes
+Learn how to use splines to create the symbol : <p float="left"> <img src="images/Curly_Bracket.svg?sanitize=true" width="100">
+
 
 <https://graphicdesign.stackexchange.com/questions/86334/inkscape-easy-way-to-create-curly-brace-bracket>
 
