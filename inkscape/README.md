@@ -36,6 +36,10 @@ https://design.tutsplus.com/tutorials/geometric-design-knots-and-weaves--cms-239
 
 <p float="left"> <img src="https://github.com/josephsalmon/Tweets/blob/master/IslamicArt/svg/Celting_knot_color.svg" width="300">
 
+## Splines and simples shapes
+Learn how to use splines to create the symbol : `{`
+
+<https://graphicdesign.stackexchange.com/questions/86334/inkscape-easy-way-to-create-curly-brace-bracket>
 
 ## pdftk
 
@@ -50,8 +54,6 @@ or
 ## Tiling and Cloning with rotation
 Here is an example of the function "Edit\Clone\Clone\Create Tiled Clone...", starting from the image on the left, centering the rotation point on the gray dot, and then applying the techniques with correct parameter (see https://www.youtube.com/watch?v=YZLwVpeu2-g&ab_channel=cuttingtimes) you get:
 <p float="left"><img src="images/Sultan_Uljaytu_Frontispiece_before_tilling.svg?sanitize=true" width="300"><img src="images/Sultan_Uljaytu_Frontispiece_after_tilling.svg?sanitize=true" width="300">
-
-
 
 
 ## Tiling / Repetition of object along a shape
