@@ -66,7 +66,7 @@ On top of that useful tools connected to LaTeX include:
 
 # Coding (with Python or not)
 
-See moslty section (XXX TODO)
+See mostly section (XXX TODO)
 
 ## Reproducibility
 First, reproducibility is important: without it, knowledge is lost, and no science can be produced: <https://rr-france.github.io/bookrr/> (in French)
