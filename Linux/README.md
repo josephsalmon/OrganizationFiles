@@ -29,14 +29,41 @@ https://www.sublimetext.com/docs/3/linux_repositories.html
 ## VSCode
 sudo snap install --classic code
 
-# OBS (https://obsproject.com/wiki/install-instructions#ubuntumint-installation)
- (Rem: ffmpeg needed.)
+# OBS
+(https://obsproject.com/wiki/install-instructions#ubuntumint-installation)
 
+```bash
+sudo apt install ffmpeg
 sudo add-apt-repository ppa:obsproject/obs-studio
 sudo apt update
 sudo apt install obs-studio
+```
 
 # Flux
+```bash
+sudo apt-get install python3-pexpect python3-distutils gir1.2-appindicator3-0.1 gir1.2-gtk-3.0
+# Download fluxgui
+cd /tmp
+git clone "https://github.com/xflux-gui/fluxgui.git"
+cd fluxgui
+./download-xflux.py
+
+
+# EITHER install system wide
+sudo ./setup.py install --record installed.txt
+
+# EXCLUSIVE OR, install in your home directory
+#
+# The fluxgui program installs
+# into ~/.local/bin, so be sure to add that to your PATH if installing
+# locally. In particular, autostarting fluxgui in Gnome will not work
+# if the locally installed fluxgui is not on your PATH.
+./setup.py install --user --record installed.txt
+
+# Run flux
+fluxgui
+```
+
 
 # fzf (reverse research)
 sudo apt-get install fzf
@@ -63,3 +90,4 @@ source ~/.bashrc
 ```
 
 # Meld (for git diff, merge)
+ sudo apt-get install meld
