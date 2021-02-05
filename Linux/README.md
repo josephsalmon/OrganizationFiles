@@ -10,6 +10,11 @@ sudo apt-get install ffmpeg texlive-full filezilla git gitk tig xournal
 ## Inkscape 
 <https://textext.github.io/textext/install/linux.html>
 
+## Communication
+- Mattermost: <https://docs.mattermost.com/install/desktop.html?src=dl#linux>
+- Slack: <https://slack.com/intl/en-fr/downloads/linux>
+
+
 
 ## Sublime Text
 https://www.sublimetext.com/docs/3/linux_repositories.html
