@@ -16,7 +16,7 @@ conda install pelican Markdown pandas bibtex parser voila scikit-learn
 conda install -c conda-forge jupyter_contrib_nbextensions
 
 
-## Inkscape 
+## Inkscape
 <https://textext.github.io/textext/install/linux.html>
 
 ## Communication
@@ -35,3 +35,21 @@ sudo snap install --classic code
 sudo add-apt-repository ppa:obsproject/obs-studio
 sudo apt update
 sudo apt install obs-studio
+
+# Flux
+
+# fzf (reverse research)
+sudo apt-get install fzf
+
+and put in your .bashrc
+``` bash
+# added fzf
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+```
+
+# xmodmap./xmodmap (accent in qwerty)
+```bash
+echo keycode 37 = Multi_key > ~/.xmodmap
+echo xmodmap ~/.xmodmap >> ~/.bashrc
+source ~/.bashrc
+```
