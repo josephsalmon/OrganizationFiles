@@ -43,8 +43,16 @@ sudo apt-get install fzf
 
 and put in your .bashrc
 ``` bash
+
 # added fzf
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
+```
+and then
+```bash
+# Append this line to ~/.bashrc to enable fzf keybindings for Bash:
+source /usr/share/doc/fzf/examples/key-bindings.bash
+# Append this line to ~/.bashrc to enable fuzzy auto-completion for Bash:
+source /usr/share/doc/fzf/examples/completion.bash
 ```
 
 # xmodmap./xmodmap (accent in qwerty)
@@ -53,3 +61,5 @@ echo keycode 37 = Multi_key > ~/.xmodmap
 echo xmodmap ~/.xmodmap >> ~/.bashrc
 source ~/.bashrc
 ```
+
+# Meld (for git diff, merge)
