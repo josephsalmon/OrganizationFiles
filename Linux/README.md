@@ -5,7 +5,16 @@ Default installation packages.
 ## Latex and other tools default tools:
 sudo apt-get install ffmpeg texlive-full filezilla git gitk tig xournal
 
-## Zoomhttps://support.zoom.us/hc/en-us/articles/204206269-Installing-or-updating-Zoom-on-Linux#h_adcc0b66-b2f4-468b-bc7a-12c182f354b7
+## Zoom
+https://support.zoom.us/hc/en-us/articles/204206269-Installing-or-updating-Zoom-on-Linux#h_adcc0b66-b2f4-468b-bc7a-12c182f354b7
+
+## Anaconda
+
+https://www.anaconda.com/products/individual
+
+conda install pelican Markdown pandas bibtex parser voila scikit-learn 
+conda install -c conda-forge jupyter_contrib_nbextensions
+
 
 ## Inkscape 
 <https://textext.github.io/textext/install/linux.html>
@@ -13,8 +22,6 @@ sudo apt-get install ffmpeg texlive-full filezilla git gitk tig xournal
 ## Communication
 - Mattermost: <https://docs.mattermost.com/install/desktop.html?src=dl#linux>
 - Slack: <https://slack.com/intl/en-fr/downloads/linux>
-
-
 
 ## Sublime Text
 https://www.sublimetext.com/docs/3/linux_repositories.html
