@@ -66,25 +66,15 @@ fluxgui
 
 
 # fzf (reverse research)
-sudo apt-get install fzf
-
-and put in your .bashrc
 ``` bash
-
-# added fzf
-[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+~/.fzf/install
 ```
-and then
-```bash
-# Append this line to ~/.bashrc to enable fzf keybindings for Bash:
-source /usr/share/doc/fzf/examples/key-bindings.bash
-# Append this line to ~/.bashrc to enable fuzzy auto-completion for Bash:
-source /usr/share/doc/fzf/examples/completion.bash
-```
+apt-get not good for that one :(
 
 # xmodmap./xmodmap (accent in qwerty)
 ```bash
-echo keycode 37 = Multi_key > ~/.xmodmap
+echo keycode 105 = Multi_key > ~/.xmodmap
 echo xmodmap ~/.xmodmap >> ~/.bashrc
 source ~/.bashrc
 ```
