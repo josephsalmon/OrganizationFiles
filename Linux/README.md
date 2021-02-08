@@ -15,7 +15,6 @@ https://www.anaconda.com/products/individual
 conda install pelican Markdown pandas bibtex parser voila scikit-learn 
 conda install -c conda-forge jupyter_contrib_nbextensions
 
-
 ## Inkscape
 <https://textext.github.io/textext/install/linux.html>
 
@@ -38,6 +37,16 @@ sudo add-apt-repository ppa:obsproject/obs-studio
 sudo apt update
 sudo apt install obs-studio
 ```
+
+Compatibility with zoom:
+
+<https://jonathanbossenger.com/obs-studio-linux-virtual-camera/>
+and the bonus to avoid compression artefacts from zoom:
+
+
+"go share screen - advanced - share content from second camera - click the switch camera icon in the top left until i find the Virtual Cam Stream and then i am getting perfect quality."
+
+<https://obsproject.com/forum/threads/obs-output-blurry-in-ndi-and-virtual-cam-using-skype-zoom-or-vlc-directshow.118628/>
 
 # Flux
 ```bash
@@ -81,3 +90,6 @@ source ~/.bashrc
 
 # Meld (for git diff, merge)
  sudo apt-get install meld
+
+
+
