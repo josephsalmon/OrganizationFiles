@@ -14,25 +14,25 @@
 
 
 
-## Text Editor 
+## Text Editor
 
 Among the useful tools a modern editor (like [VSCode](https://code.visualstudio.com/) or [Sublime Text](https://www.sublimetext.com/)).
-On top of that useful tools connected to LaTeX include:
-, is mandatory.
-In particular useful tools include 
+On top of that useful tools connected to LaTeX include, in particular useful tools include
 - snippets
-- multi-cursors 
+- multi-cursors
 - forward/backward search: so you can click the generated pdf and find the tex location in your document (something now common with Overleaf).
 
+For VSCode see for instance:
+<https://danmackinlay.name/notebook/vs_code_for_latex.html>
 
 ## Additional tools
 
 - https://www.tablesgenerator.com/ : to create LaTeX tables from copy/paste values or .csv files
 - Inkscape (see for more information in the [Inkscape](../inkscape/README.md) section): useful for sketching figures with, especially with the [TexText](https://inkscape.org/~jcwinkler/%E2%98%85textext) extension.
 - latexdiff : allows to visualize the diff in the pdf (useful for revision / v2 in a publication):
-	
+
 	`file1.tex file2.tex > diff.tex`
-	
+
 	Then, you can compile the file diff.tex and you get some nice difference file in the output pdf.
 
 
