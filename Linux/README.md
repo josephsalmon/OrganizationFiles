@@ -12,7 +12,7 @@ https://support.zoom.us/hc/en-us/articles/204206269-Installing-or-updating-Zoom-
 
 https://www.anaconda.com/products/individual
 
-conda install pelican Markdown pandas bibtex parser voila scikit-learn 
+conda install pelican Markdown pandas bibtex parser voila scikit-learn
 conda install -c conda-forge jupyter_contrib_nbextensions
 
 ## Inkscape
