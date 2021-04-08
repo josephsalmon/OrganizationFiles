@@ -34,6 +34,12 @@ Online data bases for bib files of interests are [DBLP](https://dblp.uni-trier.d
 
 In developing your PhD proposal, you agreed on certain topics and objectives to reach. These are not written in stone and can be amended with mutual agreement. Notably, as you become more experienced, you will develop several new ideas. Of course, it may be possible for you to develop a new idea into a full component of your thesis.
 
+# Affiliation / referencing
+Please always submit on Hal + arXiv. Hal is mandatory for french institutions.
+Affiliation for IMAG should be as followed:
+
+IMAG, Université de Montpellier, CNRS, Montpellier, France
+
 # Conferences
 
 You will identify me conferences that make sense for you to attend, but if you come across an interesting conference or workshop that you would like to attend, simply ask. If the budget allows, you will typically get one "free ride" at the beginning of your PhD with no accepted paper or abstract, but then you have to get some work accepted to travel.
