@@ -36,12 +36,12 @@
 	\definecolor{beamer@barcolor}{RGB}{194,193,204}% light blue
 	\definecolor{beamer@headercolor}{RGB}{33,26,82}% dark blue
 	\definecolor{beamer@normaltextcolor}{RGB}{84,97,110}% gray blue
-	
+
 	\setbeamercolor{background canvas}{bg=uninabg}
 	\setbeamercolor{structure}{fg=uninablue}
 	\setbeamercolor{frametitle}{fg=uninabg,bg=uninablue}
 	\setbeamercolor{UniNA}{fg=beamer@barcolor,bg=uninablue}
-	
+
 	\setbeamercolor{alerted text}{fg=uninaorange}
 	\setbeamercolor{normal text}{fg=uninagray}
 	% blocks
@@ -72,7 +72,7 @@
 	%templates
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	%title page
-	
+
 	\setbeamertemplate{title graphic}{
   		\vbox to 0pt {
     	\vspace*{-6em} \hspace*{\fill}
@@ -94,7 +94,7 @@
 				\vspace*{\baselineskip}\usebeamerfont{subtitle}\usebeamercolor[fg]{subtitle}\insertsubtitle\par
 				\fi
 			}\vspace*{\baselineskip}
-			\begin{beamercolorbox}[wd=\paperwidth,ht=.5\paperheight,sep=1cm]{frametitle}%			
+			\begin{beamercolorbox}[wd=\paperwidth,ht=.5\paperheight,sep=1cm]{frametitle}%
 				{\usebeamerfont{date}\insertdate}\vspace*{\baselineskip}
 
 				{\usebeamerfont{author}\insertauthor}\vspace*{\baselineskip}
@@ -107,7 +107,7 @@
 		\end{minipage}
 		}
 
-	
+
 	\def\maketitle{%
 		\ifbeamer@inframe
 			\titlepage
@@ -172,7 +172,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%% Outer theme %%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	
+
 	%%%theme options
 	% options for the progress bar/circle
 	\def\beamer@progressfixedCircCnt{fixedCircCnt} % fixed circular counter
@@ -183,7 +183,7 @@
 	\DeclareOptionBeamer{rotationcw}{\def\beamer@rotationcw{true}}
 	\DeclareOptionBeamer{shownavsym}{\def\beamer@shownavsym{true}}
 	\ProcessOptionsBeamer
-	
+
 	%the height of the header is 1.8 times the lineheight of the frame title
 	\newlength{\beamer@height}
 	\usebeamerfont{frametitle} %use the frame title font
@@ -213,13 +213,13 @@
 	%%headline
 	\setbeamertemplate{headline}{%
     	\begin{beamercolorbox}[wd=1.0\paperwidth,ht=3ex,dp=1.4ex,left]{headfoot}%
-        	\usebeamerfont{section in head/foot}\hspace*{3.5ex}%
-        	\insertshortauthor\ |\ %
-                \insertshorttitle%
+        	% \usebeamerfont{section in head/foot}\hspace*{3.5ex}  % uncomment to print name or other at top-left location
+        	% \insertshortauthor\ |\ %
+            %     \insertshorttitle%
     	\end{beamercolorbox}%
     	\aauheaderbackground%
   	}
-  
+
 	%frame title
 	\setbeamertemplate{frametitle}{%
     	\vspace{-.8ex}%reduce space before title
@@ -240,7 +240,7 @@
   	\fi
 
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	%Macros used in the theme 
+	%Macros used in the theme
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	% the fancy header background
 	\newcommand{\aauheaderbackground}[0]{%
@@ -249,14 +249,14 @@
 	    \coordinate (UL) at (0,0); %upper left corner of the slide
 	    \coordinate (HLR) at (\paperwidth,-\beamer@height); %lower right of the header
 	    \coordinate (logopos) at ([shift={(-\beamer@logoouterradius-\beamer@borderwidth,0.5\beamer@height)}] HLR);%coordinate of the logo
-	    
+
 	    %draw the background of the header, the circle and the logo
 	    {\usebeamercolor{UniNA}%
 	      \usebeamercolor{background canvas}%
-	      
+
 	      % draw the blue background rectangle of the header
 	      \draw[draw=none,fill=UniNA.bg] (UL) rectangle (HLR);
-	      
+
 	      % draw the outer circle
 	      \fill[fill=UniNA.fg] (logopos) circle (\beamer@logoouterradius);
 
@@ -270,7 +270,7 @@
 	        \else% clockwise rotation
 	          \FPeval\progress{(-360*\insertframenumber/\inserttotalframenumber)}
 	        \fi
-	        
+
 	        % draw the arc
 	        \draw[color=UniNA.bg,line width=0.5*\beamer@borderwidth] ([xshift=\beamer@counterradius] logopos) arc[radius=\beamer@counterradius, start angle=0, end angle=\progress];
 	        \fill[fill=UniNA.bg] ([shift={(\progress:\beamer@counterradius)}] logopos) circle (0.25\beamer@borderwidth);
@@ -278,20 +278,20 @@
 	        \node[fill=background canvas.bg,draw=UniNA.fg,thick,circle,minimum width=2*\beamer@borderwidth] (pagenumframe) at ([xshift=\beamer@counterradius]logopos) {};
 	        \node[at=(pagenumframe.center), anchor=center] {{\usebeamercolor[bg]{frametitle}\insertframenumber}};
 	      \fi
-	      
+
 	      \ifx\beamer@progressstyle\beamer@progressmovCircCnt% the circular counter with a moving counter
 	        \ifx\beamer@rotationcw\undefined% counterclockwise rotation
 	          \FPeval\progress{360*\insertframenumber/\inserttotalframenumber}
 	        \else% clockwise rotation
 	          \FPeval\progress{(-360*\insertframenumber/\inserttotalframenumber)}
 	        \fi
-	        
+
 	        % draw the arc
 	        \draw[color=AAUsimple.bg,line width=0.5*\beamer@borderwidth] ([xshift=\beamer@counterradius] logopos) arc (0:\progress:\beamer@counterradius);
-	        
+
 	        % place the total number of frames
 	        \node[fill=normal text.bg,draw=AAUsimple.fg,circle,thick,minimum width=2*\beamer@borderwidth] at ([xshift=\beamer@counterradius] logopos) {{\usebeamercolor[fg]{normal text}\inserttotalframenumber}};
-	        
+
 	        % place the current frame number
 	        \node[fill=normal text.bg,draw=AAUsimple.fg,circle,thick,minimum width=2*\beamer@borderwidth] at ([shift={(\progress:\beamer@counterradius)}] logopos) {{\usebeamercolor[fg]{normal text}\insertframenumber}};
 	      \fi
