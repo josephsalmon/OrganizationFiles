@@ -20,9 +20,12 @@ Among the useful tools a modern editor (like [VSCode](https://code.visualstudio.
 On top of that useful tools connected to LaTeX include, in particular useful tools include
 - snippets
 - multi-cursors
-- forward/backward search: so you can click the generated pdf and find the tex location in your document (something now common with Overleaf).
+- forward/backward search: so you can click the generated pdf and find the tex location in your document (something now common with Overleaf). With VSCode, it can be done with a Ctrl+click, simply add to `settings.json` the entry:
+```json
+"latex-workshop.synctex.synctexjs.enabled": true,
+```
 
-For VSCode see for instance:
+For more VSCode help see for instance:
 <https://danmackinlay.name/notebook/vs_code_for_latex.html>
 
 ## Additional tools
@@ -66,7 +69,7 @@ and not
 \begin{align}
 x + 3.
 \end{align}
-
+```
 
 ## English rules
 1. **HARMONIZE notation**
