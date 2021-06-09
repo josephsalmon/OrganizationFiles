@@ -66,6 +66,11 @@ to get something like
 **Challenge**: can you replicate this https://ssdesai.wordpress.com/2020/06/30/mandala/ in Inkscape?
 
 
+## Animated svg
+
+See for instance: https://georgefrancis.dev/writing/a-generative-svg-starter-kit/.
+This requires a bit of JavaScript though...
+
 ##  (Open) Sources for svg files
 
 - https://search.creativecommons.org/
