@@ -50,3 +50,5 @@ In section [guidelines](guidelines/README.md), standard information and work pra
 
 - Nidham Gazagnadou: https://ngazagna.github.io/
 
+- Camille Garcin: https://garcinc.github.io/Camille-Garcin/
+
