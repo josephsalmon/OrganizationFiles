@@ -30,6 +30,10 @@ If you are looking for more help on (scientific) Python I can only recommend my 
 In the [Images and Inkscape](inkscape/README.md) section, I am giving some insights on using images in science and communications, and discuss why **Inkscape** is an incredible tool to master for a PhD student or a modern researcher.
 
 
+## Web/html
+You can create your personal website seamlessly by following the instructions [here](https://wowchemy.com/templates/).
+
+
 ## [Advice (mostly) for PhD students](guidelines/README.md)
 In section [guidelines](guidelines/README.md), standard information and work practices for working in my the group is provided. Information on summer schools, fundings tips for traveling, etc. is also given.
 
@@ -45,4 +49,6 @@ In section [guidelines](guidelines/README.md), standard information and work pra
 - Florent Bascou: https://bascouflorent.github.io/
 
 - Nidham Gazagnadou: https://ngazagna.github.io/
+
+- Camille Garcin: https://garcinc.github.io/Camille-Garcin/
 
