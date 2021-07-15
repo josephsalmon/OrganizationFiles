@@ -1,0 +1,7 @@
+{
+    "dotp": {
+        "prefix": "dotp",
+        "body": "\\dotp{${1:env}}{${2:env}}$0",
+        "description": "New dotp"
+    }
+}

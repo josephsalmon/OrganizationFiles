@@ -17,11 +17,14 @@ There are two options:
 indicating from which type of files should it be used,
 - add snippets to a the JSON file associated to the wanted language.
 
+Or you can directly add the different `.code-snippets` files in the snippets directory.
+
 ### Activate them
 
 You only need to write the trigger keyword and press `Tab`.
 Each placeholder (written `${1:name}` or simply `$1` without the default text) is reached by pressing `Tab` again. The number is the order of visit from `1`.
 Note that `0` will always be visited last.
+If snippets induce a transformation (like replacing spaces by underscores), simply hit `Tab` again to apply it.
 
 If the `Tab` completion is not automatic and/or you wish to get your snippets first, add the following lines to the `settings.json` file:
 
@@ -31,7 +34,6 @@ If the `Tab` completion is not automatic and/or you wish to get your snippets fi
     "editor.snippetSuggestions": "top"
 }
 ```
-
 
 More keywords and tips ![in the official documentation](https://code.visualstudio.com/docs/editor/userdefinedsnippets)
 

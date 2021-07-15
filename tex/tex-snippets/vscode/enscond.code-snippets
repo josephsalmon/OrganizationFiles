@@ -1,0 +1,9 @@
+{
+    "enscond":{
+        "prefix": "enscond",
+        "body": [
+            "\\enscond{${1:env}}{${2:env}}$0"
+        ],
+        "description": "New enscond"
+    }
+}

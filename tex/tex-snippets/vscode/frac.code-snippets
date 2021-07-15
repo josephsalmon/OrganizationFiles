@@ -1,0 +1,9 @@
+{
+    "frac":{
+        "prefix": "frac",
+        "body": [
+            "\\frac{${1:env}}{${2:env}}$0"
+        ],
+        "description": "New frac"
+    }
+}
