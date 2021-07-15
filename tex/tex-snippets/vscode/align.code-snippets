@@ -1,0 +1,11 @@
+{
+    "align":{
+        "prefix": "align",
+        "body": [
+            "\\begin{align}\\label{eq:${1:env}}",
+            "$0",
+            "\\end{align}"
+        ],
+        "description": "New align"
+    }
+}

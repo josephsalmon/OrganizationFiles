@@ -1,0 +1,11 @@
+{
+    "align*":{
+        "prefix": "align*",
+        "body": [
+            "\\begin{align*}",
+            "$0",
+            "\\end{align*}"
+        ],
+        "description": "Equation*"
+    }
+}
