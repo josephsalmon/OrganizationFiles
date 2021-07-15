@@ -1,0 +1,11 @@
+{
+    "equation":{
+        "prefix": "eq*",
+        "body": [
+            "\\begin{equation*}",
+            "$0",
+            "\\end{equation*}"
+        ],
+        "description": "Equation"
+    }
+}

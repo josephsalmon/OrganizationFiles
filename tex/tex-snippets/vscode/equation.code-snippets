@@ -1,0 +1,11 @@
+{
+    "equation":{
+        "prefix": "eq",
+        "body": [
+            "\\begin{equation}\\label{eq:${1:env}}",
+            "$0",
+            "\\end{equation}"
+        ],
+        "description": "Equation*"
+    }
+}
