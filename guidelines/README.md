@@ -60,6 +60,14 @@ We are mostly communicating using Slack http://salmonlab.slack.com and Mattermos
 For visio-conferences you can use https://rendez-vous.renater.fr/ or https://meet.jit.si/.
 
 
+# Scientific writing
+
+Scientific writing is hard but practice help, a lot.
+Reading good articles also do.
+Some rules of thumb could be found here:
+
+https://twitter.com/13adh13/status/1406664117147123715
+
 # TeX / LaTeX
 
 TeX / LaTeX is mandatory when writing research in Mathematics, Computer Science or signal processing. A full [TeX / LaTeX section](../tex/README.md) is dedicated here.
