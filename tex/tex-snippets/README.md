@@ -4,7 +4,7 @@
 
 ### Architecture
 
-It is a JSON entry defined by:
+It is a JSON entry defined by a `name` and:
 - the `prefix`: the triggering keyword(s),
 - the `body`: what the snippet does. Each line is between quotes and separated by commas,
 - the `description`: optional but displayed by the help.
@@ -33,6 +33,18 @@ If the `Tab` completion is not automatic and/or you wish to get your snippets fi
 {
     "editor.tabCompletion": "on",
     "editor.snippetSuggestions": "top"
+}
+```
+
+To trigger the snippet named `my_snippet` with the key combination `key_combination`, add to the `keybindings.json` file:
+```json
+{
+    "key": "key_combination",
+    "command": "editor.action.insertSnippet",
+    "args": {
+        "name": "my_snippet"
+    },
+    "when": "editorHasSelection"  // optional: to add a condition on the event trigger (here when there is selected text)
 }
 ```
 
