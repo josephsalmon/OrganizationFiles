@@ -19,23 +19,23 @@ In the [LaTeX section](tex/) is provided:
 |[<img src="sharedimages/article.png" width="105" height="150">](tex/draft-article/article.tex)|[<img src="sharedimages/beamer_js.png" width="200" height="150">](tex/draft-beamer/beamer_js.tex)|[<img src="sharedimages/beamer_tl.png" width="200" height="150">](tex/draft-beamer/beamer_tl.tex)|[<img src="sharedimages/examen.png" width="105" height="150">](tex/draft-exam/exam.tex)|[<img src="sharedimages/scribe.png" width="105" height="150">](tex/draft-scribe/scribe.tex)|
 
 
-## [Python](python/draft-package/README.md)
-In section [draft-package](python/draft-package/README.md)
+## [Python](python/draft-package/)
+In section [draft-package](python/draft-package/)
 an example of a Python package
  to start a new project.
 If you are looking for more help on (scientific) Python I can only recommend my course with [B. Charlier](https://imag.umontpellier.fr/~charlier), see: https://github.com/bcharlier/HMMA238
 
 
-## [Images and Inkscape](inkscape/README.md)
-In the [Images and Inkscape](inkscape/README.md) section, I am giving some insights on using images in science and communications, and discuss why **Inkscape** is an incredible tool to master for a PhD student or a modern researcher.
+## [Images and Inkscape](inkscape/)
+In the [Images and Inkscape](inkscape/) section, I am giving some insights on using images in science and communications, and discuss why **Inkscape** is an incredible tool to master for a PhD student or a modern researcher.
 
 
 ## Web/html
 You can create your personal website seamlessly by following the instructions [here](https://wowchemy.com/templates/).
 
 
-## [Advice (mostly) for PhD students](guidelines/README.md)
-In section [guidelines](guidelines/README.md), standard information and work practices for working in my the group is provided. Information on summer schools, fundings tips for traveling, etc. is also given.
+## [Advice (mostly) for PhD students](guidelines/)
+In section [guidelines](guidelines/), standard information and work practices for working in my the group is provided. Information on summer schools, fundings tips for traveling, etc. is also given.
 
 
 ## Contributors
