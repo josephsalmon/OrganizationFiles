@@ -5,8 +5,8 @@ You will find a focus on: writing scientific documents (Tex / LaTeX / BibTeX), c
 Feel free to fork the repository (by clicking **Fork** in the top-right corner of the page) and submit pull-request to improve it.
 
 
-## [TeX / LaTeX / BibTeX](tex/README.md)
-In the [LaTeX section](tex/README.md) is provided:
+## [TeX / LaTeX / BibTeX](tex/)
+In the [LaTeX section](tex/) is provided:
 
 - Large harmonized reference file for my group : [references_all.bib](tex/biblio/references_all.bib)
 
