@@ -17,7 +17,7 @@
 
 |[beamer_tl_js.tex](draft-beamer/beamer_tl_js.tex) |[beamer_js.tex](draft-beamer/beamer_js.tex) | [beamer_tl.tex](draft-beamer/beamer_tl.tex)|
 | ----------- | ----------- |----------- |
-|[<img src="../sharedimages/beamer_js.png" width="400" height="150">](draft-beamer/beamer_js.tex)|[<img src="../sharedimages/beamer_tl.png" width="400" height="150">](draft-beamer/beamer_tl.tex)|[<img src="../sharedimages/beamer_tl.png" width="400" height="150">](draft-beamer/beamer_tl.tex)|
+|[<img src="../sharedimages/beamer_tl_js.png" width="400" height="150">](draft-beamer/beamer_js.tex)|[<img src="../sharedimages/beamer_tl.png" width="400" height="150">](draft-beamer/beamer_tl.tex)|[<img src="../sharedimages/beamer_tl.png" width="400" height="150">](draft-beamer/beamer_tl.tex)|
 
 
 
