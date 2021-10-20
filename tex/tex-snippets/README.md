@@ -47,6 +47,33 @@ To trigger the snippet named `my_snippet` with the key combination `key_combinat
     "when": "editorHasSelection"  // optional: to add a condition on the event trigger (here when there is selected text)
 }
 ```
+An example with the following snippet:
+```json
+{
+	"surround": {
+		"prefix": "sandwich",
+		"body": [
+			"\\\\${1}{$TM_SELECTED_TEXT}${2}"
+		]
+	}
+}
+```
+and key bindings
+```json
+{
+  {
+      "key": "\\",
+      "command": "editor.action.insertSnippet",
+      "when": "editorHasSelection",
+      "args": {
+        "name": "surround"
+      }
+    }
+}
+```
+provide the following behavior when selecting a text and then typing `\`:
+
+<img src="sharedvideos/snippet_example.gif?sanitize=true" width="600">
 
 More keywords, transformations and tips ![in the official documentation](https://code.visualstudio.com/docs/editor/userdefinedsnippets)
 
