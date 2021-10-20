@@ -1,0 +1,86 @@
+\documentclass[10pt,aspectratio=43,unknownkeysallowed]{beamer}
+
+\usepackage{amsmath,amsfonts,amsthm,amssymb}
+\usepackage{graphicx}
+
+\newcommand{\srcimages}{srcimages}           % Source images dir. name
+\newcommand{\images}{images}                 % create images dir. name
+\newcommand{\prebuiltimages}{prebuiltimages} % prebuiltimages images dir. name
+
+\graphicspath{{./\images/},{./\prebuiltimages/},{../../sharedimages/}}
+
+\usepackage[rotationcw]{../sty/beamer_tl_js}% clockwise, default is counterclockwise
+
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{copyrightbox}
+\usepackage{cleveref}
+\usepackage{hyperref}
+\usepackage[scaled]{beramono}
+\usepackage[scale=1.05]{AlegreyaSans}
+\usepackage{../sty/shortcuts_js}
+\usepackage{minted}
+\usepackage{tkz-fct}
+
+% \pgfplotsset{compat=1.17}
+\usetikzlibrary{spy}
+% \usepackage[round]{natbib}
+% \bibliographystyle{plainnat}
+\addbibresource{../biblio/references_all.bib}
+
+
+
+\definecolor{javared}{rgb}{0.6,0,0} % for strings
+\definecolor{javagreen}{rgb}{0.25,0.5,0.35} % comments
+\definecolor{javapurple}{rgb}{0.5,0,0.35} % keywords
+\definecolor{javadocblue}{rgb}{0.25,0.35,0.75} % javadoc
+\definecolor{marron}{rgb}{0.64,0.16,0.16}
+\definecolor{orange_js}{RGB}{230,159,0}
+\colorlet{LightGray}{gray!40}
+
+\newcommand{\mybold}[1]{\textcolor{marron}{\textbf{#1}}}
+\newcommand{\cRm}[1]{\textsc{\romannumeral #1}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% HEADER
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\title[] %shown at the top of frames
+{Deep Learning from a statistical viewpoint
+% \parencite{bartlett_deep_2021}
+} %shown in title frame
+\subtitle{Session 0: How, why and what is deep learning?}
+
+\date{10-2021} % explicitly set date instead of \today
+
+\author[]%shown at the top of frames
+{%shown in title frame
+    {\textbf{Tanguy Lefort}\\ IMAG, Univ Montpellier, CNRS\\ LIRMM,Inria, Univ Montpellier, CNRS}\\[0.3cm]%
+    {\textbf{Joseph Salmon}\\ IMAG, Univ Montpellier, CNRS\\ Institut Universitaire de France (IUF)}%
+}
+
+\institute[
+]
+{% is placed on the bottom of the title page
+}
+
+\titlegraphic{% logos are put at the bottom-right part of the page
+    \includesvgpdf{All_logos}{width=5cm} % logo
+    % \includegraphics[width=3cm]{imag_logo}~ % up to 3 (after it gets messy)
+    % \includegraphics[width=2cm]{CNRS.pdf} % if more, combine them in one image.
+    % \includegraphics[width=2cm]{inr_logo_rouge_cmjn.pdf} % if more, combine them in one image.
+    }
+
+\setbeamercolor{itemize subitem}{fg=javadocblue}
+\setbeamertemplate{itemize subitem}[triangle]
+\setbeamercolor{subsection in toc}{fg=black}
+
+
+
+\begin{document}
+\maketitle
+\input{content/content_factorized.tex}
+\end{document}
