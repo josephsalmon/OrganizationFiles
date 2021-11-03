@@ -42,6 +42,8 @@ In section [guidelines](guidelines/), standard information and work practices fo
 
 - Joseph Salmon: http://josephsalmon.eu
 
+- Tanguy Lefort: https://tanglef.github.io/
+
 - Mathurin Massias: https://mathurinm.github.io/
 
 - Quentin Bertrand: https://qb3.github.io/
