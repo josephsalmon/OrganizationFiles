@@ -1,0 +1,386 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{beamerthemeGlobalUniNA}[2018/11/16 An unofficial beamer theme for the University of Naples "Federico II" in a compacted version]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Setup
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{xcolor}
+\definecolor{uninabg}{HTML}{FCFCFC}
+\definecolor{uninablue}{HTML}{002747}
+\definecolor{uninaorange}{HTML}{D72638}
+\definecolor{uninagreen}{HTML}{149911}
+\definecolor{uninagray}{HTML}{434E58}
+
+\usepackage{tikz}
+\usetikzlibrary{positioning,automata,calc,fit,shapes,backgrounds,arrows.meta}
+\usetikzlibrary{external}
+%\usepackage{setspace}
+\usepackage{transparent}
+
+\usepackage[most]{tcolorbox} % for colored textboxes
+\tcbset{colframe=purple,colbacktitle=uninablue,colframe=uninablue,enhanced,left=0.5pt, right=0.5pt,fonttitle=\bfseries}
+
+\newtcolorbox{mybox}[2][]{%
+fonttitle=\bfseries,
+title={#2},
+#1
+}
+
+\usepackage[export]{adjustbox}
+\RequirePackage{calc}
+\RequirePackage{fp}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% citation/footenote in beamer
+\usepackage[backend=biber,style=authoryear,firstinits=true,citetracker=false,doi=false,isbn=false,url=false,eprint=false]{biblatex}
+\AtEveryCitekey{%
+  \clearfield{note}%
+}
+\renewcommand{\footnotesize}{\tiny} % size of footnotes
+\renewcommand\multicitedelim{\addsemicolon\space} % for footfullcite to have multiple elements separated by commas.
+
+\renewcommand{\footnoterule}{%
+\kern -3pt
+{\color{uninablue}\hrule width \textwidth height 1.5pt}
+\kern 3pt
+} % control the line before footnotes
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% footnote setting: (1), (2), etc.
+\usepackage{fnpct}
+\@ifpackagelater{fnpct}{2021/01/21}
+  {%
+  \AdaptNote\footcite{oo+m}[footnote]{% https://tex.stackexchange.com/questions/123814/consecutive-footcite-commands-and-separating-commas-in-the-text
+  \setfnpct{dont-mess-around}%
+  \IfNoValueTF{#1}
+    {#NOTE{#3}}
+    {\IfNoValueTF{#2}
+       {#NOTE[#1]{#3}}
+       {#NOTE[#1][#2]{#3}}}}
+  }
+  {%
+  \AdaptNoteOpt\footcite\multfootcite
+   \AdaptNoteOpt\footfullcite\multfootfullcite
+}%
+\renewcommand*{\thefootnote}{(\arabic{footnote})}
+
+
+
+\AtBeginDocument{\setlength\abovedisplayskip{0pt}}% remove top align blanks
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%beamer specific options
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\mode<presentation>%refers to the first four modes (beamer,handout,second and trans). That is, to all modes except the article mode
+{
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%% Color theme %%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+	\definecolor{beamer@barcolor}{RGB}{194,193,204}% light blue
+	\definecolor{beamer@headercolor}{RGB}{33,26,82}% dark blue
+	\definecolor{beamer@normaltextcolor}{RGB}{84,97,110}% gray blue
+
+	\setbeamercolor{background canvas}{bg=uninabg}
+	\setbeamercolor{structure}{fg=uninablue}
+	\setbeamercolor{frametitle}{fg=uninabg,bg=uninablue}
+	\setbeamercolor{UniNA}{fg=beamer@barcolor,bg=uninablue}
+
+	\setbeamercolor{alerted text}{fg=uninaorange}
+	\setbeamercolor{normal text}{fg=uninagray}
+	% blocks
+	\setbeamercolor{block title}{fg=white,bg=uninablue}
+	\setbeamercolor{block body}{fg=,bg=uninablue!7}
+	\setbeamercolor{block title example}{fg=white,bg=uninagreen}
+	\setbeamercolor{block body example}{fg=,bg=uninagreen!20}
+	\setbeamercolor{block title alerted}{fg=white,bg=uninaorange}
+	\setbeamercolor{block body alerted}{fg=,bg=uninaorange!20}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%% Font theme %%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+	\setbeamerfont{frametitle}{size=\Large,series=\scshape}
+	\setbeamerfont{title}{size=\Large,series=\scshape\bfseries}
+	\setbeamerfont{date}{size=\footnotesize}
+	\setbeamerfont{institute}{size=\footnotesize}
+	\setbeamerfont{framesubtitle}{size=\normalsize}
+	\setbeamerfont{author}{size=\normalsize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%% Inner theme %%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+	\DeclareOptionBeamer{sectionpages}{\def\beamersectionpages{true}}
+	\ProcessOptionsBeamer
+
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%templates
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%title page
+
+	\newcommand{\executeiffilenewer}[3]{%
+	\ifnum\pdfstrcmp{\pdffilemoddate{#1}}%
+	{\pdffilemoddate{#2}}>0%
+	{\immediate\write18{#3}}\fi%
+	}
+	\newcommand{\includesvgpdf}[2]{%
+
+	\IfFileExists{\prebuiltimages/#1.pdf}{
+		\includegraphics[#2]{\prebuiltimages/#1.pdf}
+		}{%
+		\executeiffilenewer{\srcimages/#1.svg}{\images/#1.pdf}{inkscape -D \srcimages/#1.svg -o \images/#1.pdf}
+		\includegraphics[#2]{#1.pdf}
+		}
+	}
+
+
+	\setbeamertemplate{title graphic}{
+  		% \vbox to 0pt {
+    	% \vspace*{-6em} \hspace*{\fill}
+    	\inserttitlegraphic%
+  		% }%
+  	% \nointerlineskip%
+	}
+
+	\setbeamertemplate{title page}{%
+		\begin{minipage}[t][\paperheight]{\textwidth}
+			\begin{beamercolorbox}[wd=\paperwidth,ht=.40\paperheight,sep=1cm]{frametitle}%
+			\begin{minipage}{0.9\paperwidth}
+				% {\usebeamerfont{date}\insertdate}\vspace*{\baselineskip}
+				\vfill
+				{\usebeamerfont{title}
+				\usebeamercolor[white]{title}
+				\inserttitle\par}
+				{
+					\ifx\insertsubtitle\empty
+					\else
+					\vspace*{\baselineskip}\usebeamerfont{subtitle}\usebeamercolor[white]{subtitle}\insertsubtitle\par
+					\fi
+					}
+					% \vspace*{\baselineskip}
+					% {\usebeamerfont{institute}\insertinstitute}
+				\end{minipage}
+			\end{beamercolorbox}%
+			\vfill
+			{
+				\begin{columns}[c,onlytextwidth] % align columns
+					\begin{column}{.58\textwidth}
+					{\usebeamerfont{bg}\usebeamercolor[uninablue]{author}\insertauthor}
+					\end{column}%
+					\hfill%
+					\begin{column}{.41\textwidth}
+					\centering
+					{\ifx\inserttitlegraphic\@empty\else\usebeamertemplate*{title graphic}\fi}
+					\end{column}%
+				\end{columns}
+
+			}
+			\vfill
+			\vspace*{\baselineskip}
+		\end{minipage}
+		}
+
+
+	\def\maketitle{%
+		\ifbeamer@inframe
+			\titlepage
+		\else
+			\frame[plain,noframenumbering]{\titlepage}
+		\fi
+	}
+
+	%standout page
+	\defbeamertemplate{standout page}{text}[1]{%
+		\begin{tikzpicture}[overlay, remember picture]%
+			\draw[fill=uninablue] (current page.south west) rectangle (current page.north east);
+		\end{tikzpicture}%
+		\begin{minipage}[c][\textheight][c]{\textwidth}
+			\centering
+				{\usebeamercolor[fg]{frametitle}\Large #1}
+		\end{minipage}
+	}
+	\newcommand{\standoutpage}[1]{%
+		\setbeamertemplate{standout page}[text]{#1}
+		\usebeamertemplate{standout page}
+	}
+
+	%standout page light
+	\defbeamertemplate{standout page light}{text}[1]{%
+		\begin{minipage}[c][\textheight][c]{\textwidth}
+			\centering
+				{\Large #1}
+		\end{minipage}
+	}
+	\newcommand{\standoutpagelight}[1]{%
+		\setbeamertemplate{standout page light}[text]{#1}
+		\usebeamertemplate{standout page light}
+	}
+
+	% Section pages
+	%standout page light
+	\defbeamertemplate{section page light}{text}[1]{%
+		\begin{minipage}[l][\textheight][c]{\textwidth}
+				{\usebeamerfont{title}\usebeamercolor[bg]{frametitle} #1}
+		\end{minipage}
+	}
+	\newcommand{\sectionpagelight}[1]{%
+		\setbeamertemplate{section page light}[text]{#1}
+		\usebeamertemplate{section page light}
+	}
+
+	\ifx\beamersectionpages\undefined% section frames
+		%nothing
+	\else
+		\AtBeginSection{
+			\ifbeamer@inframe
+				\standoutpage{\insertsectionhead}
+			\else
+				\begin{frame}[plain,c,noframenumbering]
+					\sectionpagelight{\insertsectionhead}
+				\end{frame}
+			\fi
+		}
+	\fi
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%% Outer theme %%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+	%%%theme options
+	% options for the progress bar/circle
+	\def\beamer@progressfixedCircCnt{fixedCircCnt} % fixed circular counter
+	\def\beamer@progressmovCircCnt{movCircCnt} % moving circular counter
+	\def\beamer@progresscorner{corner} % a counter in the lower right corner
+	\def\beamer@progressstyle{fixedCircCnt} % default
+	\DeclareOptionBeamer{progressstyle}{\def\beamer@progressstyle{#1}}
+	\DeclareOptionBeamer{rotationcw}{\def\beamer@rotationcw{true}}
+	\DeclareOptionBeamer{shownavsym}{\def\beamer@shownavsym{true}}
+	\ProcessOptionsBeamer
+
+	%the height of the header is 1.8 times the lineheight of the frame title
+	\newlength{\beamer@height}
+	\usebeamerfont{frametitle} %use the frame title font
+	\setlength{\beamer@height}{1.8\baselineskip}
+	% reset fonts
+	\reset@font
+	% radius of the logo
+	\newlength{\beamer@logoradius}
+	\setlength{\beamer@logoradius}{1\beamer@height/3}
+	% width of the border
+	\newlength{\beamer@borderwidth}
+	\setlength{\beamer@borderwidth}{1.mm}
+	% inner radius of border of the logo frame
+	\newlength{\beamer@logoinnerradius}
+	\setlength{\beamer@logoinnerradius}{1.1\beamer@logoradius}
+	% radius of the outer border of the logo frame
+	\newlength{\beamer@logoouterradius}
+	\setlength{\beamer@logoouterradius}{\beamer@logoinnerradius+\beamer@borderwidth}
+	% radius of the counters
+	\newlength{\beamer@counterradius}
+	\setlength{\beamer@counterradius}{\beamer@logoinnerradius/2+\beamer@logoouterradius/2}
+	% the progress
+
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%templates
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%headline
+	\setbeamertemplate{headline}{%
+    	\begin{beamercolorbox}[wd=1.0\paperwidth,ht=-1.5ex,dp=1.4ex,left]{headfoot}%
+        	\usebeamerfont{section in head/foot}\hspace*{3.5ex}%
+        	% \insertshortauthor\ |\ %
+            %     \insertshorttitle%
+    	\end{beamercolorbox}%
+    	\aauheaderbackground%
+  	}
+
+	%frame title
+	\setbeamertemplate{frametitle}{%
+    	\vspace{-.8ex}%reduce space before title
+    	\begin{minipage}[t][.75\beamer@height][t]{\textwidth-1.5\beamer@logoouterradius}%
+      	{\usebeamercolor[fg]{frametitle}\usebeamerfont{frametitle}\insertframetitle\par}%
+      	{\usebeamercolor[fg]{framesubtitle}\usebeamerfont{framesubtitle}{\insertframesubtitle}\par}%
+    	\end{minipage}
+  	}
+
+	\ifx\beamer@shownavsym\undefined% insert navigation symbols
+    	\setbeamertemplate{navigation symbols}{%
+      	%disable navigation symbols
+    	}
+  	\fi
+
+  	\ifx\beamer@progressstyle\beamer@progresscorner% the progress in the lower right corner
+    \setbeamertemplate{footline}[frame number]
+  	\fi
+
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%Macros used in the theme
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	% the fancy header background
+	\newcommand{\aauheaderbackground}[0]{%
+	  \tikzexternaldisable
+	  \begin{tikzpicture}[overlay]
+	    \coordinate (UL) at (0,0); %upper left corner of the slide
+	    \coordinate (HLR) at (\paperwidth,-\beamer@height); %lower right of the header
+	    \coordinate (logopos) at ([shift={(-\beamer@logoouterradius-\beamer@borderwidth,0.5\beamer@height)}] HLR);%coordinate of the logo
+
+	    %draw the background of the header, the circle and the logo
+	    {\usebeamercolor{UniNA}%
+	      \usebeamercolor{background canvas}%
+
+	      % draw the blue background rectangle of the header
+	      \draw[draw=none,fill=UniNA.bg] (UL) rectangle (HLR);
+
+	      % draw the outer circle
+	      \fill[fill=UniNA.fg] (logopos) circle (\beamer@logoouterradius);
+
+	      % draw the inner circle
+	      \fill[fill=background canvas.bg] (logopos) circle (\beamer@logoinnerradius);
+
+	      %% draw progress circle/bar
+	      \ifx\beamer@progressstyle\beamer@progressfixedCircCnt% the circular counter with a fixed counter
+	        \ifx\beamer@rotationcw\undefined% counterclockwise rotation
+	          \FPeval\progress{360*\insertframenumber/\inserttotalframenumber}
+	        \else% clockwise rotation
+	          \FPeval\progress{(-360*\insertframenumber/\inserttotalframenumber)}
+	        \fi
+
+	        % draw the arc
+	        \draw[color=UniNA.bg,line width=0.5*\beamer@borderwidth] ([xshift=\beamer@counterradius] logopos) arc[radius=\beamer@counterradius, start angle=0, end angle=\progress];
+	        \fill[fill=UniNA.bg] ([shift={(\progress:\beamer@counterradius)}] logopos) circle (0.25\beamer@borderwidth);
+	        % place the current frame number
+	        \node[fill=background canvas.bg,draw=UniNA.fg,thick,circle,minimum width=2*\beamer@borderwidth] (pagenumframe) at ([xshift=\beamer@counterradius]logopos) {};
+	        \node[at=(pagenumframe.center), anchor=center] {{\usebeamercolor[bg]{frametitle}\insertframenumber}};
+	      \fi
+
+	      \ifx\beamer@progressstyle\beamer@progressmovCircCnt% the circular counter with a moving counter
+	        \ifx\beamer@rotationcw\undefined% counterclockwise rotation
+	          \FPeval\progress{360*\insertframenumber/\inserttotalframenumber}
+	        \else% clockwise rotation
+	          \FPeval\progress{(-360*\insertframenumber/\inserttotalframenumber)}
+	        \fi
+
+	        % draw the arc
+	        \draw[color=AAUsimple.bg,line width=0.5*\beamer@borderwidth] ([xshift=\beamer@counterradius] logopos) arc (0:\progress:\beamer@counterradius);
+
+	        % place the total number of frames
+	        \node[fill=normal text.bg,draw=AAUsimple.fg,circle,thick,minimum width=2*\beamer@borderwidth] at ([xshift=\beamer@counterradius] logopos) {{\usebeamercolor[fg]{normal text}\inserttotalframenumber}};
+
+	        % place the current frame number
+	        \node[fill=normal text.bg,draw=AAUsimple.fg,circle,thick,minimum width=2*\beamer@borderwidth] at ([shift={(\progress:\beamer@counterradius)}] logopos) {{\usebeamercolor[fg]{normal text}\insertframenumber}};
+	      \fi
+	    }
+	  \end{tikzpicture}%
+	  \tikzexternalenable
+	  }
+
+}%end of beamer specific options
+
+\mode<all>
