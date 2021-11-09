@@ -1,7 +1,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{Table of Contents}
-\tableofcontents[hideallsubsections]
+	\tableofcontents[hideallsubsections]
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -10,12 +10,12 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \AtBeginSection[]
 {
-\begin{frame}<beamer>{Table of Contents}
-\tableofcontents[currentsubsection,
-    hideothersubsections,
-    sectionstyle=show/shaded,
-]
-\end{frame}
+	\begin{frame}<beamer>{Table of Contents}
+		\tableofcontents[currentsubsection,
+			hideothersubsections,
+			sectionstyle=show/shaded,
+		]
+	\end{frame}
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -36,29 +36,29 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{Display a theorem and talk about it}
 
-\vspace{0.4cm}
+	\vspace{0.4cm}
 
-\mytheorem{Theorem}
-{
-\begin{equation*}
-a^2 + b^2 = c^2
-\end{equation*}
-}
+	\mytheorem{Theorem}
+	{
+		\begin{equation*}
+			a^2 + b^2 = c^2
+		\end{equation*}
+	}
 
-\vspace{0.25cm}
+	\vspace{0.25cm}
 
-Here, the response vector $Y$ is \mybold{qualitative}.
+	Here, the response vector $Y$ is \mybold{qualitative}.
 
-\vspace{0.25cm}
+	\vspace{0.25cm}
 
-\exple
-$\mathcal{Y} = \{\texttt{spam},  \texttt{ham}\}$ (\texttt{ham}=correct e-mail) or $\mathcal{Y}= \{0, 1, \dots,9\}$.
+	\exple
+	$\mathcal{Y} = \{\texttt{spam},  \texttt{ham}\}$ (\texttt{ham}=correct e-mail) or $\mathcal{Y}= \{0, 1, \dots,9\}$.
 
-The objective could be
-\begin{itemize}
-	\item create a classifier $\phi(x)$ that maps $x$ to one of the classes in $\mathcal{Y}$
-	\item evaluate the classification incertitude \footfullcite{Massias_Gramfort_Salmon18}\footfullcite{Dalalyan_Tsybakov07}
-\end{itemize}
+	The objective could be
+	\begin{itemize}
+		\item create a classifier $\phi(x)$ that maps $x$ to one of the classes in $\mathcal{Y}$
+		\item evaluate the classification incertitude \footfullcite{Massias_Gramfort_Salmon18}\footfullcite{Dalalyan_Tsybakov07}
+	\end{itemize}
 
 
 \end{frame}
@@ -68,34 +68,34 @@ The objective could be
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{Double column when needed}
-\begin{columns}
-\begin{column}[T]{.48\textwidth}
-	\mybold{Bayes classifier is} optimal
-	\begin{equation*}
-	  \phi^*(x) = \argmax_{y\in \mathcal{Y}} P(Y=y|X=x)
-	\end{equation*}
-	for the loss  $l(y,y')=1_{y\neq y'}$.
+	\begin{columns}
+		\begin{column}[T]{.48\textwidth}
+			\mybold{Bayes classifier is} optimal
+			\begin{equation*}
+				\phi^*(x) = \argmax_{y\in \mathcal{Y}} P(Y=y|X=x)
+			\end{equation*}
+			for the loss  $l(y,y')=1_{y\neq y'}$.
 
-	\vspace{1cm}
+			\vspace{1cm}
 
-	One can always use  $\widehat{\phi}(x)$.
-\end{column}
-\begin{column}[T]{.48\textwidth}
-	\centering
-	\includegraphics[width=0.75\textwidth]{french-flag}
+			One can always use  $\widehat{\phi}(x)$.
+		\end{column}
+		\begin{column}[T]{.48\textwidth}
+			\centering
+			\includegraphics[width=0.75\textwidth]{french-flag}
 
-	\vspace{1cm}
+			\vspace{1cm}
 
-	Alternatives:
-	\begin{itemize}
-		\item logistic regression / LDA
-		\item GAM
-		\item SVM
-	\end{itemize}
-	\vspace{1cm}
+			Alternatives:
+			\begin{itemize}
+				\item logistic regression / LDA
+				\item GAM
+				\item SVM
+			\end{itemize}
+			\vspace{1cm}
 
-\end{column}
-\end{columns}
+		\end{column}
+	\end{columns}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -104,6 +104,29 @@ The objective could be
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{A second example}
 \label{sub:deuxiem_exmple}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{A brief detour}{Proximal operators\footnotemark}
+
+	How to handle references possibly in the title (for the \texttt{beamer\_tl\_js.tex} template)
+
+
+	\underline{Motivation for proximal operators:}\\[0.5cm] smooth non-smooth functions (sic), \eg to perform gradient descent
+
+	\vspace{0.5cm}
+
+	\begin{align*}
+		\prox_{\tfrac{ \lambda }{L} g}(z) = \argmin_{z' \in \bbR^p} \tfrac{\lambda}{L} g(z') + \tfrac{1}{2}\norm{z'-z}^2
+	\end{align*}
+
+
+
+	\footnotetext[3]{\fullcite{Moreau62}}
+	\addtocounter{footnote}{1}
+\end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
@@ -142,20 +165,20 @@ The objective could be
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{Lectures:}
-\begin{itemize}
- \item[$\bullet$] \textbf{Joseph Salmon} :
-\begin{itemize}
-\visible<1->{\item current situation:  Professor at Université de Montpellier}
-\visible<2->{\item Previously: Paris Diderot-Paris 7, Duke University, Télécom ParisTech, University of Washington}
-\visible<3->{\item Research topics: high dimensional statistics, optimization, aggregation, images}
-\visible<4->{\item Bureau: 415, Bat. 9}
+	\begin{itemize}
+		\item[$\bullet$] \textbf{Joseph Salmon} :
+		      \begin{itemize}
+			      \visible<1->{\item current situation:  Professor at Université de Montpellier}
+			            \visible<2->{\item Previously: Paris Diderot-Paris 7, Duke University, Télécom ParisTech, University of Washington}
+			            \visible<3->{\item Research topics: high dimensional statistics, optimization, aggregation, images}
+			            \visible<4->{\item Bureau: 415, Bat. 9}
 
-\end{itemize}
-\end{itemize}
+		      \end{itemize}
+	\end{itemize}
 
-\vspace{0.4cm}
-\centering
-\includegraphics[width=0.93\textwidth]{contact_js}
+	\vspace{0.4cm}
+	\centering
+	\includegraphics[width=0.93\textwidth]{contact_js}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -172,6 +195,6 @@ The objective could be
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{Bibliographie}
-\printbibliography
+	\printbibliography
 \end{frame}
- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
