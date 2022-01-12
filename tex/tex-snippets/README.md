@@ -64,7 +64,8 @@ and key bindings
   {
       "key": "\\",
       "command": "editor.action.insertSnippet",
-      "when": "editorHasSelection",
+      "when": "editorHasSelection && editorLangId==latex"
+",
       "args": {
         "name": "surround"
       }
