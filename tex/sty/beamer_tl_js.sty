@@ -34,6 +34,7 @@ title={#2},
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% citation/footenote in beamer
+\setbeamercolor{footnote mark}{fg=.}  % keep color fine for footmarks
 \usepackage[backend=biber,style=authoryear,firstinits=true,citetracker=false,doi=false,isbn=false,url=false,eprint=false]{biblatex}
 \AtEveryCitekey{%
   \clearfield{note}%
@@ -47,6 +48,18 @@ title={#2},
 \kern 3pt
 } % control the line before footnotes
 
+\renewrobustcmd{\blx@mkbibfootnote}[2]{%
+  \iftoggle{blx@footnote}
+    {\blx@warning{Nested notes}%
+     \addspace\mkbibparens{#2}}
+    {\unspace
+     \ifnum\blx@notetype=\tw@
+       \expandafter\@firstoftwo
+     \else
+       \expandafter\@secondoftwo
+     \fi
+       {\csuse{blx@theendnote#1}{\protecting{\blxmkbibnote{end}{#2}}}}
+       {\footnote[#1,frame]{\protecting{\blxmkbibnote{foot}{#2}}}}}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % footnote setting: (1), (2), etc.
