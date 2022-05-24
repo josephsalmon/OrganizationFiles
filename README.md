@@ -37,6 +37,11 @@ You can create your personal website seamlessly by following the instructions [h
 ## [Advice (mostly) for PhD students](guidelines/)
 In section [guidelines](guidelines/), standard information and work practices for working in my the group is provided. Information on summer schools, fundings tips for traveling, etc. is also given.
 
+## Calendar / polls / etc. 
+
+To create polls with unique possibilities (say you want the people you contact to choose one single choice, on a first-come, first-served basis) evento is a good solution evento.renater.fr/ , see help here : https://numerique76.spip.ac-rouen.fr/IMG/pdf/planifier_des_rendez-vous_evento_modifie_erun_76.pdf .
+
+Use a calendar, a paper or an online version is up to you.
 
 ## Contributors
 
