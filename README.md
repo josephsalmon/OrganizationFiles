@@ -29,6 +29,7 @@ If you are looking for more help on (scientific) Python I can only recommend my 
 ## [Images and Inkscape](inkscape/)
 In the [Images and Inkscape](inkscape/) section, I am giving some insights on using images in science and communications, and discuss why **Inkscape** is an incredible tool to master for a PhD student or a modern researcher.
 About colors, it is interesting to know some basics rules (see https://matthewstrom.com/writing/how-to-pick-the-least-wrong-colors/) and to be aware of colorblind people.
+A last important point is the creation of palettes for choosing the right colors. For that [http://paletton.com](http://paletton.com/#uid=1000u0kllllaFw0g0qFqFg0w0aF) could help a lot.
 
 ## Web/html
 You can create your personal website seamlessly by following the instructions [here](https://wowchemy.com/templates/).
