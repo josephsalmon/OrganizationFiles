@@ -40,7 +40,7 @@ In section [guidelines](guidelines/), standard information and work practices fo
 
 ## Calendar / polls / etc. 
 
-To create polls with unique possibilities (say you want the people you contact to choose one single choice, on a first-come, first-served basis) evento is a good solution evento.renater.fr/ , see help here : https://numerique76.spip.ac-rouen.fr/IMG/pdf/planifier_des_rendez-vous_evento_modifie_erun_76.pdf .
+To create polls with unique possibilities (say you want the people you contact to choose one single choice, on a first-come, first-served basis) evento is a good solution evento.renater.fr/, see help here : https://numerique76.spip.ac-rouen.fr/IMG/pdf/planifier_des_rendez-vous_evento_modifie_erun_76.pdf.
 
 Use a calendar, a paper or an online version is up to you.
 
