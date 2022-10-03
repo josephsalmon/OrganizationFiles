@@ -30,7 +30,7 @@ You should meet me for an extended individual discussion on a regular basis.
 Importantly, you should expect to be continually reading papers to stay up-to-date in the field and acquire broader scientific knowledge. Reading one paper a week is considered good practice, but you probably need to read more in the first months working on a new topic. This will be an entirely independent activity that you are expected to perform on your own. I may suggest particularly relevant papers when I come across them, but otherwise you should find and choose which papers to read independently. With time, reading good papers will also help you improve your own writing.
 Resources for that could be [arXiv.org](https://arxiv.org/), [The arXivist](http://arxivist.com/), [Scholar Google](https://scholar.google.fr/), [Twitter](https://twitter.com), etc.
 Online data bases for bib files of interests are [DBLP](https://dblp.uni-trier.de/), [mathscinet](https://mathscinet.ams.org/mathscinet/index.html), [Zentralblatt MATH](https://zbmath.org/) among others.
-An extension of interest from the CNRS (if you are affiliated) is the following: [Click and Read](https://bib.cnrs.fr/click-read-2/)
+An extension of interest from the CNRS (if you are affiliated) is the following: [Click and Read](https://bib.cnrs.fr/click-read-2/).
 To keep track of your reading, consider also using: https://github.com/vict0rsch/PaperMemory.
 
 
