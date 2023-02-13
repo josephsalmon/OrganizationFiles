@@ -18,6 +18,8 @@
 %\usepackage{setspace}
 \usepackage{transparent}
 
+\usepackage[absolute,overlay]{textpos}  % for image where you want
+
 \usepackage[most]{tcolorbox} % for colored textboxes
 \tcbset{colframe=purple,colbacktitle=uninablue,colframe=uninablue,enhanced,left=0.5pt, right=0.5pt,fonttitle=\bfseries}
 
@@ -31,11 +33,17 @@ title={#2},
 \RequirePackage{calc}
 \RequirePackage{fp}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% footnote setting: (1), (2), etc.
+\usepackage{fnpct}
+\renewcommand*{\thefootnote}{(\arabic{footnote})}
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% citation/footenote in beamer
 \setbeamercolor{footnote mark}{fg=.}  % keep color fine for footmarks
-\usepackage[backend=biber,style=authoryear,firstinits=true,citetracker=false,doi=false,isbn=false,url=false,eprint=false]{biblatex}
+\usepackage[backend=biber,style=authoryear,giveninits=true,citetracker=false,doi=false,isbn=false,url=false,eprint=false,natbib,uniquename=false]{biblatex}
 \AtEveryCitekey{%
   \clearfield{note}%
 }
@@ -61,27 +69,20 @@ title={#2},
        {\csuse{blx@theendnote#1}{\protecting{\blxmkbibnote{end}{#2}}}}
        {\footnote[#1,frame]{\protecting{\blxmkbibnote{foot}{#2}}}}}}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% footnote setting: (1), (2), etc.
-\usepackage{fnpct}
-\@ifpackagelater{fnpct}{2021/01/21}
-  {%
-  \AdaptNote\footcite{oo+m}[footnote]{% https://tex.stackexchange.com/questions/123814/consecutive-footcite-commands-and-separating-commas-in-the-text
-  \setfnpct{dont-mess-around}%
-  \IfNoValueTF{#1}
-    {#NOTE{#3}}
-    {\IfNoValueTF{#2}
-       {#NOTE[#1]{#3}}
-       {#NOTE[#1][#2]{#3}}}}
-  }
-  {%
-  \AdaptNoteOpt\footcite\multfootcite
-   \AdaptNoteOpt\footfullcite\multfootfullcite
-}%
-\renewcommand*{\thefootnote}{(\arabic{footnote})}
-
-
-
+	   \AdaptNote\footcite{oo+m}[footnote]{%
+	   \setfnpct{dont-mess-around}%
+	   \IfNoValueTF{#1}
+		 {#NOTE{#3}}
+		 {\IfNoValueTF{#2}
+			{#NOTE[#1]{#3}}
+			{#NOTE[#1][#2]{#3}}}}
+		\AdaptNote\footfullcite{oo+m}[footnote]{%
+			\setfnpct{dont-mess-around}%
+			\IfNoValueTF{#1}
+			  {#NOTE{#3}}
+			  {\IfNoValueTF{#2}
+				 {#NOTE[#1]{#3}}
+				 {#NOTE[#1][#2]{#3}}}}
 \AtBeginDocument{\setlength\abovedisplayskip{0pt}}% remove top align blanks
 
 
@@ -95,13 +96,13 @@ title={#2},
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%% Color theme %%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%beamerthemeGlobalUniNA
 
 	\definecolor{beamer@barcolor}{RGB}{194,193,204}% light blue
 	\definecolor{beamer@headercolor}{RGB}{33,26,82}% dark blue
 	\definecolor{beamer@normaltextcolor}{RGB}{84,97,110}% gray blue
 
-	\setbeamercolor{background canvas}{bg=uninabg}
+	\setbeamercolor{background canvas}{bg=white}
 	\setbeamercolor{structure}{fg=uninablue}
 	\setbeamercolor{frametitle}{fg=uninabg,bg=uninablue}
 	\setbeamercolor{UniNA}{fg=beamer@barcolor,bg=uninablue}
