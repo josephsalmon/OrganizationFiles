@@ -24,6 +24,7 @@ In section [draft-package](python/draft-package/)
 an example of a Python package
  to start a new project.
 If you are looking for more help on (scientific) Python I can only recommend my course with [B. Charlier](https://imag.umontpellier.fr/~charlier), see: https://github.com/bcharlier/HMMA238
+I also provide in [Python](python/matplotlib/) a style file to use with matplotlib, for clean figures harmonization.
 
 
 ## [Images and Inkscape](inkscape/)
