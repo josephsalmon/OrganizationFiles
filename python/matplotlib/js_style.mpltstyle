@@ -1,0 +1,59 @@
+# GRID
+grid.color: .8
+grid.linestyle: -
+
+# IMAGE
+image.cmap: Greys
+
+
+# FIGURE
+figure.facecolor: white
+figure.dpi: 100
+figure.titlesize: 14
+figure.titleweight: bold
+
+# LINES
+lines.linewidth: 1.5
+lines.solid_capstyle: round
+
+# PATCHES
+patch.facecolor: 0072B2
+
+# LEGEND
+legend.fontsize: 25
+legend.frameon: False
+legend.numpoints: 1
+legend.scatterpoints: 1
+
+# FONTS
+font.family: serif
+font.serif: Times
+font.size: 20
+
+# AXES
+axes.linewidth: 1.0
+axes.titlesize: 40
+axes.titleweight: bold
+axes.labelsize: 25
+axes.labelweight: bold
+axes.prop_cycle: cycler('color', ['1F77B4', 'FF7F0E', 'D62728', '2CA02C', '9467BD', '8C564B', 'E377C2', '7F7F7F', 'BCBD22', '17BECF'])
+axes.axisbelow: True
+axes.edgecolor: .8
+axes.facecolor: white
+axes.grid: True
+axes.labelcolor: .15
+
+# TEXT
+text.color: .15
+text.usetex: True
+text.latex.preamble: \usepackage{amsmath}\usepackage{amsfonts}\usepackage{amsthm}\usepackage{amssymb}
+
+# TICKS
+xtick.color: .15
+xtick.direction: out
+xtick.major.size: 0.0
+xtick.minor.size: 0.0
+ytick.color: .15
+ytick.direction: out
+ytick.major.size: 0.0
+ytick.minor.size: 0.0
