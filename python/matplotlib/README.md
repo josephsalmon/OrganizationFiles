@@ -23,3 +23,5 @@ You can then load in a script the style file with:
 import matplotlib.pyplot as plt
 plt.style.use('js_style')
 ```
+
+More information on the style loading is available here: [customizing-with-style-sheets](https://matplotlib.org/stable/tutorials/introductory/customizing.html#customizing-with-style-sheets) and a nice gallery of examples can be found here: [style_sheets_reference](https://matplotlib.org/stable/gallery/style_sheets/style_sheets_reference.html)
