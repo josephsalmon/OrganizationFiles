@@ -87,5 +87,9 @@ See mostly section (XXX TODO)
 ## Reproducibility
 First, reproducibility is important: without it, knowledge is lost, and no science can be produced: <https://rr-france.github.io/bookrr/> (in French)
 
+# MOOC
+
+- How to teach with dyslexic students at university: https://www.fun-mooc.fr/fr/cours/etudiants-dyslexiques-dans-mon-amphi-comprendre-et-aider/
+
 Resources:
 - "50 years of datascience", D. Donoho, 2015 <https://courses.csail.mit.edu/18.337/2015/docs/50YearsDataScience.pdf>
