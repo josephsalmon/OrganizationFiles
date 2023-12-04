@@ -79,6 +79,7 @@ This requires a bit of JavaScript though...
 - http://www.clker.com/
 - https://openclipart.org/
 - https://freesvg.org/
+- https://viglino.github.io/font-gis/?fg=earth (icons for maps etc.)
 
 ### Additional miscellaneous (math) art
 
