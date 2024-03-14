@@ -7,6 +7,8 @@ https://e2eml.school/convert_rgb_to_grayscale.html
 Inkscape is full of joy!
 Below are some interesting patterns you can create, and some help on how to learn to master Inkscape with it.
 
+For French reader, you can find some help here: https://www.ds-inkscape.net/category/outils
+
 ### TexText
 The first point is to use LaTeX with Inkscape. A toolbox interface for that is given by [TexText](https://inkscape.org/~jcwinkler/%E2%98%85textext) and can help you make graphs like this one:
 
@@ -74,6 +76,8 @@ This requires a bit of JavaScript though...
 
 ### (Open) Sources for SVG files
 
+- https://simpleicons.org/
+- https://www.openmoji.org/
 - https://scidraw.io/
 - https://search.creativecommons.org/
 - http://www.clker.com/
@@ -85,6 +89,8 @@ This requires a bit of JavaScript though...
 
 You will find more examples and math art creations here: https://github.com/josephsalmon/Tweets/
 
+## Additional resources on Inkscape
+- https://www.ds-inkscape.net/category/outils/
 
 
 ## Other software for image manipulations
