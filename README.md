@@ -14,9 +14,9 @@ In the [LaTeX section](tex/) is provided:
 
 - LaTeX / TeX templates and examples:
 
-|[article.tex](tex/draft-article/article.tex)|[beamer_js.tex](tex/draft-beamer/beamer_js.tex) | [beamer_tl.tex](tex/draft-beamer/beamer_tl.tex) | [exam.tex](tex/draft-exam/exam.tex)| [scribe.tex](tex/draft-scribe/scribe.tex) |
-| ----------- | ----------- | ----------- |----------- |----------- |
-|[<img src="sharedimages/article.png" width="105" height="150">](tex/draft-article/article.tex)|[<img src="sharedimages/beamer_js.png" width="200" height="150">](tex/draft-beamer/beamer_js.tex)|[<img src="sharedimages/beamer_tl.png" width="200" height="150">](tex/draft-beamer/beamer_tl.tex)|[<img src="sharedimages/examen.png" width="105" height="150">](tex/draft-exam/exam.tex)|[<img src="sharedimages/scribe.png" width="105" height="150">](tex/draft-scribe/scribe.tex)|
+| [article.tex](tex/draft-article/article.tex)                                                   | [beamer_js.tex](tex/draft-beamer/beamer_js.tex)                                                   | [beamer_tl.tex](tex/draft-beamer/beamer_tl.tex)                                                   | [exam.tex](tex/draft-exam/exam.tex)                                                     | [scribe.tex](tex/draft-scribe/scribe.tex)                                                   |
+| ---------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
+| [<img src="sharedimages/article.png" width="105" height="150">](tex/draft-article/article.tex) | [<img src="sharedimages/beamer_js.png" width="200" height="150">](tex/draft-beamer/beamer_js.tex) | [<img src="sharedimages/beamer_tl.png" width="200" height="150">](tex/draft-beamer/beamer_tl.tex) | [<img src="sharedimages/examen.png" width="105" height="150">](tex/draft-exam/exam.tex) | [<img src="sharedimages/scribe.png" width="105" height="150">](tex/draft-scribe/scribe.tex) |
 
 
 ## [Python](python/draft-package/)
@@ -26,6 +26,13 @@ an example of a Python package
 If you are looking for more help on (scientific) Python I can only recommend my course with [B. Charlier](https://imag.umontpellier.fr/~charlier), see: https://github.com/bcharlier/HMMA238 .
 
 I also provide in [matpotlib](python/matplotlib/) a style file to use with matplotlib, for clean figures harmonization.
+
+## Reproducibility/Replicability
+
+These are key concept for modern science.
+See for instance Konrad Hinsen's blog post on the topic: [https://khinsen.net/keynote-acm-rep-24/transcript.html]().
+
+More motivational reading can be found in the papers by D. Donoho: [50 years of data science](https://www.tandfonline.com/doi/full/10.1080/10618600.2017.1384734) and the more recent [Data Science at the Singularity](https://hdsr.mitpress.mit.edu/pub/g9mau4m0/release/2).
 
 
 ## [Images and Inkscape](inkscape/)
@@ -38,11 +45,11 @@ You can create your personal website seamlessly by following the instructions [h
 
 
 ## [Advice (mostly) for PhD students](guidelines/)
-In section [guidelines](guidelines/), standard information and work practices for working in my the group is provided. Information on summer schools, fundings tips for traveling, etc. is also given.
+In section [guidelines](guidelines/), standard information and work practices for working in my the group is provided. Information on summer schools, funding tips for traveling, etc. is also given.
 
-## Calendar / polls / etc. 
+## Calendar / polls / etc.
 
-To create polls with unique possibilities (say you want the people you contact to choose one single choice, on a first-come, first-served basis) evento is a good solution evento.renater.fr/, see help here : https://numerique76.spip.ac-rouen.fr/IMG/pdf/planifier_des_rendez-vous_evento_modifie_erun_76.pdf.
+To create polls with unique possibilities (say you want the people you contact to choose one single choice, on a first-come, first-served basis) `Evento` is a good solution [https://evento.renater.fr](), see help [here](https://prim76.ac-normandie.fr/IMG/pdf/planifier_des_rendez-vous_evento_modifie_erun_76.pdf).
 
 Use a calendar, a paper or an online version is up to you.
 
