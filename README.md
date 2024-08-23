@@ -5,10 +5,10 @@ You will find a focus on: writing scientific documents (Tex / LaTeX / BibTeX), c
 Feel free to fork the repository (by clicking **Fork** in the top-right corner of the page) and submit pull-request to improve it.
 
 
-## [Quarto](quarto/)
-In the [Quarto section](quarto/) is provided:
+## [Quarto](Quarto/)
+In the [Quarto section](Quarto/) is provided:
 
-- A template for a Quarto presentation: [presentation-template](quarto/presentation-template/)
+- A template for a Quarto presentation: [presentation-template](Quarto/presentation-template/)
 - An example of a website created with Quarto: [HAX712X](https://josephsalmon.github.io/HAX712X/) with the source code available [here](https://github.com/josephsalmon/HAX712X/blob/main/index.qmd).
 
 
