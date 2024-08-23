@@ -8,16 +8,16 @@
 
 - Plain TeX templates
 
-|[article.tex](draft-article/article.tex)| [exam.tex](draft-exam/exam.tex)| [scribe.tex](draft-scribe/scribe.tex) |
-| ----------- |----------- |----------- |
-|[<img src="../sharedimages/article.png" width="210" height="150">](draft-article/article.tex)|[<img src="../sharedimages/examen.png" width="210" height="150">](draft-exam/exam.tex)|[<img src="../sharedimages/scribe.png" width="210" height="150">](draft-scribe/scribe.tex)|
+| [article.tex](draft-article/article.tex)                                                      | [exam.tex](draft-exam/exam.tex)                                                        | [scribe.tex](draft-scribe/scribe.tex)                                                      |
+| --------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ |
+| [<img src="../sharedimages/article.png" width="210" height="150">](draft-article/article.tex) | [<img src="../sharedimages/examen.png" width="210" height="150">](draft-exam/exam.tex) | [<img src="../sharedimages/scribe.png" width="210" height="150">](draft-scribe/scribe.tex) |
 
 
 - Beamer TeX templates
 
-|[beamer_tl_js.tex](draft-beamer/beamer_tl_js.tex) |[beamer_js.tex](draft-beamer/beamer_js.tex) | [beamer_tl.tex](draft-beamer/beamer_tl.tex)|
-| ----------- | ----------- |----------- |
-|[<img src="../sharedimages/beamer_tl_js.png" width="320" height="180">](draft-beamer/beamer_js.tex)|[<img src="../sharedimages/beamer_js.png" width="320" height="180">](draft-beamer/beamer_tl.tex)|[<img src="../sharedimages/beamer_tl.png" width="320" height="180">](draft-beamer/beamer_tl.tex)|
+| [beamer_tl_js.tex](draft-beamer/beamer_tl_js.tex)                                                   | [beamer_js.tex](draft-beamer/beamer_js.tex)                                                      | [beamer_tl.tex](draft-beamer/beamer_tl.tex)                                                      |
+| --------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------ |
+| [<img src="../sharedimages/beamer_tl_js.png" width="320" height="180">](draft-beamer/beamer_js.tex) | [<img src="../sharedimages/beamer_js.png" width="320" height="180">](draft-beamer/beamer_tl.tex) | [<img src="../sharedimages/beamer_tl.png" width="320" height="180">](draft-beamer/beamer_tl.tex) |
 
 
 
