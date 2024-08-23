@@ -1,0 +1,5 @@
+name: quarto-prez
+dependencies:
+  - numpy
+  - pandas
+  - plotly

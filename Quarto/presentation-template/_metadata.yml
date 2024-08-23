@@ -1,0 +1,71 @@
+
+
+project:
+  resources: images/*
+
+authors:
+  - name: Joseph Salmon
+    email: joseph.salmon@umontpellier.fr
+    affiliations:
+      - Université de Montpellier (Imag)
+      - IUF
+      - CNRS
+  - name: Benjamin Charlier
+    email: benjamin.charlier@umontpellier.fr
+    affiliations:
+      - Université de Montpellier (Imag)
+      - CNRS
+
+
+license: CC BY-SA
+
+bibliography: ../../tex/biblio/references_all.bib
+# csl: ieee.csl
+
+date: 2024-01-19
+
+history: false
+lang: fr-FR
+toc: true
+toc-depth: 1
+tbl-colwidths: [60, 50, 40, 30, 30]
+code-line-numbers: false
+jupyter: python3
+format:
+    revealjs:
+      html-math-method: mathjax
+      include-in-header:
+        - text: |
+            <script>
+            MathJax = {
+              options: {
+                menuOptions: {
+                  settings: {
+                    assistiveMml: false
+                  }
+                }
+              }
+            };
+            </script>
+      slide-number: true
+      controls-tutorial: true
+      preview-links: auto
+      # logo: images/logo-um.svg
+      # header-logo: images/logo-imag.png
+      footer: <span style="color:grey;float:left;margin-left:7%;"><em>{{< meta title >}}</em></span>
+      # <span style="color:grey;float:right;margin-right:12%;">Séminaire de Culture Générale</span>
+      transition: none
+      # fig-align: "center" 
+      center: false
+      width: 1600
+      height: 900
+      margin: 0.1
+      controls: false
+      code-annotations: select
+      css: slides.css
+
+editor:
+  render-on-save: true
+slide-level: 2
+# execute:
+#   cache: true

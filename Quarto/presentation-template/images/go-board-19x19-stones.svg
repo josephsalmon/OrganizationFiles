@@ -1,0 +1,631 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+    xmlns:cc="http://creativecommons.org/ns#"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:svg="http://www.w3.org/2000/svg"
+    xmlns:ns1="http://sozi.baierouge.fr"
+    id="svg2"
+    sodipodi:docname="go_board_19x19_stones.svg"
+    viewBox="0 0 903.72 905"
+    version="1.1"
+    inkscape:version="0.47 r22583"
+  >
+  <title
+      id="title2965"
+    >Go Board 19 x 19 With Stones</title
+  >
+  <defs
+      id="defs4"
+    >
+    <radialGradient
+        id="radialGradient2942"
+        cx="-120"
+        gradientUnits="userSpaceOnUse"
+        cy="120.34"
+        r="30"
+        inkscape:collect="always"
+      >
+      <stop
+          id="stop3617"
+          style="stop-color:#000000"
+          offset="0"
+      />
+      <stop
+          id="stop3619"
+          style="stop-color:#323232"
+          offset="1"
+      />
+    </radialGradient
+    >
+    <radialGradient
+        id="radialGradient2961"
+        cx="-120"
+        gradientUnits="userSpaceOnUse"
+        cy="120.34"
+        r="30"
+        inkscape:collect="always"
+      >
+      <stop
+          id="stop3617-4-8-5"
+          style="stop-color:#ffffff"
+          offset="0"
+      />
+      <stop
+          id="stop3619-0-2-5"
+          style="stop-color:#cdcdcd"
+          offset="1"
+      />
+    </radialGradient
+    >
+  </defs
+  >
+  <sodipodi:namedview
+      id="base"
+      bordercolor="#666666"
+      inkscape:pageshadow="2"
+      inkscape:window-y="-4"
+      inkscape:snap-center="true"
+      pagecolor="#ffffff"
+      inkscape:window-height="753"
+      inkscape:window-maximized="1"
+      inkscape:zoom="0.39140625"
+      inkscape:window-x="-4"
+      inkscape:snap-object-midpoints="true"
+      showgrid="false"
+      borderopacity="1.0"
+      inkscape:current-layer="layer1"
+      inkscape:cx="756.25195"
+      inkscape:cy="458.16598"
+      inkscape:window-width="1280"
+      inkscape:pageopacity="0.0"
+      inkscape:document-units="px"
+      inkscape:snap-nodes="false"
+    >
+    <inkscape:grid
+        id="grid2844"
+        enabled="true"
+        visible="true"
+        snapvisiblegridlinesonly="true"
+        type="xygrid"
+        empspacing="5"
+    />
+  </sodipodi:namedview
+  >
+  <g
+      id="layer1"
+      inkscape:label="Layer 1"
+      inkscape:groupmode="layer"
+      transform="translate(157.89 -48.724)"
+    >
+    <g
+        id="g2867"
+      >
+      <g
+          id="g4722"
+        >
+        <path
+            id="path2846"
+            style="stroke:#000000;stroke-width:2.5028;fill:none"
+            d="m-156.64 301.26h900"
+        />
+        <path
+            id="path2846-1"
+            style="stroke:#000000;stroke-width:2.5028;fill:none"
+            d="m-156.64 351.26h900"
+        />
+        <path
+            id="path2846-4"
+            style="stroke:#000000;stroke-width:2.5028;fill:none"
+            d="m-156.64 401.26h900"
+        />
+        <path
+            id="path2846-9"
+            style="stroke:#000000;stroke-width:2.5028;fill:none"
+            d="m-156.64 451.26h900"
+        />
+        <path
+            id="path2846-8"
+            style="stroke:#000000;stroke-width:2.5028;fill:none"
+            d="m-156.64 501.26h900"
+        />
+        <path
+            id="path2846-2"
+            style="stroke:#000000;stroke-width:2.5028;fill:none"
+            d="m-156.64 551.26h900"
+        />
+        <path
+            id="path2846-5"
+            style="stroke:#000000;stroke-width:2.5028;fill:none"
+            d="m-156.64 601.26h900"
+        />
+        <path
+            id="path2846-7"
+            style="stroke:#000000;stroke-width:2.5028;fill:none"
+            d="m-156.64 651.26h900"
+        />
+        <path
+            id="path2846-52"
+            style="stroke:#000000;stroke-width:2.5028;fill:none"
+            d="m-156.64 701.26h900"
+        />
+        <path
+            id="path2846-14"
+            style="stroke:#000000;stroke-width:2.5034;fill:none"
+            d="m94.587 52.475v900"
+        />
+        <path
+            id="path2846-3"
+            style="stroke:#000000;stroke-width:2.5034;fill:none"
+            d="m144.59 52.475v900"
+        />
+        <path
+            id="path2846-3-2"
+            style="stroke:#000000;stroke-width:2.5034;fill:none"
+            d="m194.59 52.475v900"
+        />
+        <path
+            id="path2846-3-1"
+            style="stroke:#000000;stroke-width:2.5034;fill:none"
+            d="m244.58 52.475v900"
+        />
+        <path
+            id="path2846-3-8"
+            style="stroke:#000000;stroke-width:2.5034;fill:none"
+            d="m294.58 52.475v900"
+        />
+        <path
+            id="path2846-3-7"
+            style="stroke:#000000;stroke-width:2.5034;fill:none"
+            d="m344.58 52.475v900"
+        />
+        <path
+            id="path2846-3-89"
+            style="stroke:#000000;stroke-width:2.5034;fill:none"
+            d="m394.58 52.475v900"
+        />
+        <path
+            id="path2846-3-9"
+            style="stroke:#000000;stroke-width:2.5034;fill:none"
+            d="m444.58 52.475v900"
+        />
+        <path
+            id="path2846-3-3"
+            style="stroke:#000000;stroke-width:2.5034;fill:none"
+            d="m494.58 52.475v900"
+        />
+        <path
+            id="path2846-3-3-1"
+            style="stroke:#000000;stroke-width:2.5034;fill:none"
+            d="m544.58 52.475v900"
+        />
+        <path
+            id="path2846-3-3-3"
+            style="stroke:#000000;stroke-width:2.5034;fill:none"
+            d="m594.58 52.475v900"
+        />
+        <path
+            id="path2846-3-3-7"
+            style="stroke:#000000;stroke-width:2.5034;fill:none"
+            d="m44.588 52.475v900"
+        />
+        <path
+            id="path2846-3-3-2"
+            style="stroke:#000000;stroke-width:2.5034;fill:none"
+            d="m-5.4118 52.475v900"
+        />
+        <path
+            id="path2846-77"
+            style="stroke:#000000;stroke-width:2.5028;fill:none"
+            d="m-156.64 251.26h900"
+        />
+        <path
+            id="path2846-31"
+            style="stroke:#000000;stroke-width:2.5028;fill:none"
+            d="m-156.64 201.26h900"
+        />
+        <path
+            id="path2846-6"
+            style="stroke:#000000;stroke-width:2.5028;fill:none"
+            d="m-156.64 751.26h900"
+        />
+        <path
+            id="path2846-0"
+            style="stroke:#000000;stroke-width:2.5028;fill:none"
+            d="m-156.64 801.26h900"
+        />
+        <path
+            id="path2846-3-3-3-0"
+            style="stroke:#000000;stroke-width:2.5034;fill:none"
+            d="m644.58 52.475v900"
+        />
+        <path
+            id="path2846-3-3-3-0-9"
+            style="stroke:#000000;stroke-width:2.5034;fill:none"
+            d="m694.58 52.475v900"
+        />
+        <path
+            id="path2846-3-3-3-0-0"
+            style="stroke:#000000;stroke-width:2.5069;fill:none"
+            d="m744.58 49.977v902.49"
+        />
+        <path
+            id="path2846-3-3-3-0-1"
+            style="stroke:#000000;stroke-width:2.5034;fill:none"
+            d="m-55.411 52.475v900"
+        />
+        <path
+            id="path2846-3-3-3-0-8"
+            style="stroke:#000000;stroke-width:2.5;fill:none"
+            d="m-105.42 203.51v597.74"
+        />
+        <path
+            id="path2846-3-3-3-0-3"
+            style="stroke:#000000;stroke-width:2.5034;fill:none"
+            d="m-105.41 52.475v900"
+        />
+        <path
+            id="path2846-3-3-3-0-4"
+            style="stroke:#000000;stroke-width:2.5034;fill:none"
+            d="m-155.41 52.475v900"
+        />
+        <path
+            id="path2846-31-6"
+            style="stroke:#000000;stroke-width:2.5028;fill:none"
+            d="m-156.64 151.26h900"
+        />
+        <path
+            id="path2846-31-66"
+            style="stroke:#000000;stroke-width:2.5028;fill:none"
+            d="m-156.64 101.26h900"
+        />
+        <path
+            id="path2846-31-8"
+            style="stroke:#000000;stroke-width:2.5028;fill:none"
+            d="m-156.64 51.256h900"
+        />
+        <path
+            id="path2846-31-6-4"
+            style="stroke:#000000;stroke-width:2.5028;fill:none"
+            d="m-156.64 851.26h900"
+        />
+        <path
+            id="path2846-31-6-4-9"
+            style="stroke:#000000;stroke-width:2.5028;fill:none"
+            d="m-156.64 901.26h900"
+        />
+        <path
+            id="path2846-31-6-4-3"
+            style="stroke:#000000;stroke-width:2.5028;fill:none"
+            d="m-156.64 951.26h900"
+        />
+      </g
+      >
+      <path
+          id="path4317"
+          sodipodi:rx="20"
+          sodipodi:ry="10"
+          style="color:#000000;stroke:#000000;stroke-width:2;fill:#000000"
+          sodipodi:type="arc"
+          d="m-280 170c0 5.5228-8.9543 10-20 10s-20-4.4772-20-10 8.9543-10 20-10 20 4.4772 20 10z"
+          transform="matrix(.23349 0 0 .46698 64.483 722.37)"
+          sodipodi:cy="170"
+          sodipodi:cx="-300"
+      />
+      <path
+          id="path4317-2"
+          sodipodi:rx="20"
+          sodipodi:ry="10"
+          style="color:#000000;stroke:#000000;stroke-width:2;fill:#000000"
+          sodipodi:type="arc"
+          d="m-280 170c0 5.5228-8.9543 10-20 10s-20-4.4772-20-10 8.9543-10 20-10 20 4.4772 20 10z"
+          transform="matrix(.23349 0 0 .46698 364.37 721.88)"
+          sodipodi:cy="170"
+          sodipodi:cx="-300"
+      />
+      <path
+          id="path4317-6"
+          sodipodi:rx="20"
+          sodipodi:ry="10"
+          style="color:#000000;stroke:#000000;stroke-width:2;fill:#000000"
+          sodipodi:type="arc"
+          d="m-280 170c0 5.5228-8.9543 10-20 10s-20-4.4772-20-10 8.9543-10 20-10 20 4.4772 20 10z"
+          transform="matrix(.23349 0 0 .46698 664.69 721.93)"
+          sodipodi:cy="170"
+          sodipodi:cx="-300"
+      />
+      <path
+          id="path4317-24"
+          sodipodi:rx="20"
+          sodipodi:ry="10"
+          style="color:#000000;stroke:#000000;stroke-width:2;fill:#000000"
+          sodipodi:type="arc"
+          d="m-280 170c0 5.5228-8.9543 10-20 10s-20-4.4772-20-10 8.9543-10 20-10 20 4.4772 20 10z"
+          transform="matrix(.23349 0 0 .46698 64.739 421.8)"
+          sodipodi:cy="170"
+          sodipodi:cx="-300"
+      />
+      <path
+          id="path4317-5"
+          sodipodi:rx="20"
+          sodipodi:ry="10"
+          style="color:#000000;stroke:#000000;stroke-width:2;fill:#000000"
+          sodipodi:type="arc"
+          d="m-280 170c0 5.5228-8.9543 10-20 10s-20-4.4772-20-10 8.9543-10 20-10 20 4.4772 20 10z"
+          transform="matrix(.23349 0 0 .46698 364.48 422.02)"
+          sodipodi:cy="170"
+          sodipodi:cx="-300"
+      />
+      <path
+          id="path4317-5-7"
+          sodipodi:rx="20"
+          sodipodi:ry="10"
+          style="color:#000000;stroke:#000000;stroke-width:2;fill:#000000"
+          sodipodi:type="arc"
+          d="m-280 170c0 5.5228-8.9543 10-20 10s-20-4.4772-20-10 8.9543-10 20-10 20 4.4772 20 10z"
+          transform="matrix(.23349 0 0 .46698 664.58 422.12)"
+          sodipodi:cy="170"
+          sodipodi:cx="-300"
+      />
+      <path
+          id="path4317-24-8"
+          sodipodi:rx="20"
+          sodipodi:ry="10"
+          style="color:#000000;stroke:#000000;stroke-width:2;fill:#000000"
+          sodipodi:type="arc"
+          d="m-280 170c0 5.5228-8.9543 10-20 10s-20-4.4772-20-10 8.9543-10 20-10 20 4.4772 20 10z"
+          transform="matrix(.23349 0 0 .46698 64.539 122)"
+          sodipodi:cy="170"
+          sodipodi:cx="-300"
+      />
+      <path
+          id="path4317-24-8-8"
+          sodipodi:rx="20"
+          sodipodi:ry="10"
+          style="color:#000000;stroke:#000000;stroke-width:2;fill:#000000"
+          sodipodi:type="arc"
+          d="m-280 170c0 5.5228-8.9543 10-20 10s-20-4.4772-20-10 8.9543-10 20-10 20 4.4772 20 10z"
+          transform="matrix(.23349 0 0 .46698 364.66 122.04)"
+          sodipodi:cy="170"
+          sodipodi:cx="-300"
+      />
+      <path
+          id="path4317-24-8-8-2"
+          sodipodi:rx="20"
+          sodipodi:ry="10"
+          style="color:#000000;stroke:#000000;stroke-width:2;fill:#000000"
+          sodipodi:type="arc"
+          d="m-280 170c0 5.5228-8.9543 10-20 10s-20-4.4772-20-10 8.9543-10 20-10 20 4.4772 20 10z"
+          transform="matrix(.23349 0 0 .46698 664.74 122.15)"
+          sodipodi:cy="170"
+          sodipodi:cx="-300"
+      />
+    </g
+    >
+    <path
+        id="path2841"
+        sodipodi:rx="30"
+        sodipodi:ry="30"
+        style="color:#000000;fill:url(#radialGradient2942)"
+        sodipodi:type="arc"
+        d="m-90 120.34a30 30 0 1 1 -60 0 30 30 0 1 1 60 0z"
+        transform="matrix(.80645 0 0 .80645 439.65 355.92)"
+        sodipodi:cy="120.34024"
+        sodipodi:cx="-120"
+    />
+    <path
+        id="path2841-8"
+        sodipodi:rx="30"
+        sodipodi:ry="30"
+        style="color:#000000;fill:url(#radialGradient2942)"
+        sodipodi:type="arc"
+        d="m-90 120.34a30 30 0 1 1 -60 0 30 30 0 1 1 60 0z"
+        transform="matrix(.80645 0 0 .80645 690.02 105.54)"
+        sodipodi:cy="120.34024"
+        sodipodi:cx="-120"
+    />
+    <path
+        id="path2841-1"
+        sodipodi:rx="30"
+        sodipodi:ry="30"
+        style="color:#000000;fill:url(#radialGradient2942)"
+        sodipodi:type="arc"
+        d="m-90 120.34a30 30 0 1 1 -60 0 30 30 0 1 1 60 0z"
+        transform="matrix(.80645 0 0 .80645 140.72 154.08)"
+        sodipodi:cy="120.34024"
+        sodipodi:cx="-120"
+    />
+    <path
+        id="path2841-3"
+        sodipodi:rx="30"
+        sodipodi:ry="30"
+        style="color:#000000;fill:url(#radialGradient2942)"
+        sodipodi:type="arc"
+        d="m-90 120.34a30 30 0 1 1 -60 0 30 30 0 1 1 60 0z"
+        transform="matrix(.80645 0 0 .80645 340 302.27)"
+        sodipodi:cy="120.34024"
+        sodipodi:cx="-120"
+    />
+    <path
+        id="path2841-89"
+        sodipodi:rx="30"
+        sodipodi:ry="30"
+        style="color:#000000;fill:url(#radialGradient2942)"
+        sodipodi:type="arc"
+        d="m-90 120.34a30 30 0 1 1 -60 0 30 30 0 1 1 60 0z"
+        transform="matrix(.80645 0 0 .80645 590.38 404.46)"
+        sodipodi:cy="120.34024"
+        sodipodi:cx="-120"
+    />
+    <path
+        id="path2841-9-4-7"
+        sodipodi:rx="30"
+        sodipodi:ry="30"
+        style="color:#000000;stroke:#000000;stroke-width:2;fill:url(#radialGradient2961)"
+        sodipodi:type="arc"
+        d="m-90 120.34a30 30 0 1 1 -60 0 30 30 0 1 1 60 0z"
+        transform="matrix(.80645 0 0 .80645 340 455.56)"
+        sodipodi:cy="120.34024"
+        sodipodi:cx="-120"
+    />
+    <path
+        id="path2841-9-4-7-1"
+        sodipodi:rx="30"
+        sodipodi:ry="30"
+        style="stroke-width:2;color:#000000;stroke:#000000;fill:url(#radialGradient2961)"
+        sodipodi:type="arc"
+        d="m-90 120.34a30 30 0 1 1 -60 0 30 30 0 1 1 60 0z"
+        transform="matrix(.80645 0 0 .80645 89.625 703.38)"
+        sodipodi:cy="120.34024"
+        sodipodi:cx="-120"
+    />
+    <path
+        id="path2841-9-4-7-7"
+        sodipodi:rx="30"
+        sodipodi:ry="30"
+        style="stroke-width:2;color:#000000;stroke:#000000;fill:url(#radialGradient2961)"
+        sodipodi:type="arc"
+        d="m-90 120.34a30 30 0 1 1 -60 0 30 30 0 1 1 60 0z"
+        transform="matrix(.80645 0 0 .80645 189.27 506.66)"
+        sodipodi:cy="120.34024"
+        sodipodi:cx="-120"
+    />
+    <path
+        id="path2841-9-4-7-9"
+        sodipodi:rx="30"
+        sodipodi:ry="30"
+        style="stroke-width:2;color:#000000;stroke:#000000;fill:url(#radialGradient2961)"
+        sodipodi:type="arc"
+        d="m-90 120.34a30 30 0 1 1 -60 0 30 30 0 1 1 60 0z"
+        transform="matrix(.80645 0 0 .80645 638.93 703.38)"
+        sodipodi:cy="120.34024"
+        sodipodi:cx="-120"
+    />
+    <path
+        id="path2841-9-4-7-6"
+        sodipodi:rx="30"
+        sodipodi:ry="30"
+        style="stroke-width:2;color:#000000;stroke:#000000;fill:url(#radialGradient2961)"
+        sodipodi:type="arc"
+        d="m-90 120.34a30 30 0 1 1 -60 0 30 30 0 1 1 60 0z"
+        transform="matrix(.80645 0 0 .80645 738.57 654.84)"
+        sodipodi:cy="120.34024"
+        sodipodi:cx="-120"
+    />
+  </g
+  >
+  <metadata
+    >
+    <rdf:RDF
+      >
+      <cc:Work
+        >
+        <dc:format
+          >image/svg+xml</dc:format
+        >
+        <dc:type
+            rdf:resource="http://purl.org/dc/dcmitype/StillImage"
+        />
+        <cc:license
+            rdf:resource="http://creativecommons.org/licenses/publicdomain/"
+        />
+        <dc:publisher
+          >
+          <cc:Agent
+              rdf:about="http://openclipart.org/"
+            >
+            <dc:title
+              >Openclipart</dc:title
+            >
+          </cc:Agent
+          >
+        </dc:publisher
+        >
+        <dc:title
+          >Go Board 19 x 19 With Stones</dc:title
+        >
+        <dc:date
+          >2010-05-09T15:17:42</dc:date
+        >
+        <dc:description
+          >A full size go board of 19 x 19 points and some playing stones.</dc:description
+        >
+        <dc:source
+          >https://openclipart.org/detail/59485/go-board-19-x-19-with-stones-by-mazeo</dc:source
+        >
+        <dc:creator
+          >
+          <cc:Agent
+            >
+            <dc:title
+              >mazeo</dc:title
+            >
+          </cc:Agent
+          >
+        </dc:creator
+        >
+        <dc:subject
+          >
+          <rdf:Bag
+            >
+            <rdf:li
+              >board</rdf:li
+            >
+            <rdf:li
+              >board games</rdf:li
+            >
+            <rdf:li
+              >game of go</rdf:li
+            >
+            <rdf:li
+              >go</rdf:li
+            >
+            <rdf:li
+              >go board</rdf:li
+            >
+            <rdf:li
+              >go game</rdf:li
+            >
+            <rdf:li
+              >go stone</rdf:li
+            >
+            <rdf:li
+              >go stones</rdf:li
+            >
+            <rdf:li
+              >stone</rdf:li
+            >
+            <rdf:li
+              >stones</rdf:li
+            >
+          </rdf:Bag
+          >
+        </dc:subject
+        >
+      </cc:Work
+      >
+      <cc:License
+          rdf:about="http://creativecommons.org/licenses/publicdomain/"
+        >
+        <cc:permits
+            rdf:resource="http://creativecommons.org/ns#Reproduction"
+        />
+        <cc:permits
+            rdf:resource="http://creativecommons.org/ns#Distribution"
+        />
+        <cc:permits
+            rdf:resource="http://creativecommons.org/ns#DerivativeWorks"
+        />
+      </cc:License
+      >
+    </rdf:RDF
+    >
+  </metadata
+  >
+</svg
+>

@@ -1,0 +1,640 @@
+---
+title: "Introduction"
+subtitle: "HAX603X: Modélisation stochastique"
+format:
+  revealjs:
+    embed-resources: true
+    toc: true
+    template-partials:
+        - toc-slide.html
+    include-after-body: toc-add.html
+
+---
+
+# Présentation, informations générales
+
+
+##
+![](https://raw.githubusercontent.com/josephsalmon/OrganizationFiles/master/inkscape/images/contact_js.svg)
+
+<br>
+<br>
+<br>
+
+PS: n'oubliez pas de mettre [HAX603X] dans le titre de vos mails!
+
+
+## Enseignants
+
+::: {.fragment fragment-index=1}
+- **Joseph Salmon** : CM et TP
+    - Situation actuelle : Professeur à l'Université de Montpellier
+    - Précédemment : Paris Diderot-Paris 7, Duke Univ., Télécom ParisTech, Univ. Washington
+    - Spécialités : statistiques, optimisation, traitement des images, sciences participatives
+    - Bureau : 415, Bat. 9
+:::
+<div style="line-height:4%;">
+<br>
+</div>
+
+::: {.fragment fragment-index=2}
+- **Benjamin Charlier** : CM, TD et TP
+  - Situation actuelle : Maître de conférences à l'Université de Montpellier
+  - Précédemment : Université Paul Sabatier, ENS Paris-Saclay
+  - Spécialités : traitement des images, statistiques, différentiation automatique
+  - Bureau : 423, Bat. 9
+:::
+
+
+##
+```{=html}
+<div id='toc'></div>
+```
+
+## Ressources en ligne
+
+<br>
+
+[Informations principales]{.underline} : site du cours <http://josephsalmon.github.io/HAX603X>
+
+<br>
+
+:::{.incremental}
+
+- Syllabus
+- Cours (détaillé: site web)
+- Slides (résumé)
+- Feuilles de TD
+- Feuilles de TP
+- Rendu TP : Moodle de l'université (https://moodle.umontpellier.fr/course/view.php?id=5558)
+
+:::
+
+## Validation
+
+- TP notés : Rendu = fichier Python **.py** unique
+
+   - TP noté 1 : rendre en fin de session (en S11)
+   - TP noté 2 : rendre en fin de session (en S17)
+
+- CC : devoir sur table d'une heure (S18)
+
+<br>
+
+- Coefficients:
+    - Note Session 1 : (40% CC + 30% TP 1 + 30% TP 2)
+    - Note Session 2 : (30% CC + 35% TP 1 + 35% TP 2)
+
+::: {.callout-important}
+
+
+Le rendu est individuel pour le TP noté !!!
+:::
+
+## Notation pour les TPs
+
+[Rendu]{.underline} : sur Moodle, en déposant un fichier nom_prenom.py
+dans le dossier adéquat.
+
+Détails de la notation des TPs :
+
+- Qualité des réponses aux questions
+- Qualité de rédaction et d'orthographe
+- Qualité des graphiques (légendes, couleurs)
+- Qualité du code (noms de variables, clairs, commentaires utiles, code synthétique, etc.)
+- Code reproductible et absence de bug
+
+<br>
+
+::: {.callout-important}
+
+## [Pénalités]{.underline}
+
+
+- Envoi par mail : zéro
+- Retard : zéro (uploader avant la fin, fermeture automatique de moodle)
+
+:::
+
+## Prérequis - à revoir seul
+
+:::{.incremental}
+<br>
+<br>
+
+- Bases de probabilités (en particulier "HAX506X- Théorie des Probabilités"): probabilité, densité, espérance, fonction de répartition, mesure, intégration, analyse numérique élémentaire, etc. [@Foata_Fuchs96;@Barbe_Ledoux06;@Ouvrard07;@Ouvrard08]
+
+<br>
+
+- Programmation élémentaire (en Python): if ... then... else ..., for, while, fonctions, etc. [HLMA310 - Logiciels scientifiques](https://josephsalmon.eu/HLMA310.html), [@Courant_deFalco_Gonnord_Filliatre_Conchon_Dowek_Wack13], [Cours de Python: Univ. Paris Diderot](https://python.sdv.univ-paris-diderot.fr/)
+
+<br>
+
+- Pour aller plus loin: conditionnement, martingales [@Williams91]
+
+:::
+
+## Description du cours
+
+:::{.incremental}
+
+1. Générer l’aléa
+   - générateurs pseudo-aléatoires, simulations de variables aléatoires (inverse, rejet, etc.)
+   - illustrations numériques et visualisation en Python (loi des grands nombres, TCL)
+2. Méthode de Monte-Carlo
+   - méthode de Monte-Carlo pour le calcul approché d’une intégrale
+   - réduction de la variance : variables antithétiques, variables de contrôle, etc.
+3. Compléments
+   - vecteurs gaussiens et lien avec les lois usuelles de la statistique inférentielle (student, chi2)
+   - construction d'intervalles de confiance.
+   - marche aléatoire simple, etc.
+
+:::
+
+# Perspectives historiques
+
+## Buffon et les prémisses de la méthode de Monte-Carlo
+
+::::{.columns}
+
+:::{.column width="60%"}
+
+:::{.fragment fragment-index=1}
+- 1733:  **l'aiguille de Buffon**, méthode d'estimation de la valeur de $\pi$. 
+:::
+:::{.fragment fragment-index=2}
+- **Problème initial**: une aiguille de taille 1 tombe sur un parquet composé de lattes de largeur $1$: quelle est alors la probabilité $P$ que l'aiguille croise une ligne de la trame du parquet ?
+:::
+
+:::{.fragment fragment-index=3}
+```{python}
+#| echo: false
+#| layout-ncol: 1
+
+import numpy as np
+import plotly.graph_objects as go
+from plotly.subplots import make_subplots
+
+rng = np.random.default_rng(44)
+
+n_samples = 200
+xmax = 14.499999
+xmin = -xmax
+
+
+# Create the needles
+centers_x = rng.uniform(xmin, xmax, n_samples)
+angles = rng.uniform(0, 2 * np.pi, n_samples)
+centers_y = rng.uniform(-2, 2, n_samples)
+
+# Compute the right borders of the needles
+borders_right = np.zeros((n_samples, 2))
+borders_right[:, 0] = centers_x + np.cos(angles) / 2
+borders_right[:, 1] = centers_y + np.sin(angles) / 2
+
+# Compute the left borders of the needles
+borders_left = np.zeros((n_samples, 2))
+borders_left[:, 0] = centers_x + np.cos(angles + np.pi) / 2
+borders_left[:, 1] = centers_y + np.sin(angles + np.pi) / 2
+
+centers_x_round = np.round(centers_x)
+overlap = (borders_right[:, 0] - centers_x_round) * (
+    borders_left[:, 0] - centers_x_round
+) < 0
+overlap = np.where(overlap, 1, 0)
+n_overlap = int(np.sum(overlap))
+
+
+# Check if the needles cross a line
+borders_red = np.empty((3 * n_overlap, 2), dtype=object)
+borders_red.fill(None)
+borders_red[::3, :] = borders_right[overlap == 1]
+borders_red[1::3, :] = borders_left[overlap == 1]
+
+borders_blue = np.empty((3 * (n_samples - n_overlap), 2), dtype=object)
+borders_blue.fill(None)
+borders_blue[::3, :] = borders_right[overlap == 0]
+borders_blue[1::3, :] = borders_left[overlap == 0]
+
+overlaps = np.empty((3 * n_samples), dtype=object)
+overlaps.fill(None)
+overlaps[::3] = overlap
+overlaps[1::3] = overlap
+overlaps[2::3] = overlap
+
+idx_red = np.cumsum(overlaps)
+idx_blue = np.cumsum(1 - overlaps)
+
+
+# Create subplots with 2 rows and 1 column with ratio x /  y  of 10
+fig = make_subplots(rows=1, cols=1)
+
+# Use a loop to plot vertical lines equation "y=c" for integer values c in [-2, -1, 0, 1, 2]
+for i in range(int(np.round(xmin)), int(np.round(xmax)) + 1):
+    fig.add_shape(
+        type="line",
+        y0=-3,
+        x0=i,
+        y1=3,
+        x1=i,
+        line=dict(
+            color="black",
+            width=2,
+        ),
+    )
+
+color = np.where(overlaps, 1.0, 0.0)
+
+n_samples_array = np.arange(1, n_samples + 1)
+pi_estimate = 2 / (np.cumsum(overlap) / n_samples_array)
+t = n_samples
+
+fig.update_layout(
+    template="simple_white",
+    xaxis=dict(range=[xmin, xmax], constrain="domain", showgrid=False),
+    yaxis_scaleanchor="x",
+    xaxis_visible=False,
+    yaxis_visible=False,
+)
+
+
+i = 20
+fig.add_trace(
+    go.Scatter(
+        x=borders_red[: idx_red[3 * i] + 1, 0],
+        y=borders_red[: idx_red[3 * i] + 1, 1],
+        mode="lines",
+        line=dict(width=2),
+        marker=dict(color="red"),
+        name="Avec intersection",
+        visible=True,
+    ),
+)
+fig.add_trace(
+    go.Scatter(
+        x=borders_blue[: idx_blue[3 * i] + 1, 0],
+        y=borders_blue[: idx_blue[3 * i] + 1, 1],
+        mode="lines",
+        line=dict(width=2),
+        marker=dict(color="darkblue"),
+        name="Sans intersection",
+        visible=True,
+    ),
+)
+
+fig.update_layout(legend=dict(x=0.5, y=1.05, xanchor='center', yanchor='top'))
+fig.show()
+```
+
+:::
+
+:::
+
+:::{.column width="40%"}
+
+:::{.fragment fragment-index=1}
+
+[Georges-Louis Leclerc, Comte de Buffon](https://fr.wikipedia.org/wiki/Georges-Louis_Leclerc_de_Buffon)(1707-1788) :
+ naturaliste, mathématicien et industriel français du siècle des Lumières<img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/Georges-Louis_Leclerc_de_Buffon.jpg" width="65%" style="display: block; margin-right: auto; margin-left: auto;" alt="Portrait de Georges-Louis Leclerc, comte de Buffon.
+Huile sur toile de François-Hubert Drouais, Montbard, musée Buffon." title="Portrait de Georges-Louis Leclerc, comte de Buffon.
+Huile sur toile de François-Hubert Drouais, Montbard, musée Buffon."></img>
+:::
+
+:::
+
+::::
+
+
+## L'aiguille de Buffon (suite)
+
+::: {.fragment}
+
+**Problème initial**: une aiguille de taille 1 tombe sur un parquet composé de lattes de largeur $1$: quelle est alors la probabilité $P$ que l'aiguille croise une ligne de la trame du parquet ?
+:::
+
+<br>
+
+::: {.fragment}
+**Réponse**:
+$$
+P = \frac{2}{\pi} \approx 0.6366 \enspace.
+$$
+Une preuve de ce résultat est donnée [ici](http://josephsalmon.github.io/HAX603X/perspective_historique.html).
+:::
+
+
+## Principe de Monte Carlo et estimation 
+
+Idée sous-jacente de Buffon :
+
+si l'on répète cette expérience un grand nombre de fois, on peut approché la quantité $P$ numériquement, par exemple en proposant un estimateur $\hat{P}_n$ qui compte la proportion de chevauchement après avoir fait $n$ répétition des lancers.
+
+<br>
+Estimation de $\pi$:
+
+$$
+\pi \approx \frac{2}{\hat{P}_n}
+$$
+
+
+## Principe de Monte Carlo pour l'estimation (suite)
+
+<br>
+
+```{python}
+
+#| echo: false
+#| layout-ncol: 1
+
+# Create subplots with 2 rows and 1 column with ratio x /  y  of 10
+fig1 = make_subplots(rows=2, cols=1, vertical_spacing=0.1, row_heights=[2, 1])
+
+# Use a loop to plot vertical lines equation "y=c" for integer values c in [-2, -1, 0, 1, 2]
+for i in range(int(np.round(xmin)), int(np.round(xmax)) + 1):
+    fig1.add_shape(
+        type="line",
+        y0=-3,
+        x0=i,
+        y1=3,
+        x1=i,
+        line=dict(
+            color="black",
+            width=2,
+        ),
+        row=1,
+        col=1,
+    )
+
+color = np.where(overlaps, 1.0, 0.0)
+
+n_samples_array = np.arange(1, n_samples + 1)
+pi_estimate = 2 / (np.cumsum(overlap) / n_samples_array)
+t = n_samples
+
+fig1.update_layout(
+    template="simple_white",
+    xaxis=dict(range=[xmin, xmax], constrain="domain", showgrid=False),
+    yaxis_scaleanchor="x",
+    xaxis_visible=False,
+    yaxis_visible=False,
+)
+
+for i in range(3, t):
+    fig1.add_trace(
+        go.Scatter(
+            x=borders_red[: idx_red[3 * i] + 1, 0],
+            y=borders_red[: idx_red[3 * i] + 1, 1],
+            mode="lines",
+            line=dict(width=2),
+            marker=dict(color="red"),
+            name="Avec intersection",
+            visible=False,
+        ),
+        row=1,
+        col=1,
+    )
+    fig1.add_trace(
+        go.Scatter(
+            x=borders_blue[: idx_blue[3 * i] + 1, 0],
+            y=borders_blue[: idx_blue[3 * i] + 1, 1],
+            mode="lines",
+            line=dict(width=2),
+            marker=dict(color="darkblue"),
+            name="Sans intersection",
+            visible=False,
+        ),
+        row=1,
+        col=1,
+    )
+
+    fig1.add_trace(
+        go.Scatter(
+            x=n_samples_array[:i],
+            y=pi_estimate[:i],
+            mode="lines",
+            line=dict(width=1),
+            marker=dict(color="red"),
+            showlegend=False,
+            visible=False,
+        ),
+        row=2,
+        col=1,
+    )
+
+fig1.add_annotation(
+    dict(
+        x=0.04,
+        y=0.19,
+        xref="paper",
+        yref="paper",
+        text="Estimation de pi",
+        showarrow=False,
+        font=dict(color="red"),
+    )
+)
+
+fig1.add_annotation(
+    dict(x=1., y=0.19, xref="paper", yref="paper", text="pi", showarrow=False)
+)
+
+fig1.update_xaxes(title_text="Nombre d'aiguilles tirées", row=2, col=1)
+
+fig1.update_layout(
+    template="none",
+    xaxis2=dict(showgrid=True, zeroline=True, zerolinewidth=1, range=[0, n_samples]),
+    yaxis2=dict(showgrid=True, zeroline=True, zerolinewidth=1, range=[0, 6]),
+)
+# plot a dash line at y=pi
+fig1.add_shape(
+    type="line",
+    y0=np.pi,
+    x0=0,
+    y1=np.pi,
+    x1=n_samples,
+    line=dict(
+        color="black",
+        width=1,
+        dash="dashdot",
+    ),
+    row=2,
+    col=1,
+)
+
+
+fig1.data[11 * 3].visible = True
+fig1.data[11 * 3 + 1].visible = True
+fig1.data[11 * 3 + 2].visible = True
+
+
+steps = []
+for ii in range(len(fig1.data) // 3):
+    step = dict(
+        label=str(ii + 4),
+        method="update",
+        args=[
+            {"visible": [False] * len(fig1.data)},
+            {
+                "title": "Estimation avec "
+                + str(ii + 4)
+                + f" aiguilles: pi = {pi_estimate[ii]:.4f}"
+            },
+        ],
+    )
+    step["args"][0]["visible"][3 * ii] = True
+    step["args"][0]["visible"][3 * ii + 1] = True
+    step["args"][0]["visible"][3 * ii + 2] = True
+
+    steps.append(step)
+
+slider = dict(
+    active=6,
+    currentvalue={"prefix": "Nombre d'aiguilles: "},
+    pad={"t": 50},
+    y=-0.1,
+    steps=steps,
+)
+
+fig1.update_layout(legend=dict(x=0.5, y=1, xanchor='center', yanchor='bottom'))
+fig1.update_layout(sliders=[slider])
+fig1.update_layout(height=800, width=1480)
+
+fig1.show()
+```
+
+
+##  Méthode de Monte-Carlo
+
+Méthode de calcul numérique qui consiste à utiliser des nombres aléatoires pour résoudre des problèmes déterministes.
+
+<br>
+
+Domaines d'applications:
+
+ - la physique
+ - la chimie
+ - la biologie
+ - la finance
+ - l'apprentissage automatique
+
+
+## Contexte de la naissance de la méthode de Monte Carlo
+
+::::{.columns}
+
+:::{.column width="70%"}
+
+:::{.fragment fragment-index=1}
+
+- Lieu: Los Alamos
+- Époque: seconde guerre mondial
+- Contexte: **Projet Manathan**, produire une bombe atomique
+- Besoins: modéliser les réactions nucléaires en chaîne (combinatoires)
+
+:::
+
+
+
+
+::: {layout-ncol=3}
+:::{.fragment fragment-index=3}
+![[John von Neumann](https://fr.wikipedia.org/wiki/John_von_Neumann) (1903-1957), mathématicien et physicien américano-hongrois, un des pères de l'informatique.](https://upload.wikimedia.org/wikipedia/commons/d/d6/JohnvonNeumann-LosAlamos.jpg){height=200}
+:::
+
+:::{.fragment fragment-index=4}
+![[Nicholas Metropolis](https://fr.wikipedia.org/wiki/Nicholas_Metropolis) (1915-1999), physicien gréco-américain, un des initiateurs de la méthode de Monte Carlo et du recuit simulé](https://upload.wikimedia.org/wikipedia/commons/5/56/Nicholas_Metropolis_cropped.PNG){height=200}
+:::
+
+:::{.fragment fragment-index=5}
+![[Stanisław Ulam](https://fr.wikipedia.org/wiki/Stanislaw_Ulam) (1909-1984),  mathématicien polono-américainm, un des initiateurs de la méthode de Monte Carlo et de la propulsion nucléaire pulsée](https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Stanislaw_Ulam.tif/lossy-page1-413px-Stanislaw_Ulam.tif.jpg){height=200}
+:::
+
+:::
+
+:::
+
+:::{.column width="30%"}
+
+:::{.fragment fragment-index=2}
+
+![Explosion de Trinity (16 Juillet 1945)](https://upload.wikimedia.org/wikipedia/commons/f/fc/Trinity_Detonation_T%26B.jpg){width=100%}
+
+:::
+
+:::
+
+::::
+
+
+
+## L'origine du nom "Monte-Carlo"
+
+Initialement: besoin de confidentialité du projet Manhattan
+
+<br>
+
+Monte-Carlo: connue pour ses jeux de hasard, où l'oncle de Stanisław Ulam aimait se rendre pour assouvir sa soif de jeu.
+
+<br>
+Ce serait N. Metropolis qui aurait proposé ce nom, cf. [@Metropolis87]:
+
+
+*It was at that time that I suggested an obvious name for the statistical method—a suggestion not unrelated to the fact that Stan had an uncle who would borrow money from relatives because he “just had to go to Monte Carlo”.*
+
+
+
+## Essor de la méthode de Monte Carlo
+
+
+::::{.columns}
+
+:::{.column width="60%"}
+
+:::{.fragment fragment-index=1}
+
+- Popularisation croissante:
+
+  - Essor de l'informatique (depuis les années 80)
+  - Essor des méthodes de calcul parallèle (GPUs, clusters, etc.)
+
+:::
+
+:::{.fragment fragment-index=2}
+
+- Domaine principaux impactés:
+
+  - finance : évaluation des prix de produits dérivés
+  - apprentissage automatique: utilisation de l'aléatoire pour généré des scénarios
+
+    [Exemples: Alphago (2016)]{.fragment fragment-index=3}[, AlphaGeometry (2024)]{.fragment fragment-index=4}
+:::
+
+:::
+
+:::{.column width="40%"}
+
+:::{.fragment fragment-index=3}
+  ![](/images/go-board-19x19-stones.svg){width=50%}
+:::
+
+:::{.fragment fragment-index=4}
+
+  ![](/images/alphageometry.png){width=50%}
+:::
+
+
+:::
+
+::::
+<br>
+
+
+:::{.fragment fragment-index=5}
+
+Recherche arborescente Monte-Carlo (:gb:: *Monte Carlo tree search*): analyse des scénarios les plus prometteurs, en élargissant l'arbre de recherche sur la base d'un échantillonnage aléatoire de l'espace entier (ingrédient important d'AlphaGo)
+
+:::
+
+## Bibliographie
+
+::: {#refs}
+:::

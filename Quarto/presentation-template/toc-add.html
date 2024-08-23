@@ -1,0 +1,10 @@
+<script>
+  let placeholder = document.querySelector("div#toc");
+  let toc = document.querySelector("#toc-nav");
+  let toc_slide = document.querySelector("section#TOC");
+  
+  let toc_clone = toc.cloneNode(true);
+  placeholder.replaceWith(toc_clone);
+  
+  toc_slide.remove();
+</script>
