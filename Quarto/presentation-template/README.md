@@ -37,5 +37,7 @@ Then you can run the presentation by running the following command in the termin
 quarto render presentation-template/slides_intro.qmd
 ```
 
-The display is then given in the `html` file created in the `presentation-template` folder [here](https://raw.githubusercontent.com/josephsalmon/OrganizationFiles/master/Quarto/presentation-template/slides_intro.html/slides_intro.html).
-Alternatively with VScode you can just open the `presentation.qmd` file and click on the `Quarto: Render` button at the top right of the editor.
+The display is then given in the `html` file created in the `presentation-template` folder [here](https://raw.githubusercontent.com/josephsalmon/OrganizationFiles/master/Quarto/presentation-template/slides_intro.html).
+You might need to download the html file and open it in a browser to see the slides (as the link might not work directly in some cases).
+
+Alternatively with VScode you can just open the `presentation.qmd` file and click on the `Quarto: Render` button at the top right of the editor or `Quarto: Preview` to see the slides directly in the editor.
