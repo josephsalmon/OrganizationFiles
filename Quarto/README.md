@@ -5,7 +5,7 @@
 Inspired by the great blog by [Emil Hvitfeldt](https://emilhvitfeldt.com/blog),
 I am starting to use [Quarto](https://quarto.org/) for my presentations.
 
-In the [Quarto section](Quarto/) is provided:
+In the Quarto section is provided:
 
 - a Quarto template for presentation: [presentation-template](presentation-template/)
 
