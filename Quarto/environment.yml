@@ -3,3 +3,5 @@ dependencies:
   - numpy
   - pandas
   - plotly
+  - jupyter
+  - ipykernel
