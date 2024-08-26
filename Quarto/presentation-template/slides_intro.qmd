@@ -4,11 +4,13 @@ from: markdown+emoji
 subtitle: "HAX603X: Modélisation stochastique"
 format:
   revealjs:
-    embed-resources: true
     toc: true
-    template-partials:
-        - toc-slide.html
-    include-after-body: toc-add.html
+    output-ext: "html"
+    # template-partials:
+    #     - toc-slide.html
+    # include-after-body: toc-add.html
+    # embed-resources: true
+    date: 2024-08-26
 
 ---
 
@@ -17,6 +19,7 @@ format:
 
 ##
 ![](https://raw.githubusercontent.com/josephsalmon/OrganizationFiles/master/inkscape/images/contact_js.svg)
+
 
 <br>
 <br>

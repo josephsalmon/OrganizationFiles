@@ -22,7 +22,6 @@ license: CC BY-SA
 bibliography: ../../tex/biblio/references_all.bib
 # csl: ieee.csl
 
-date: 2024-01-19
 
 history: false
 lang: fr-FR
@@ -50,12 +49,12 @@ format:
       slide-number: true
       controls-tutorial: true
       preview-links: auto
-      # logo: images/logo-um.svg
-      # header-logo: images/logo-imag.png
+      logo: https://raw.githubusercontent.com/josephsalmon/OrganizationFiles/master/sharedimages/coeur_M12.svg
+      # header-logo: images/coeur_M12.svg
       footer: <span style="color:grey;float:left;margin-left:7%;"><em>{{< meta title >}}</em></span>
       # <span style="color:grey;float:right;margin-right:12%;">Séminaire de Culture Générale</span>
       transition: none
-      # fig-align: "center" 
+      # fig-align: "center"
       center: false
       width: 1600
       height: 900
