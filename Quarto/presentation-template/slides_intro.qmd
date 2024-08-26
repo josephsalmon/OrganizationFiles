@@ -5,11 +5,8 @@ subtitle: "HAX603X: Modélisation stochastique"
 format:
   revealjs:
     toc: true
-    output-ext: "html"
-    # template-partials:
-    #     - toc-slide.html
-    # include-after-body: toc-add.html
     # embed-resources: true
+    self-contained-math: true
     date: 2024-08-26
 
 ---

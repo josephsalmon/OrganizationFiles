@@ -40,4 +40,6 @@ quarto render presentation-template/slides_intro.qmd
 The display is then given in the `html` file created in the `presentation-template` folder [here](https://raw.githubusercontent.com/josephsalmon/OrganizationFiles/master/Quarto/presentation-template/slides_intro.html).
 You might need to download the html file and open it in a browser to see the slides (as the link might not work directly in some cases).
 
+Note: the `html` hence created requires the option `embed-resources: true` that might alter the rendering of the slides in some cases. If you want to see the slides in a browser, you can change this option to `false` in header.
+
 Alternatively with VScode you can just open the `presentation.qmd` file and click on the `Quarto: Render` button at the top right of the editor or `Quarto: Preview` to see the slides directly in the editor.
