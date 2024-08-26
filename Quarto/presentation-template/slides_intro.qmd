@@ -4,6 +4,7 @@ from: markdown+emoji
 subtitle: "HAX603X: Modélisation stochastique"
 format:
   revealjs:
+    embed-resources: true
     toc: true
     template-partials:
         - toc-slide.html
