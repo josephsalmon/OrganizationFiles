@@ -1,5 +1,9 @@
 # TeX / LaTeX / BibTeX
 
+## Introduction and help
+
+A great [tutorial](https://guides.nyu.edu/LaTeX/) by Matthew Frenkel (from NYU) is available that describes all the basics of LaTeX. You can start from there.
+
 ## Content
 
 - References harmonized for my group in (a huge) .bib file: [references_all.bib](biblio/references_all.bib)
