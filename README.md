@@ -48,9 +48,12 @@ More motivational reading can be found in the papers by D. Donoho: [50 years of 
 In the [Images and Inkscape](inkscape/) section, I am giving some insights on using images in science and communications, and discuss why **Inkscape** is an incredible tool to master for a PhD student or a modern researcher.
 About colors, it is interesting to know some basics rules (see https://matthewstrom.com/writing/how-to-pick-the-least-wrong-colors/) and to be aware of colorblind people.
 A last important point is the creation of palettes for choosing the right colors. For that [http://paletton.com](http://paletton.com/#uid=1000u0kllllaFw0g0qFqFg0w0aF) could help a lot.
+As a preliminary guidline on which format to use (jpg, png, gif, svg, pdf, etc.), see this page [Interneting Is Hard](https://internetingishard.netlify.app/html-and-css/links-and-images/#image-formats).
 
 ## Web/html
 You can create your personal website seamlessly by following the instructions [here](https://wowchemy.com/templates/).
+It is also probably important to start having some basic knowledge in html and css, see for instance
+[Interneting Is Hard](https://internetingishard.netlify.app/html-and-css/introduction/).
 
 
 ## [Advice (mostly) for PhD students](guidelines/)
