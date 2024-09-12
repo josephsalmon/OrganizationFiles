@@ -32,6 +32,7 @@ code-line-numbers: false
 jupyter: python3
 format:
     revealjs:
+      embed-resources: true
       theme:
         - meds-slides-styles.scss
       html-math-method: mathjax
