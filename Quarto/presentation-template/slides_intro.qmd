@@ -1,13 +1,13 @@
 ---
 title: "Introduction"
-from: markdown+emoji
 subtitle: "HAX603X: Modélisation stochastique"
+from: markdown+emoji
 format:
   revealjs:
-    toc: true
-    # embed-resources: true
-    self-contained-math: true
-    date: 2024-08-26
+    # preview-links: true
+    code-link: true
+    highlight-style: a11y
+
 
 ---
 
@@ -495,9 +495,9 @@ slider = dict(
     steps=steps,
 )
 
-fig1.update_layout(legend=dict(x=0.5, y=1, xanchor='center', yanchor='bottom'))
+fig1.update_layout(legend=dict(x=0.5, y=0.91, xanchor='center', yanchor='bottom'))
 fig1.update_layout(sliders=[slider])
-fig1.update_layout(height=800, width=1480)
+# fig1.update_layout(height=800, width=1480)
 
 fig1.show()
 ```
@@ -635,7 +635,9 @@ Recherche arborescente Monte-Carlo (:gb: *Monte Carlo tree search*): analyse des
 
 :::
 
-## Bibliographie
+# Bibliographie
+
+## Livres recommandés
 
 ::: {#refs}
 :::
