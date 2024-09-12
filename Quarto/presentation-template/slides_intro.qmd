@@ -47,10 +47,6 @@ PS: n'oubliez pas de mettre [HAX603X] dans le titre de vos mails!
 :::
 
 
-##
-```{=html}
-<div id='toc'></div>
-```
 
 ## Ressources en ligne
 
