@@ -43,3 +43,10 @@ You might need to download the html file and open it in a browser to see the sli
 Note: the `html` hence created requires the option `embed-resources: true` that might alter the rendering of the slides in some cases. If you want to see the slides in a browser, you can change this option to `false` in header.
 
 Alternatively with VScode you can just open the `presentation.qmd` file and click on the `Quarto: Render` button at the top right of the editor or `Quarto: Preview` to see the slides directly in the editor.
+
+
+## Resources
+
+- [Quarto](https://quarto.org/docs/presentations/revealjs/): the Quarto website.
+- [Data science tools for building professional online portfolios](https://ucsb-meds.github.io/EDS-296-DS-portfolios/course-materials/week4-writing-blogs.html): a course on how to build professional slides, a great inspiration for this repository.
+- [Blog post by Christophe Avonture](https://www.avonture.be/blog/quarto-revealjs-tips/): Some tips and tricks for Quarto when rendering as a reveal.js slideshow
