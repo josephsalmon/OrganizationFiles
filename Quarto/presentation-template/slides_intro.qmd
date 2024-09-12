@@ -14,6 +14,7 @@ format:
 # Présentation, informations générales
 
 
+<!-- ----------------------------------------------------------------------- -->
 ##
 ![](https://raw.githubusercontent.com/josephsalmon/OrganizationFiles/master/inkscape/images/contact_js.svg)
 
@@ -45,9 +46,11 @@ PS: n'oubliez pas de mettre [HAX603X] dans le titre de vos mails!
   - Spécialités : traitement des images, statistiques, différentiation automatique
   - Bureau : 423, Bat. 9
 :::
+<!-- ----------------------------------------------------------------------- -->
 
 
 
+<!-- ----------------------------------------------------------------------- -->
 ## Ressources en ligne
 
 <br>
@@ -87,7 +90,10 @@ PS: n'oubliez pas de mettre [HAX603X] dans le titre de vos mails!
 
 Le rendu est individuel pour le TP noté !!!
 :::
+<!-- ----------------------------------------------------------------------- -->
 
+
+<!-- ----------------------------------------------------------------------- -->
 ## Notation pour les TPs
 
 [Rendu]{.underline} : sur Moodle, en déposant un fichier nom_prenom.py
@@ -112,7 +118,11 @@ Détails de la notation des TPs :
 - Retard : zéro (uploader avant la fin, fermeture automatique de moodle)
 
 :::
+<!-- ----------------------------------------------------------------------- -->
 
+
+
+<!-- ----------------------------------------------------------------------- -->
 ## Prérequis - à revoir seul
 
 :::{.incremental}
@@ -130,7 +140,11 @@ Détails de la notation des TPs :
 - Pour aller plus loin: conditionnement, martingales [@Williams91]
 
 :::
+<!-- ----------------------------------------------------------------------- -->
 
+
+
+<!-- ----------------------------------------------------------------------- -->
 ## Description du cours
 
 :::{.incremental}
@@ -147,10 +161,17 @@ Détails de la notation des TPs :
    - marche aléatoire simple, etc.
 
 :::
+<!-- ----------------------------------------------------------------------- -->
+
+
+
 
 # Perspectives historiques
 
-## Buffon et les prémisses de la méthode de Monte-Carlo
+
+
+<!-- ----------------------------------------------------------------------- -->
+## L'aiguille de Buffon
 
 ::::{.columns}
 
@@ -300,8 +321,11 @@ Huile sur toile de François-Hubert Drouais, Montbard, musée Buffon."></img>
 :::
 
 ::::
+<!-- ----------------------------------------------------------------------- -->
 
 
+
+<!-- ----------------------------------------------------------------------- -->
 ## L'aiguille de Buffon (suite)
 
 ::: {.fragment}
@@ -334,7 +358,7 @@ $$
 $$
 
 
-## Principe de Monte Carlo pour l'estimation (suite)
+## Principe de Monte Carlo et estimation  (suite)
 
 <br>
 
