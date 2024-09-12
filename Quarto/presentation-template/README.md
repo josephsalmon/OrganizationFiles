@@ -16,10 +16,10 @@ The presentations are then rendered as HTML slides in the `presentation.html` fi
 
 The sources of the presentations contain the following elements:
 
-- `presentation.qmd`: the main file containing the presentation content.
-- `slides.css`: the CSS file for the slides.
-- `_metadata.yml`: the metadata file for the presentation.
-- `environment.yml`: the environment file for the presentation. You can (you don't have to though if you have a Python env working already) then create a conda environment by running the following command in the terminal:
+- [`presentation.qmd`](presentation.qmd): the main file containing the presentation content.
+- [`meds-slides-styles.scss`](meds-slides-styles.scss): the (S)CSS file for the slides.
+- [`_metadata.yml`](_metadata.yml): the metadata file for the presentation.
+- [`environment.yml`](../environment.yml): the environment file for the presentation. You can (you don't have to though if you have a Python env working already) then create a conda environment by running the following command in the terminal:
 
 ```bash
 conda env create -f environment.yml
