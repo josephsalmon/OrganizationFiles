@@ -3,7 +3,8 @@
 ## Content
 
 Inspired by the great blog by [Emil Hvitfeldt](https://emilhvitfeldt.com/blog),
-I am starting to use [Quarto](https://quarto.org/) for my presentations.
+I have started using [Quarto](https://quarto.org/) for my presentations.
+Also a good design for a website with quarto is given by  on [Marvin Schmitt's](https://www.marvinschmitt.com/).
 
 In the Quarto section is provided:
 
