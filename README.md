@@ -43,6 +43,9 @@ See for instance Konrad Hinsen's blog post on the topic: [https://khinsen.net/ke
 
 More motivational reading can be found in the papers by D. Donoho: [50 years of data science](https://www.tandfonline.com/doi/full/10.1080/10618600.2017.1384734) and the more recent [Data Science at the Singularity](https://hdsr.mitpress.mit.edu/pub/g9mau4m0/release/2).
 
+### [SSH and remote computing](SSH/)
+In the [SSH section](SSH/), I provide some basic information on how to connect to a remote machine using SSH, and how to set up your environment on this remote machine, especially to use `pytorch` and other libraries.
+
 
 ## [Images and Inkscape](inkscape/)
 In the [Images and Inkscape](inkscape/) section, I am giving some insights on using images in science and communications, and discuss why **Inkscape** is an incredible tool to master for a PhD student or a modern researcher.

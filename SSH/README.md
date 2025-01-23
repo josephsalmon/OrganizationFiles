@@ -1,4 +1,4 @@
-# OBAN TUTORIAL
+#  TUTORIAL for connecting to a remote machine
 
 ## Remote ssh connection for computing
 
@@ -7,8 +7,9 @@
 - Type the command in a terminal and enter the password
 
 ```bash
-ssh <login>@oban.imag.umontpellier.fr
+ssh <login>@<machine_name>.imag.umontpellier.fr
 ```
+where `<login>` is your login and `<machine_name>` is the name of the machine (e.g., `oban`).
 
 - To avoid retyping the password for each connection, you can generate an SSH key (first check if you already have one: look for a file with the .pub extension in your .ssh folder) using, for example, the command
 
@@ -27,7 +28,7 @@ cat nom_de_la_cle.pub
 You can now connect by simply typing the command
 
 ```bash
-ssh <login>@oban.imag.umontpellier.fr
+ssh <login>@<machine_name>.imag.umontpellier.fr
 ```
 
 ## Connection au remote
@@ -37,21 +38,37 @@ ssh <login>@oban.imag.umontpellier.fr
 - You should then see the oban remote to which you can connect
 
 
-- On voit alors le remote oban auquel on peut se connecter
+- You can now seen the remote `<machine_name>` you wan to connect to.
 
-## Mise en place de l'environement
+## Setting your environment
 
-Now you need to configure the Python environment in this remote
+Now you need to configure the Python environment in this remote for instance by creating a micromamba environment. This require an `environment.yml` file of the following kind:
 
-environment.yml file:
 ```yaml
 name: nom_de_env
 channels:
- - conda-forge
- - defaults
+    - pytorch
+    - nvidia
+    - conda-forge
 dependencies:
-  - python=3.13
+    - python=3.12
+    - numpy
+    - pandas
+    - scikit-learn
+    - matplotlib
+    - seaborn
+    - plotly
+    - notebook
+    - dask
+    - dask-jobqueue
+    - numba
+    - pytorch
+    - torchvision
+    - torchaudio
+    - pytorch-cuda=12.4
+
 ```
+with for instance `nom_de_env` being `pytorch-env`.
 
 - Create and activate your environment with the commands:
 
@@ -60,17 +77,5 @@ micromamba create -f environment.yml
 ```
 
 ```bash
-micromamba activate
-```
-
-- Then install the necessary packages
-
-```bash
-micromamba install pytorch pytorch-cuda=12.4 -c conda-forge -c pytorch -c nvidia
-```
-
-torchvision and torchaudio do not want to install, I don't know why, the command given on the pytorch website does not work:
-
-```bash
-micromamba install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvidia
+micromamba activate pytorch-env
 ```
