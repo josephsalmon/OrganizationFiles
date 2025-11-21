@@ -10,26 +10,27 @@ A great [tutorial](https://guides.nyu.edu/LaTeX/) by Matthew Frenkel (from NYU) 
 
 - Snippets used for LaTeXing with Sublime (to be adapted for VSCode).
 
-### Plain TeX templates
+- Plain TeX templates
 
 | [article.tex](draft-article/article.tex)                                                      | [exam.tex](draft-exam/exam.tex)                                                        | [scribe.tex](draft-scribe/scribe.tex)                                                      |
 | --------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ |
-| [<img src="../sharedimages/article.png" width="210" height="150">](draft-article/article.tex) | [<img src="../sharedimages/examen.png" width="210" height="150">](draft-exam/exam.tex) | [<img src="../sharedimages/scribe.png" width="210" height="150">](draft-scribe/scribe.tex) |
+| [<img src="../sharedimages/article.png" width="210">](draft-article/article.tex) | [<img src="../sharedimages/examen.png" width="210">](draft-exam/exam.tex) | [<img src="../sharedimages/scribe.png" width="210">](draft-scribe/scribe.tex) |
 
 
-### Phd / habilitation templates (*Credit: Mélanie Karlsen and Benjamin Charlier*
+- Phd / habilitation templates  (*Credit: Mélanie Karlsen and Benjamin Charlier*
 )
 
-| [typst code](Melanie_Karlsen/phd-typst/main.typ)                                                      | [tex code](https://github.com/bcharlier/TexPlate)                                                      |
+| [typst code](Melanie_Karlsen/phd-typst/main.typ)                                                      | [tex code](Benjamin_Charlier/phd)                                                      |
 | --------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
-| [<img src="../sharedimages/phd-typst.png" width="210" height="150">](phd-typst/phd.typ) | [<img src="../sharedimages/phd-tex.png" width="210" height="150">](phd-latex/phd.tex) |
+| [<img src="../sharedimages/phd-typst.png" width="210">](phd-typst/phd.typ) | [<img src="../sharedimages/phd-tex.png" width="210">](phd-latex/phd.tex) |
 
 
-### Beamer TeX templates
+- Beamer TeX templates
 
 | [beamer_tl_js.tex](draft-beamer/beamer_tl_js.tex)                                                   | [beamer_js.tex](draft-beamer/beamer_js.tex)                                                      | [beamer_tl.tex](draft-beamer/beamer_tl.tex)                                                      |
 | --------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------ |
-| [<img src="../sharedimages/beamer_tl_js.png" width="320" height="180">](draft-beamer/beamer_js.tex) | [<img src="../sharedimages/beamer_js.png" width="320" height="180">](draft-beamer/beamer_tl.tex) | [<img src="../sharedimages/beamer_tl.png" width="320" height="180">](draft-beamer/beamer_tl.tex) |
+| [<img src="../sharedimages/beamer_tl_js.png" width="320">](draft-beamer/beamer_js.tex) | [<img src="../sharedimages/beamer_js.png" width="320">](draft-beamer/beamer_tl.tex) | [<img src="../sharedimages/beamer_tl.png" width="320">](draft-beamer/beamer_tl.tex) |
+
 
 
 ## Text Editor
