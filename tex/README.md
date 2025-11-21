@@ -17,11 +17,12 @@ A great [tutorial](https://guides.nyu.edu/LaTeX/) by Matthew Frenkel (from NYU) 
 | [<img src="../sharedimages/article.png" width="210" height="150">](draft-article/article.tex) | [<img src="../sharedimages/examen.png" width="210" height="150">](draft-exam/exam.tex) | [<img src="../sharedimages/scribe.png" width="210" height="150">](draft-scribe/scribe.tex) |
 
 
+- Phd / habilitation templates  (*Credit: Mélanie Karlsen and Benjamin Charlier*
+)
 
-- Phd / habilitation templates
-
-
-
+| [main.typ](Melanie_Karlsen/phd-typst/main.typ)                                                      | [phd.tex](Benjamin_Charlier/phd-latex/phd.tex)                                                      |
+| --------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
+| [<img src="../sharedimages/phd-typst.png" width="210" height="150">](phd-typst/phd.typ) | [<img src="../sharedimages/phd-latex.png" width="210" height="150">](phd-latex/phd.tex) |
 
 
 - Beamer TeX templates
@@ -50,11 +51,11 @@ For more VSCode help see for instance:
 
 - https://www.tablesgenerator.com/ : to create LaTeX tables from copy/paste values or .csv files
 - Inkscape (see for more information in the [Inkscape](../inkscape/README.md) section): useful for sketching figures with, especially with the [TexText](https://inkscape.org/~jcwinkler/%E2%98%85textext) extension.
-- latexdiff : allows to visualize the diff in the pdf (useful for revision / v2 in a publication):
+- `latexdiff` : allows to visualize the diff in the pdf (useful for revision / v2 in a publication):
 
 	`file1.tex file2.tex > diff.tex`
 
-	Then, you can compile the file diff.tex and you get some nice difference file in the output pdf.
+	Then, you can compile the file `diff.tex` and you get some nice difference file in the output pdf.
 
 
 ## Latex tips
