@@ -17,6 +17,13 @@ A great [tutorial](https://guides.nyu.edu/LaTeX/) by Matthew Frenkel (from NYU) 
 | [<img src="../sharedimages/article.png" width="210" height="150">](draft-article/article.tex) | [<img src="../sharedimages/examen.png" width="210" height="150">](draft-exam/exam.tex) | [<img src="../sharedimages/scribe.png" width="210" height="150">](draft-scribe/scribe.tex) |
 
 
+
+- Phd / habilitation templates
+
+
+
+
+
 - Beamer TeX templates
 
 | [beamer_tl_js.tex](draft-beamer/beamer_tl_js.tex)                                                   | [beamer_js.tex](draft-beamer/beamer_js.tex)                                                      | [beamer_tl.tex](draft-beamer/beamer_tl.tex)                                                      |
