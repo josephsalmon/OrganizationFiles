@@ -20,9 +20,9 @@ A great [tutorial](https://guides.nyu.edu/LaTeX/) by Matthew Frenkel (from NYU) 
 - Phd / habilitation templates  (*Credit: Mélanie Karlsen and Benjamin Charlier*
 )
 
-| [typst code](draft-thesis/Melanie_Karlsen/main.typ)                                                      | [tex code](https://github.com/bcharlier/TexPlate)                                                      |
+| [typst code](draft-thesis/Melanie_Karlsen/)                                                      | [tex code](https://github.com/bcharlier/TexPlate)                                                      |
 | --------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
-| [<img src="../sharedimages/phd-typst.png" width="210">](phd-typst/phd.typ) | [<img src="../sharedimages/phd-tex.png" width="210">](phd-latex/phd.tex) |
+| [<img src="../sharedimages/phd-typst.png" width="210">](draft-thesis/Melanie_Karlsen/) | [<img src="../sharedimages/phd-tex.png" width="210">](https://github.com/bcharlier/TexPlate) |
 
 
 - Beamer TeX templates
